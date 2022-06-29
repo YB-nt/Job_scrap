@@ -58,6 +58,7 @@ for i in range(1,page_count+1):
 
     sleep(0.5)
     job_page = driver.page_source
+    print(job_page)
     page_soup = bs(job_page,'html.parser')
     job_title = page_soup.find('section',{"class":"JobHeader_className__HttDA"}).find('h2').text
     section = page_soup.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
