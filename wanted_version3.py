@@ -82,7 +82,7 @@ for job_href in job_hrefs:
 driver.quit()
 
 
-df = pd.DataFrame({"기업이름":list(dic_job_scarp.keys()),"기업공고":list(dic_job_scarp.items())})
+df = pd.DataFrame({"공고 제목":list(dic_job_scarp.keys()),"기업 공고":list(dic_job_scarp.items())})
 
 print(df)
 df.to_csv("job_srcap.csv")
