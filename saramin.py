@@ -1,3 +1,4 @@
+from os import linesep
 import requests as req
 from bs4 import BeautifulSoup as soup 
 import re
@@ -36,6 +37,7 @@ base_url = "https://www.saramin.co.kr"
 url_list = make_url_list(keyword=keyword)
 total_url = [base_url+add_url for add_url in url_list]
 detail_page =[]
+
 test_url = total_url[:4]
 
 for lnk in test_url:   
@@ -46,12 +48,15 @@ for lnk in detail_page:
     resp = req.get(lnk,headers=headers)
     if(resp.status_code==200):
         page_source = soup(resp.text,"html.parser")
-        print(page_source.text)
-        
-        # if(.find("dt").text=='자격요건'):
-        #     print(page_source.find_all('div').find('dt'))
-        # else:
-        #     print("None!")
+        contents = page_source.find('div',class_='wrap_tbl_template').find('td')
+        if(contents!=None):
+            children = contents.findChildren("table" , recursive=False)
+            for child in children:
+                print(lnk)
+                print('-'*50)
+                print(child.text)
+
+# 여러개의 포지션을 구인하는 경우 처리를 해주어야 한다.
 
 
 
