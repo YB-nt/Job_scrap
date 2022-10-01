@@ -50,11 +50,12 @@ for lnk in detail_page:
         page_source = soup(resp.text,"html.parser")
         contents = page_source.find('div',class_='wrap_tbl_template').find('td')
         if(contents!=None):
-            children = contents.findChildren("table" , recursive=False)
-            for child in children:
-                print(lnk)
-                print('-'*50)
-                print(child.text)
+            job_part = contents.find('table').fin('td')
+            # children = contents.findChildren("table" , recursive=False)
+            # for child in children:
+            #     print(lnk)
+            #     print('-'*50)
+            #     print(child.text)
 
 # 여러개의 포지션을 구인하는 경우 처리를 해주어야 한다.
 
