@@ -1,4 +1,3 @@
-from os import linesep
 import requests as req
 from bs4 import BeautifulSoup as soup 
 import re
@@ -6,7 +5,7 @@ import re
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.122 Whale/3.16.138.27 Safari/537.36'}
 
 # keyword = input("input keyword: ")
-keyword='딥러닝'
+keyword='데이터 엔지니어'
 
 
 def make_url_list(keyword):
@@ -64,24 +63,57 @@ for lnk in test_url:
 # print(detail_page)
 
 for lnk in detail_page:
+    # check=0
     resp = req.get(lnk,headers=headers)
     if(resp.status_code==200):
         page_source = soup(resp.text,"html.parser")
         contents = page_source.find('div',class_='wrap_tbl_template')
+        # if(contents!=None):
+        #     contents= contents.find('table')
+        # else:
+        #     contents=page_source.find('table',class_="tbl_template")
         if(contents!=None):
-            contents= contents.find('table')
-        else:
-            contents=page_source.find('table',class_="tbl_template")
-        if(contents!=None):
-            print(contents.text)
-            print('-'*50)
-            job_part = contents.find('td')
-            if(job_part!=None):
-                print(job_part.text)
-                job_part=job_part.findNext('tr')
-                print('--')
-                print(job_part.text)
-            
+            conf = contents.text
+            conf_list = conf.split('\n')
+            for c in conf_list:
+                print(c)
+                print('\n'*2)
+        # if(contents!=None):
+        #     # print(contents.text)
+        #     # print('-'*50)
+        #     job_part = contents.find('td')
+        #     if(job_part!=None):
+        #         while(job_part.findNext('tr') != None):  
+        #             job_part = job_part.findNext('tr')
+        #             # print("*"*100)
+        #             job_part_text = job_part.text
+        #             if(check==0):
+        #                 print('지원자격')
+        #                 print(job_part_text)
+        #                 print(lnk)
+        #                 print('-'*50)
+        #             if(check==1):
+        #                 print('우대사항')
+        #                 print(job_part_text)
+        #                 print(lnk)
+        #                 print('-'*50)
+        #             if(job_part_text=='공통 자격요건'):
+        #                 check=1
+        #                 continue
+        #             if(len(job_part_text)==4):
+        #                 if(job_part_text=='지원자격'):
+        #                     check=1
+        #                     continue
+        #                 if(job_part_text=='우대사항'):
+        #                     check=2
+        #                     continue
+        #                 else:
+        #                     check=0
+        #                     continue
+                    
+                        
+
+                            
             
 
 # 여러개의 포지션을 구인하는 경우 처리를 해주어야 한다.
