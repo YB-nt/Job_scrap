@@ -42,6 +42,7 @@ def scraper():
         detail_content_num = re.search('rec_idx=(.+?)$',lnk).group(1)
         detail_page.append(f'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx={detail_content_num}&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=')
 
+    # test_page = detail_page[:10]
     access_page = []
     access_link = []
     for lnk in detail_page:
@@ -51,20 +52,40 @@ def scraper():
             page_source = soup(resp.text,"html.parser")
             contents = page_source.find('div',class_='wrap_tbl_template')
             if(contents!=None):
-                access_page.append(contents)
-                access_link.append(lnk)
+                print("This")
+                print(contents.text)
+                page_text = contents.text
+                if(page_text.find("공통 자격요건") != -1):
+                    common = page_text[page_text.find("공통 자격요건")+7:page_text.find("데이터엔지니어")]
+                    job_main = page_text[page_text.find('[담당업무]')+6:page_text.find("[자격요건")]
+                    require = page_text[page_text.find('[자격요건]')+6:page_text.find("[우대사항")]
+                    print("-"*100)
+                    print("common:",common)
+                    print("-"*100)
+                    print("job_main",job_main)
+                    print("-"*100)
+                    print("require:",require)
+                    print("-"*100)
+
+
+
+
+
+
+                # access_page.append()
+                # access_link.append(lnk)
         else:
             print(resp.status_code)
 
-    return access_link,access_page
+    # return access_link,access_page
 
 
 
 
-df = make_df()
-lnk,page = scraper()
-
-df.html=page
-df.url=lnk
-file_name=str(time.time()).replace('.','_')
-df.to_csv(f'.{file_name}.csv',index=True)
+# df = make_df()
+# lnk,page = scraper()
+scraper()
+# df.html=page
+# df.url=lnk
+# file_name=str(time.time()).replace('.','_')
+# df.to_csv(f'.{file_name}.csv',index=True)
