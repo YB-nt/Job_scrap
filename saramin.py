@@ -56,71 +56,55 @@ def scraper():
                 # print("This")
                 # print(contents.text)
                 page_text = contents.text
-                if(page_text.find("공통 자격요건") != -1):
-                    
-                    if("공통 자격요건" in page_text):
-                        if(")" in page_text[page_text.find("공통 자격요건")+7:30]):
-                            common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
-                        else:
-                            common = page_text[page_text.find("공통 자격요건")+7:page_text.find("관")+1]
-                            if("대졸 이상 (4년)S/W F/W 엔지니어S/W팀 0명담당업무" in page_text): 
-                                # 특정공고 1개에서 에러 발생...
-                                # 이유를 찾지못해서 string 으로 예외처리
-                                common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
-                            else:
-                                pass
-                page_text = page_text[len("공통 자격요건")+len(common):]
-                if("자격요건" in page_text):
-                    require = page_text[page_text.find('자격요건')+5:page_text.find("우대")]
-                elif("지원자격" in page_text):
-                    require = page_text[page_text.find('지원자격')+5:page_text.find("우대")]
-
-                require = require.replace("\n","")
-                require = require.replace("            ㆍ기타 필수 사항","")
-                require = require.replace("및","없음")
-
-                if(page_text.find("데이터 엔지니어") !=-1):
-                    lenght = len("데이터 엔지니어")
-                    page_text = page_text[page_text.find("데이터 엔지니어")+lenght:]
-                elif(page_text.find("data engineer") != -1):
-                    lenght = len("data engineer")
-                    page_text = page_text[page_text.find("data engineer")+lenght:]
-                else:
-                    pass
-                
-                if("담당업무" not in page_text):
-                    job_main ="정보 없음"
-                else:
-                    job_main = page_text[page_text.find('담당업무')+5:page_text.find("자격")]
-                    if("우대" in job_main):
-                        job_main = page_text[page_text.find("담당업무")+5:page_text.find("우대")]
-
-                if(len(job_main)<4):
-                    job_main = "정보없음"
-
-
-                print("-"*100)
-                print(lnk)
-                print("-"*100)
-                # # print("common:",common)
-                # print("-"*100)
-               
-                # print("require:",require)
-                # print("-"*100)
-
-                print("job_main",job_main)
-                print("-"*100)
-
-
-
-
-
-                # access_page.append()
-                # access_link.append(lnk)
+                return lnk,page_text
+    
         else:
             print(resp.status_code)
 
-    # return access_link,access_page
+    
+def data_scaling(page_text):
+    if(page_text.find("공통 자격요건") != -1):
+        if("공통 자격요건" in page_text):
+            if(")" in page_text[page_text.find("공통 자격요건")+7:30]):
+                common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
+            else:
+                common = page_text[page_text.find("공통 자격요건")+7:page_text.find("관")+1]
+                if("대졸 이상 (4년)S/W F/W 엔지니어S/W팀 0명담당업무" in page_text): 
+                    # 특정공고 1개에서 에러 발생...
+                    # 이유를 찾지못해서 string 으로 예외처리
+                    common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
+                else:
+                    pass
+    page_text = page_text[len("공통 자격요건")+len(common):]
+    if("자격요건" in page_text):
+        require = page_text[page_text.find('자격요건')+5:page_text.find("우대")]
+    elif("지원자격" in page_text):
+        require = page_text[page_text.find('지원자격')+5:page_text.find("우대")]
+
+    require = require.replace("\n","")
+    require = require.replace("            ㆍ기타 필수 사항","")
+    require = require.replace("및","없음")
+
+    if(page_text.find("데이터 엔지니어") !=-1):
+        lenght = len("데이터 엔지니어")
+        page_text = page_text[page_text.find("데이터 엔지니어")+lenght:]
+    elif(page_text.find("data engineer") != -1):
+        lenght = len("data engineer")
+        page_text = page_text[page_text.find("data engineer")+lenght:]
+    else:
+        pass
+    
+    if("담당업무" not in page_text):
+        job_main ="정보 없음"
+    else:
+        job_main = page_text[page_text.find('담당업무')+5:page_text.find("자격")]
+        if("우대" in job_main):
+            job_main = page_text[page_text.find("담당업무")+5:page_text.find("우대")]
+
+    if(len(job_main)<4):
+        job_main = "정보없음"
+    return 
+
 
 
 
