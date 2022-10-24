@@ -45,6 +45,7 @@ def scraper():
     # test_page = detail_page[:10]
     access_page = []
     access_link = []
+    p = r''
     for lnk in detail_page:
         # check=0
         resp = req.get(lnk,headers=headers)
@@ -52,20 +53,32 @@ def scraper():
             page_source = soup(resp.text,"html.parser")
             contents = page_source.find('div',class_='wrap_tbl_template')
             if(contents!=None):
-                print("This")
-                print(contents.text)
+                # print("This")
+                # print(contents.text)
                 page_text = contents.text
                 if(page_text.find("공통 자격요건") != -1):
-                    common = page_text[page_text.find("공통 자격요건")+7:page_text.find("데이터엔지니어")]
-                    job_main = page_text[page_text.find('[담당업무]')+6:page_text.find("[자격요건")]
-                    require = page_text[page_text.find('[자격요건]')+6:page_text.find("[우대사항")]
+                    
+                    if("공통 자격요건" in page_text):
+                        if(")" in page_text[page_text.find("공통 자격요건")+7:30]):
+                            common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
+                        else:
+                            common = page_text[page_text.find("공통 자격요건")+7:page_text.find("관")+1]
+                            if("대졸 이상 (4년)S/W F/W 엔지니어S/W팀 0명담당업무" in page_text): # 특정공고 1개에서 에러 발생...
+                                common = page_text[page_text.find("공통 자격요건")+7:page_text.find("년)")+2]
+                            else:
+                                pass
+                        
+                    # job_main = page_text[page_text.find('[담당업무]')+6:page_text.find("[자격요건")]
+                    # require = page_text[page_text.find('[자격요건]')+6:page_text.find("[우대사항")]
+                    print("-"*100)
+                    print(lnk)
                     print("-"*100)
                     print("common:",common)
                     print("-"*100)
-                    print("job_main",job_main)
-                    print("-"*100)
-                    print("require:",require)
-                    print("-"*100)
+                    # print("job_main",job_main)
+                    # print("-"*100)
+                    # print("require:",require)
+                    # print("-"*100)
 
 
 
