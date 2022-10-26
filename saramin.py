@@ -108,6 +108,20 @@ def data_scaling(page_text):
 
 
 
+def data_init():
+    # 클라우드 데이터 베이스와 연결 
+    # 데이터 베이스 먼저 정의 되어있는지 확인 
+    # RETURN DATABASE
+    pass
+
+def data_load():
+    # 데이터 적재 part
+    # 원티드 등 다른 사이트의 데이터를 저장하기 위해서 
+    # 저장된 데이터베이스에 추가적으로 저장할수 있도록 만들어주기 
+    pass
+
+
+
 
 # df = make_df()
 # lnk,page = scraper()
