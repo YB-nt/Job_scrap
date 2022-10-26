@@ -9,23 +9,25 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 # keyword = input("input keyword: ")
 keyword='데이터 엔지니어'
 
-
+# test
 def make_url_list(keyword):
     search_base_url = "https://www.saramin.co.kr/zf_user/search?searchword="
     add_url = search_base_url+keyword
-    resp = req.get(add_url,headers=headers)
-    url_list = []
+    for page_num  in range(1,20):
+        add_url=add_url+ "recruitPage=" +page_num
+        resp = req.get(add_url,headers=headers)
+        url_list = []
 
-    if(resp.status_code==200):
-        page_source = soup(resp.text,"html.parser")
-        contents = page_source.find("div",class_='content')
-        # h2 class : job_tit
-        job_title = contents.find_all("h2",class_="job_tit")
-        for lnk in job_title:
-            url_list.append(lnk.find('a',href=True)['href'])
-    else:
-        print(resp.status_code)
-    
+        if(resp.status_code==200):
+            page_source = soup(resp.text,"html.parser")
+            contents = page_source.find("div",class_='content')
+            # h2 class : job_tit
+            job_title = contents.find_all("h2",class_="job_tit")
+            for lnk in job_title:
+                url_list.append(lnk.find('a',href=True)['href'])
+        else:
+            print(resp.status_code)
+        
     return url_list
 
 def make_df():
@@ -45,21 +47,19 @@ def scraper():
     # test_page = detail_page[:10]
     access_page = []
     access_link = []
-    p = r''
     for lnk in detail_page:
-        # check=0
         resp = req.get(lnk,headers=headers)
         if(resp.status_code==200):
             page_source = soup(resp.text,"html.parser")
             contents = page_source.find('div',class_='wrap_tbl_template')
             if(contents!=None):
-                # print("This")
-                # print(contents.text)
                 page_text = contents.text
-                return lnk,page_text
-    
+                access_page.append(page_text)
+                access_link.append(lnk)
         else:
             print(resp.status_code)
+
+    return access_link,access_page
 
     
 def data_scaling(page_text):
