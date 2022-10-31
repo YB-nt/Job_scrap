@@ -1,8 +1,32 @@
+
+import pandas as pd
 from time import sleep
 from bs4 import BeautifulSoup as bs
 import requests
+import re
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
+
+def scroll_down():
+    prev_height = driver.execute_script("return document.body.scrollHeight")
+    # 웹페이지 맨 아래까지 무한 스크롤
+    while True:
+        # 스크롤을 화면 가장 아래로 내린다
+        driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        # 페이지 로딩 대기
+        sleep(0.8)
+        # 현재 문서 높이를 가져와서 저장
+        curr_height = driver.execute_script("return document.body.scrollHeight")
+        if(curr_height == prev_height):
+            break
+        else:
+            prev_height = driver.execute_script("return document.body.scrollHeight")
+
+
+
+
+request_headers = { 
+'User-Agent' : ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37'), } 
 
 
 options = webdriver.ChromeOptions()
@@ -13,62 +37,84 @@ options.add_argument("--window-size=1920,1080")
 
 driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
 
-base_url = "https://www.wanted.co.kr/search?query="
+base_url1 = "https://www.wanted.co.kr/search?query="
 keyword ="딥러닝"
 
 dic_job_scarp = {}
+job_hrefs=link=cn_list=temp_list_j_name=temp_list_section=temp_list_lnk=temp_list_cname=[]
+driver.get(base_url1+keyword)
 
-driver.get(base_url+keyword)
-# 스크롤 다운 
-# 수정 필요 
-for i in range(0,10):
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    sleep(0.5)
+sleep(0.5)
+scroll_down()
+
 page_count =0
 page1 = driver.page_source
 soup=bs(page1, 'html.parser')
-# print(soup)
-job_titles = soup.findAll("div", {"class": "job-card-position"})
-for job_title in job_titles:
-    # print(job_title.text)
-    # list_job_titles.append(job_title.text)
-    page_count +=1
+# driver.quit()
 
-driver.refresh()
-sleep(0.5)
-# print(list_job_titles)
-print("-"*50)
-print("job_pages :",page_count)
-print("-"*50)
-for i in range(1,page_count+1):
+job_cards = soup.findAll("div", {"data-cy": "job-card"})
+for job_card in job_cards:
+    temp = job_card.find('a',href=True)['href']
+    job_hrefs.append(temp)
+print(job_hrefs[40:])
+print(len(job_hrefs))
+dic_job_scarp = {"job_name":"","job_section":"","link":"","cn_name":""}
+base_url2 ="https://www.wanted.co.kr"
+for job_href in job_hrefs[:len(job_hrefs)]:
+    page_count+=1
     print("-"*50)
-    print("Count:",i)
+    print("Count:",page_count)
     print("-"*50)
-    count =0
-    page = f'/html/body/div[1]/div[4]/div[2]/div/div/div[2]/ul/li[{i}]/div/a'
-    while True:
-        count+=100
-        try:
-            sleep(0.3)
-            driver.find_element_by_xpath(page).click()
-            break
-        except:
-            driver.execute_script(f"window.scrollTo(0, {count});")
-            # print(count)
+    print(base_url2 + job_href)
+    print("-"*50)
+    driver.get(base_url2+job_href)
 
-    sleep(0.5)
-    job_page = driver.page_source
-    print(job_page)
-    page_soup = bs(job_page,'html.parser')
-    job_title = page_soup.find('section',{"class":"JobHeader_className__HttDA"}).find('h2').text
-    section = page_soup.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
-    dic_job_scarp[job_title]=section
+    page = driver.page_source
+    soup_page = bs(page,"html.parser")
+    
+    # style_search =""
+    # patten = r'max\-width\: calc\(100% \- [0-9]*px\);'
+    # style = re.findall(p,style_search)[0]
 
-    driver.back()
 
-print(dic_job_scarp)
 
+    try:        
+        job_title = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h2').text
+    except:
+        continue
+    try:
+        section = soup_page.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
+    except:
+        continue
+    try:
+        company_name = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h6').find('a').text
+    except:
+        continue
+    # {"job_name":"","job_section":"","link":"","cn_name":""}
+
+    temp_list_j_name.append(job_title)
+    temp_list_section.append(section)
+    temp_list_lnk.append(base_url2 + job_href)
+    temp_list_cname.append(company_name)
+
+
+
+dic_value = [temp_list_j_name,temp_list_section,temp_list_lnk,temp_list_cname]
+dic_key = ['job_name','job_section','link','cn_name']
+
+for k,v in zip(dic_key,dic_value):
+    dic_job_scrap[k] = v
 
 
 
 driver.quit()
+
+df = pd.DataFrame(dic_job_scrap)
+
+print(df)
+
+#확인용 csv파일
+df.to_csv("./bin/job_srcap.csv")
+
+
+
