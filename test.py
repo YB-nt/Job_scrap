@@ -55,11 +55,19 @@ import re
 
 
 
-string = """<h6 style="max-width: calc(100% - 69px);"><a href="/company/5603" class="" aria-label="" data-attribute-id="company__click" data-company-id="5603" data-company-name="두잉랩">두잉랩</a></h6>
-"""
+# string = """<h6 style="max-width: calc(100% - 69px);"><a href="/company/5603" class="" aria-label="" data-attribute-id="company__click" data-company-id="5603" data-company-name="두잉랩">두잉랩</a></h6>
+# """
 
-p = r'max\-width\: calc\(100% \- [0-9]*px\);'
+# p = r'max\-width\: calc\(100% \- [0-9]*px\);'
 
-test = re.findall(p,string)[0]
+# test = re.findall(p,string)[0]
 
-print(test)
+# print(test)
+
+
+
+import class_selenium
+
+wanted_data = class_selenium.wanted('데이터엔지니어')
+print(wanted_data.job_detail())
+

@@ -83,21 +83,23 @@ for job_href in job_hrefs[:len(job_hrefs)]:
     # style_search =""
     # patten = r'max\-width\: calc\(100% \- [0-9]*px\);'
     # style = re.findall(p,style_search)[0]
-    company_name=section=job_title=""
+    company_name=""
+    section=""
+    job_title=""
     
 
     try:        
         job_title = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h2').text
     except:
-        job_title ='none'
+        job_title ='정보 없음'
     try:
         section = soup_page.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
     except:
-        job_title ='none'
+        job_title ='정보 없음'
     try:
         company_name = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h6').find('a').text
     except:
-        job_title ='none'
+        job_title ='정보 없음'
     # {"job_name":"","job_section":"","link":"","cn_name":""}
 
     temp_list_j_name.append(job_title)
