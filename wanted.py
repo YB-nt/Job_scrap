@@ -41,7 +41,13 @@ base_url1 = "https://www.wanted.co.kr/search?query="
 keyword ="딥러닝"
 
 dic_job_scarp = {}
-job_hrefs=link=cn_list=temp_list_j_name=temp_list_section=temp_list_lnk=temp_list_cname=[]
+job_hrefs=[]
+link=[]
+cn_list=[]
+temp_list_j_name=[]
+temp_list_section=[]
+temp_list_lnk=[]
+temp_list_cname=[]
 driver.get(base_url1+keyword)
 
 sleep(0.5)
@@ -56,9 +62,11 @@ job_cards = soup.findAll("div", {"data-cy": "job-card"})
 for job_card in job_cards:
     temp = job_card.find('a',href=True)['href']
     job_hrefs.append(temp)
-print(job_hrefs[40:])
-print(len(job_hrefs))
-dic_job_scarp = {"job_name":"","job_section":"","link":"","cn_name":""}
+# print(job_hrefs[40:])
+# print(len(job_hrefs))
+
+dic_job_scrap = {"job_name":"","job_section":"","link":"","cn_name":""}
+
 base_url2 ="https://www.wanted.co.kr"
 for job_href in job_hrefs[:len(job_hrefs)]:
     page_count+=1
@@ -75,35 +83,34 @@ for job_href in job_hrefs[:len(job_hrefs)]:
     # style_search =""
     # patten = r'max\-width\: calc\(100% \- [0-9]*px\);'
     # style = re.findall(p,style_search)[0]
-
-
+    company_name=section=job_title=""
+    
 
     try:        
         job_title = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h2').text
     except:
-        continue
+        job_title ='none'
     try:
         section = soup_page.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
     except:
-        continue
+        job_title ='none'
     try:
         company_name = soup_page.find('section',{"class":"JobHeader_className__HttDA"}).find('h6').find('a').text
     except:
-        continue
+        job_title ='none'
     # {"job_name":"","job_section":"","link":"","cn_name":""}
 
     temp_list_j_name.append(job_title)
     temp_list_section.append(section)
-    temp_list_lnk.append(base_url2 + job_href)
+    temp_list_lnk.append(str(base_url2 + job_href))
     temp_list_cname.append(company_name)
+    # print(temp_list_j_name)
+    print(job_title)
 
-
-
-dic_value = [temp_list_j_name,temp_list_section,temp_list_lnk,temp_list_cname]
-dic_key = ['job_name','job_section','link','cn_name']
-
-for k,v in zip(dic_key,dic_value):
-    dic_job_scrap[k] = v
+dic_job_scrap["job_name"]= temp_list_j_name
+dic_job_scrap["job_section"]=temp_list_section
+dic_job_scrap['link'] = temp_list_lnk
+dic_job_scrap['cn_name'] = temp_list_cname
 
 
 
