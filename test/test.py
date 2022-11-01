@@ -67,7 +67,10 @@ import re
 
 
 import class_selenium
+import class_saramin
 
-wanted_data = class_selenium.wanted('데이터엔지니어')
-print(wanted_data.job_detail())
+# wanted_data = class_selenium.wanted('데이터엔지니어')
+# print(wanted_data.job_detail())
 
+saramin_data = class_saramin.sarmain('데이터 엔지니어')
+print(saramin_data.data_load())
