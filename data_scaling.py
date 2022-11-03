@@ -6,7 +6,7 @@ class data_scaling:
         pass
 
     def text_scale(page_text):
-        re.sub(r'\s|\\.*|\n','',page_text)
+        page_text = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',page_text).replace("\\",'')
         return page_text
         
 

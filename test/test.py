@@ -120,6 +120,7 @@ string ="\\n\\b\b\대졸 이상 (4년)S/W F/W 엔지니어S/W팀 0명담당업�
 
 
 
-print(re.sub('\s|\\.*|\n&(^[가-힣]*|[a-z]*)','',string))
-print("---"*30)
+# string = re.sub('\s|\\.|\n|&(^[가-힣]*|[a-z]*)','',string)
+# print(string)
+string = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',string).replace("\\",'')
 print(string)
