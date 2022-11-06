@@ -70,11 +70,11 @@ class wanted:
 
         for job_href in job_hrefs[:len(job_hrefs)]:
             self.page_count+=1
-            print("-"*50)
-            print("Count:",self.page_count)
-            print("-"*50)
-            print(base_url2 + job_href)
-            print("-"*50)
+            # print("-"*50)
+            # print("Count:",self.page_count)
+            # print("-"*50)
+            # print(base_url2 + job_href)
+            # print("-"*50)
             self.driver.get(base_url2+job_href)
 
             page = self.driver.page_source
@@ -89,7 +89,7 @@ class wanted:
             except:
                 job_title ='정보 없음'
 
-            print(job_title)
+            # print(job_title)
 
             try:
                 section = soup_page.find('section',{"class":"JobDescription_JobDescription__VWfcb"}).text
@@ -118,7 +118,7 @@ class wanted:
         # print(df)
 
         #확인용 csv파일
-        df.to_csv("./bin/job_srcap.csv")
+        # df.to_csv("./bin/job_srcap.csv")
 
         return df
 

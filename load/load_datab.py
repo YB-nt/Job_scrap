@@ -2,11 +2,11 @@ import pandas as pd
 import psycopg2
 
 class connect_db:
-    def __init__(self):
-        self.input_host = input("서버 호스트 주소: ")
-        self.input_database = input("데이터베이스 이름: ")
-        self.input_user = input("유저이름: ")
-        self.input_password = input("유저 비밀번호: ")
+    def __init__(self,host,database,user,password):
+        self.input_host = host
+        self.input_database = database
+        self.input_user = user
+        self.input_password = password
         print("="*150)
         self.conn = psycopg2.connect(
             host=self.input_host,
@@ -17,12 +17,16 @@ class connect_db:
         
     def create_site_table(self,opt):
         """
-        opt1: saramin
-        opt2: wanted
-        opt3: both
-        opt4: total_data
-        opt5: all
+                            Create Database\n
+                            0: saramin\n
+                            1: wanted\n
+                            2: saramin,wanted\n
+                            3: total_data\n
+                            4: all\n
+                            -1: None
         """
+        if(opt==-1):
+            pass
         if(opt==0):
             self.cur.execute("""CREATE TABLE saramin(
                                     job_name TEXT(100) PARIMARY KEY,
