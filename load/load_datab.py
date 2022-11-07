@@ -16,34 +16,43 @@ class connect_db:
         self.cur = self.conn.cursor()
 
     def c_table_saramin(self):
-        self.cur.execute("""CREATE TABLE saramin(
-                                    job_name varchar(100) PRIMARY KEY,
-                                    job_section varchar(500) NOT NULL,
-                                    link varchar(150) NOT NULL,
-                                    cn_name varchar(30) NOT NULL
-                                );
-                            """)
-        self.cur.commit()
+        try:
+            self.cur.execute("""CREATE TABLE saramin(
+                                        job_name varchar(100) PRIMARY KEY,
+                                        job_section varchar(500) NOT NULL,
+                                        link varchar(150) NOT NULL,
+                                        cn_name varchar(30) NOT NULL
+                                    );
+                                """)
+            self.conn.commit()
+        except:
+            pass
 
     def c_table_wanted(self):
-        self.cur.execute("""CREATE TABLE wanted(
-                                    job_name varchar(100) PRIMARY KEY,
-                                    job_section varchar(500) NOT NULL,
-                                    link varchar(150) NOT NULL,
-                                    cn_name varchar(30) NOT NULL
-                                );
-                            """)
-        self.cur.commit()
+        try:
+            self.cur.execute("""CREATE TABLE wanted(
+                                        job_name varchar(100) PRIMARY KEY,
+                                        job_section varchar(500) NOT NULL,
+                                        link varchar(150) NOT NULL,
+                                        cn_name varchar(30) NOT NULL
+                                    );
+                                """)
+            self.conn.commit()
+        except:
+            pass
 
     def c_table_total_data(self):
-        self.cur.execute("""CREATE TABLE total_data(
-                                    job_name varchar(100) PRIMARY KEY,
-                                    job_section varchar(500) NOT NULL,
-                                    link varchar(150) NOT NULL,
-                                    cn_name varchar(30) NOT NULL
-                                );
-                            """)
-        self.cur.commit()
+        try:
+            self.cur.execute("""CREATE TABLE total_data(
+                                        job_name varchar(100) PRIMARY KEY,
+                                        job_section varchar(500) NOT NULL,
+                                        link varchar(150) NOT NULL,
+                                        cn_name varchar(30) NOT NULL
+                                    );
+                                """)
+            self.conn.commit()
+        except:
+            pass
 
     def create_site_table(self,opt):
         """
@@ -55,8 +64,9 @@ class connect_db:
                             4: all\n
                             -1: None
         """
-        self.cur.execute("SELECT tablename FROM pg_catalog.pg_talbes wgere schemaname ='public';")
+        self.cur.execute("SELECT tablename  FROM pg_catalog.pg_tables where schemaname = 'public';")
         table_check = self.cur.fetchall()
+        # print(table_check,type(table_check))
         if(opt==-1):
             pass
 
@@ -137,12 +147,16 @@ class connect_db:
         print(pd.read_sql_table('Total_Table',self.conn))
         print("#"*100)
 
+    def merge_df(self,df1,df2):
+        df = pd.concat([df1,df2],ignore_index=True)
+        return df
 
-    def load_data(self,df):
+    def load_data(self,df,table_name):
         for idx in range(0,df.shape[0]+1):    
-            self.cur.execute(f"INSERT INTO VALUES{(v for v in df.loc[idx])}")
-        self.cur.commit()
+            self.cur.execute(f"INSERT INTO {table_name} VALUES {tuple(v for v in df.loc[idx])}")
+            self.conn.commit()
         self.display_table_value()
+
 
 
     

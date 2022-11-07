@@ -48,15 +48,32 @@ class Job_scraping:
     def load(self):
 
         load_data = load_datab.connect_db(self.host,self.database,self.user,self.password) 
-        sramin,wanted = self.transfrom()
+        saramin,wanted = self.transfrom()
+        
         load_data.create_site_table(self.cdb)
-        load_data.load_data(sramin)
-        load_data.load_data(wanted)
-        return sramin,wanted
+        total = load_data.merge_df(saramin,wanted)
+        if(self.cdb==-1):
+            load_data.load_data(wanted, table_name = "saramin") 
+            load_data.load_data(wanted, table_name = "wanted")
+            load_data.load_data(total, table_name = "total_data")  
+        if(self.cdb==0):
+            load_data.load_data(saramin, table_name = "saramin")
+        elif(self.cdb==1):
+            load_data.load_data(wanted, table_name = "wanted")
+        elif(self.cdb==2):
+            load_data.load_data(saramin, table_name = "saramin")
+            load_data.load_data(wanted, table_name = "wanted")
+        elif(self.cdb==3):
+            load_data.load_data(total, table_name = "total_data") 
+        elif(self.cdb==4):
+            load_data.load_data(wanted, table_name = "saramin") 
+            load_data.load_data(wanted, table_name = "wanted")
+            load_data.load_data(total, table_name = "total_data") 
+        return saramin,wanted
 
     def job_scraping(self):
-        sramin,wanted = self.load()
-        sramin.to_csv('./csv/saramin.csv')
+        saramin,wanted = self.load()
+        saramin.to_csv('./csv/saramin.csv')
         wanted.to_csv('./csv/wanted.csv')
        
 
