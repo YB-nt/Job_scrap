@@ -1,8 +1,10 @@
 import re
 
 def text_preprocessing(page_text):
-    page_text = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',page_text).replace("\\",'')
-    return page_text
+    # page_text = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',page_text).replace("\\",'')
+    r_t = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text)
+    r = re.sub('\n','',r_t)
+    return r
 
 
 def text_split(page_text):
@@ -30,7 +32,8 @@ def text_split(page_text):
         require = page_text[page_text.find('자격요건')+5:page_text.find("우대")]
     elif("지원자격" in page_text):
         require = page_text[page_text.find('지원자격')+5:page_text.find("우대")]
-
+    else:
+        require =''
     require = require.replace("\n","")
     require = require.replace("            ㆍ기타 필수 사항","")
     require = require.replace("및","없음")

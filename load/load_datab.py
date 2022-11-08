@@ -18,10 +18,10 @@ class connect_db:
     def c_table_saramin(self):
         try:
             self.cur.execute("""CREATE TABLE saramin(
-                                        job_name varchar(100) PRIMARY KEY,
-                                        job_section varchar(500) NOT NULL,
-                                        link varchar(150) NOT NULL,
-                                        cn_name varchar(30) NOT NULL
+                                        job_name TEXT PRIMARY KEY,
+                                        job_section TEXT NOT NULL,
+                                        link TEXT NOT NULL,
+                                        cn_name TEXT NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -31,10 +31,10 @@ class connect_db:
     def c_table_wanted(self):
         try:
             self.cur.execute("""CREATE TABLE wanted(
-                                        job_name varchar(100) PRIMARY KEY,
-                                        job_section varchar(500) NOT NULL,
-                                        link varchar(150) NOT NULL,
-                                        cn_name varchar(30) NOT NULL
+                                        job_name TEXT PRIMARY KEY,
+                                        job_section TEXT NOT NULL,
+                                        link TEXT NOT NULL,
+                                        cn_name TEXT NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -44,10 +44,10 @@ class connect_db:
     def c_table_total_data(self):
         try:
             self.cur.execute("""CREATE TABLE total_data(
-                                        job_name varchar(100) PRIMARY KEY,
-                                        job_section varchar(500) NOT NULL,
-                                        link varchar(150) NOT NULL,
-                                        cn_name varchar(30) NOT NULL
+                                        job_name TEXT PRIMARY KEY,
+                                        job_section TEXT NOT NULL,
+                                        link TEXT NOT NULL,
+                                        cn_name TEXT NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -66,6 +66,7 @@ class connect_db:
         """
         self.cur.execute("SELECT tablename  FROM pg_catalog.pg_tables where schemaname = 'public';")
         table_check = self.cur.fetchall()
+        self.conn.commit()
         # print(table_check,type(table_check))
         if(opt==-1):
             pass
@@ -124,38 +125,43 @@ class connect_db:
                         pass
                     else:
                         self.c_table_total_data()
-
- 
-    def display_table_value(self):
+    def display_table_value(self,table_name):
         print("="*100)
-        print("Complte Data load")        
+        print(">> Complte Data load")        
         #my_table   = pd.read_sql_table('table_name', connection)
-        print("#"*100)
+        print("="*100)
+        print(f'{table_name}')
+        print("="*100)
+        self.cur.execute(f"SELECT * FROM {table_name}")
+        for i in self.cur.fetchall()[:10]:
+            print(i)
+        self.conn.commit()
 
-        print("Saramin")
-        print("#"*100)
-        print(pd.read_sql_table('saramin',self.conn))
-        print("#"*100)
 
-        print("Wanted")
-        print("#"*100)
-        print(pd.read_sql_table('wanted',self.conn))
-        print("#"*100)
-
-        print("Wanted")
-        print("#"*100)
-        print(pd.read_sql_table('Total_Table',self.conn))
-        print("#"*100)
 
     def merge_df(self,df1,df2):
         df = pd.concat([df1,df2],ignore_index=True)
         return df
 
     def load_data(self,df,table_name):
-        for idx in range(0,df.shape[0]+1):    
-            self.cur.execute(f"INSERT INTO {table_name} VALUES {tuple(v for v in df.loc[idx])}")
-            self.conn.commit()
-        self.display_table_value()
+        # dataframe 을 sql에 적재 시키는 방법에 대해서 
+        # 만약에 힘들다면 크롤링 직후 바로 적재 시도?
+        import re
+        val_list =[]
+        for idx in range(0,df.shape[0]+1):
+            val = [str(v) for v in df.loc[idx]]
+            val[1] = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',val[1])
+            temp=list(val)
+            val_list.append(temp)
+            
+            
+        self.cur.execute(f"INSERT INTO {table_name} VALUES (%s %s %s %s)",val_list)
+        self.conn.commit()
+        self.display_table_value(table_name=table_name)
+    
+    def exit_db(self):
+        self.cur.close()
+        self.conn.close()
 
 
 

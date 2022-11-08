@@ -31,8 +31,8 @@ class Job_scraping:
         # saramin_df preprossesing
         for data in sarmain_df['job_section']:
             pre_data = data_scaling.text_preprocessing(data)
-            structed_data = data_scaling.text_split(pre_data)
-            temp_section.append(structed_data)
+            # structed_data = data_scaling.text_split(pre_data)
+            temp_section.append(pre_data)
         sarmain_df['job_section'] = temp_section
         
         # wanted_df preprossesing
@@ -69,10 +69,13 @@ class Job_scraping:
             load_data.load_data(wanted, table_name = "saramin") 
             load_data.load_data(wanted, table_name = "wanted")
             load_data.load_data(total, table_name = "total_data") 
+
+        load_data.exit_db()
         return saramin,wanted
 
     def job_scraping(self):
         saramin,wanted = self.load()
+
         saramin.to_csv('./csv/saramin.csv')
         wanted.to_csv('./csv/wanted.csv')
        
