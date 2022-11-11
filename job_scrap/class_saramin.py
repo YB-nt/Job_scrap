@@ -31,16 +31,16 @@ class sarmain:
 
                 for lnk,c in zip(job_title,company_name):
                     url_list.append(lnk.find('a',href=True)['href'])
-                    job_tit.append(lnk)
-                    cname.append(c)            
+                    job_tit.append(lnk.text)
+                    cname.append(c.text)            
             else:
                 print(resp.status_code)
-        return url_list,job_title,company_name
+        return url_list,job_tit,cname
 
     def make_df(self,dic):
-        print('-'*100)
-        print("Make DataFrame")
-        print('-'*100)
+        # print('-'*100)
+        # print("Make DataFrame")
+        # print('-'*100)
         df = pd.DataFrame(dic)
         return df
     

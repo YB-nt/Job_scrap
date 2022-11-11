@@ -1,10 +1,35 @@
 import re
 
 def text_preprocessing(page_text):
-    # page_text = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',page_text).replace("\\",'')
-    r_t = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text)
+    # page_text = re.sub('\s|(\\.^[가-힣]*|[a-z]+)|\n','',page_text)
+    r_t = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace("\n",'\s')
+    r = r_t.replace('\\','')
+    return r
+
+def text_preprocessing2(page_text):
+    r_t = re.sub('[^\uAC00-\uD7A3가-힣0-9a-zA-Z\.]','',page_text)
     r = re.sub('\n','',r_t)
     return r
+
+def col_preprocessing(df,col_name):
+    temp =[]
+    for data in df[col_name]:
+        pre_data = text_preprocessing(data)
+        temp.append(pre_data)
+
+    df[col_name] = temp
+
+    return df 
+
+def col_preprocessing2(df,col_name):
+    temp =[]
+    for data in df[col_name]:
+        pre_data = text_preprocessing2(data)
+        temp.append(pre_data)
+
+    df[col_name] = temp
+
+    return df 
 
 
 def text_split(page_text):

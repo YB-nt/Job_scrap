@@ -1,5 +1,7 @@
 import pandas as pd
 import psycopg2
+from psycopg2.errors import UniqueViolation
+from util import data_scaling
 
 class connect_db:
     def __init__(self,host,database,user,password):
@@ -14,14 +16,29 @@ class connect_db:
             user=self.input_user,
             password=self.input_password)
         self.cur = self.conn.cursor()
+    def c_table_data_split(self):
+        try:
+            self.cur.execute("""CREATE TABLE split_data(
+                                        idx int PRIMARY KEY,
+                                        lnk VARCHAR(500) primary key,
+                                        job_main VARCHAR(10000) not null,
+                                        require VARCHAR(10000) not null,
+                                        common VARCHAR(10000) not null,
+                                        pt VARCHAR(8000)
+                                    );
+                                """)
+            self.conn.commit()
+        except:
+            pass
 
     def c_table_saramin(self):
         try:
             self.cur.execute("""CREATE TABLE saramin(
-                                        job_name TEXT PRIMARY KEY,
-                                        job_section TEXT NOT NULL,
-                                        link TEXT NOT NULL,
-                                        cn_name TEXT NOT NULL
+                                        idx int PRIMARY KEY,
+                                        job_name varchar(50) NOT NULL,
+                                        job_section varchar(16384) NOT NULL,
+                                        link varchar(500) NOT NULL,
+                                        cn_name varchar(50) NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -31,10 +48,11 @@ class connect_db:
     def c_table_wanted(self):
         try:
             self.cur.execute("""CREATE TABLE wanted(
-                                        job_name TEXT PRIMARY KEY,
-                                        job_section TEXT NOT NULL,
-                                        link TEXT NOT NULL,
-                                        cn_name TEXT NOT NULL
+                                        idx int PRIMARY KEY,
+                                        job_name varchar(50) NOT NULL,
+                                        job_section varchar(16384) NOT NULL,
+                                        link varchar(500) NOT NULL,
+                                        cn_name varchar(50) NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -44,10 +62,11 @@ class connect_db:
     def c_table_total_data(self):
         try:
             self.cur.execute("""CREATE TABLE total_data(
-                                        job_name TEXT PRIMARY KEY,
-                                        job_section TEXT NOT NULL,
-                                        link TEXT NOT NULL,
-                                        cn_name TEXT NOT NULL
+                                        idx int PRIMARY KEY,
+                                        job_name varchar(50) NOT NULL,
+                                        job_section varchar(16384) NOT NULL,
+                                        link varchar(500) NOT NULL,
+                                        cn_name varchar(50) NOT NULL
                                     );
                                 """)
             self.conn.commit()
@@ -70,6 +89,8 @@ class connect_db:
         # print(table_check,type(table_check))
         if(opt==-1):
             pass
+        else:
+            self.c_table_data_split()
 
         if(opt==0):
             if("saramin" in table_check):
@@ -77,13 +98,13 @@ class connect_db:
             else:
                 self.c_table_saramin()
 
-        if(opt==1):
+        elif(opt==1):
             if("wanted" in table_check):
                 pass
             else:
                 self.c_table_wanted()
 
-        if(opt==2):
+        elif(opt==2):
             if("saramin" in table_check):
                 if("wanted" in table_check):
                     pass
@@ -96,13 +117,13 @@ class connect_db:
                 else:
                     self.c_table_wanted()
 
-        if(opt==3):
+        elif(opt==3):
             if("total_data" in table_check):
                 self.c_table_total_data()
             else:
                 pass
 
-        if(opt==4):
+        elif(opt==4):
             if("saramin" in table_check):
                 if("wanted" in table_check):
                     if("total_data" in table_check):
@@ -125,40 +146,56 @@ class connect_db:
                         pass
                     else:
                         self.c_table_total_data()
+
     def display_table_value(self,table_name):
         print("="*100)
         print(">> Complte Data load")        
-        #my_table   = pd.read_sql_table('table_name', connection)
         print("="*100)
         print(f'{table_name}')
         print("="*100)
         self.cur.execute(f"SELECT * FROM {table_name}")
-        for i in self.cur.fetchall()[:10]:
+        for i in self.cur.fetchall()[:3]:
             print(i)
         self.conn.commit()
-
-
 
     def merge_df(self,df1,df2):
         df = pd.concat([df1,df2],ignore_index=True)
         return df
 
     def load_data(self,df,table_name):
-        # dataframe 을 sql에 적재 시키는 방법에 대해서 
-        # 만약에 힘들다면 크롤링 직후 바로 적재 시도?
-        import re
-        val_list =[]
-        for idx in range(0,df.shape[0]+1):
-            val = [str(v) for v in df.loc[idx]]
-            val[1] = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',val[1])
-            temp=list(val)
-            val_list.append(temp)
-            
-            
-        self.cur.execute(f"INSERT INTO {table_name} VALUES (%s %s %s %s)",val_list)
+        for idx in range(0,df.shape[0]):
+            value = [v for v in df.loc[idx]]
+            value.insert(0,idx)
+            try:    
+                self.cur.execute(f"INSERT INTO {table_name} VALUES {tuple(value)}")
+            except:
+                try:
+                    self.cur.execute("rollback")
+                    self.cur.execute(f"INSERT INTO {table_name} VALUES {tuple(value)}")
+                except UniqueViolation:
+                    print('--URL OVERLAB--')
+                    continue
+      
+        
         self.conn.commit()
         self.display_table_value(table_name=table_name)
-    
+
+    def split_data_load(self,df):
+        for idx in range(0,df.shape[0]):
+            split_data =[]
+            data = df.loc['job_section'][idx]
+            split_data = data_scaling.text_split(data)
+            split_data.insert(0,idx)
+            try:    
+                self.cur.execute(f"INSERT INTO split_data VALUES {tuple(split_data)}")
+            except:
+                try:
+                    self.cur.execute("rollback")
+                    self.cur.execute(f"INSERT INTO  VALUES {tuple(split_data)}")
+                except UniqueViolation:
+                    print('--URL OVERLAB--')
+                    continue
+
     def exit_db(self):
         self.cur.close()
         self.conn.close()

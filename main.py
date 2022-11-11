@@ -22,26 +22,15 @@ class Job_scraping:
         wanted_df = wanted.job_detail()
         return saramin_df,wanted_df
 
-    def transfrom(self):
-
-        temp_section = []
-    
+    def transfrom(self):    
         sarmain_df,wanted_df = self.extract()
-
-        # saramin_df preprossesing
-        for data in sarmain_df['job_section']:
-            pre_data = data_scaling.text_preprocessing(data)
-            # structed_data = data_scaling.text_split(pre_data)
-            temp_section.append(pre_data)
-        sarmain_df['job_section'] = temp_section
-        
-        # wanted_df preprossesing
-        temp_section = []
-        for data in wanted_df['job_section']:
-            pre_data = data_scaling.text_preprocessing(data)
-            structed_data = data_scaling.text_split(pre_data)
-            temp_section.append(structed_data)
-        wanted_df['job_section'] = temp_section
+        for df in [sarmain_df,wanted_df]:
+            for col in df.columns:
+                if(col=='job_section'):
+                    data_scaling.col_preprocessing(df,str(col))
+                elif(col=='link'):
+                    continue
+                data_scaling.col_preprocessing2(df,str(col))
 
         return sarmain_df,wanted_df
         
@@ -52,6 +41,7 @@ class Job_scraping:
         
         load_data.create_site_table(self.cdb)
         total = load_data.merge_df(saramin,wanted)
+        
         if(self.cdb==-1):
             load_data.load_data(wanted, table_name = "saramin") 
             load_data.load_data(wanted, table_name = "wanted")
@@ -66,7 +56,7 @@ class Job_scraping:
         elif(self.cdb==3):
             load_data.load_data(total, table_name = "total_data") 
         elif(self.cdb==4):
-            load_data.load_data(wanted, table_name = "saramin") 
+            load_data.load_data(saramin, table_name = "saramin") 
             load_data.load_data(wanted, table_name = "wanted")
             load_data.load_data(total, table_name = "total_data") 
 

@@ -4,6 +4,7 @@ from time import sleep
 from bs4 import BeautifulSoup as bs
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
+import requests
 
 
 
@@ -61,6 +62,7 @@ class wanted:
         for job_card in job_cards:
             temp = job_card.find('a',href=True)['href']
             self.job_hrefs.append(temp)
+        self.driver.quit()
 
         return self.job_hrefs
 
@@ -75,9 +77,12 @@ class wanted:
             print("-"*50)
             print(base_url2 + job_href)
             print("-"*50)
-            self.driver.get(base_url2+job_href)
 
-            page = self.driver.page_source
+            resp = requests.get(base_url2+job_href)
+            if(resp.status_code!=200):
+                print("status_code: ",resp.status_code)
+                continue
+            page = resp.text
             soup_page = bs(page,"html.parser")
             
             company_name=""
