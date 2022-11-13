@@ -17,23 +17,20 @@ class connect_db:
             password=self.input_password)
         self.cur = self.conn.cursor()
     def c_table_data_split(self):
-        try:
-            self.cur.execute("""CREATE TABLE split_data(
-                                        idx int PRIMARY KEY,
-                                        lnk VARCHAR(500) primary key,
-                                        job_main VARCHAR(10000) not null,
-                                        require VARCHAR(10000) not null,
-                                        common VARCHAR(10000) not null,
-                                        pt VARCHAR(8000)
-                                    );
-                                """)
-            self.conn.commit()
-        except:
-            pass
+        self.cur.execute("""CREATE TABLE split_data(
+                                    idx int PRIMARY KEY,
+                                    lnk VARCHAR(500) not null,
+                                    job_main VARCHAR(10000) not null,
+                                    require VARCHAR(10000) not null,
+                                    common VARCHAR(10000) not null,
+                                    pt VARCHAR(8000)
+                                );
+                            """)
+        self.conn.commit()
+
 
     def c_table_saramin(self):
-        try:
-            self.cur.execute("""CREATE TABLE saramin(
+        self.cur.execute("""CREATE TABLE saramin(
                                         idx int PRIMARY KEY,
                                         job_name varchar(50) NOT NULL,
                                         job_section varchar(16384) NOT NULL,
@@ -41,13 +38,10 @@ class connect_db:
                                         cn_name varchar(50) NOT NULL
                                     );
                                 """)
-            self.conn.commit()
-        except:
-            pass
+        self.conn.commit()
 
     def c_table_wanted(self):
-        try:
-            self.cur.execute("""CREATE TABLE wanted(
+        self.cur.execute("""CREATE TABLE wanted(
                                         idx int PRIMARY KEY,
                                         job_name varchar(50) NOT NULL,
                                         job_section varchar(16384) NOT NULL,
@@ -55,23 +49,18 @@ class connect_db:
                                         cn_name varchar(50) NOT NULL
                                     );
                                 """)
-            self.conn.commit()
-        except:
-            pass
+        self.conn.commit()
 
     def c_table_total_data(self):
-        try:
-            self.cur.execute("""CREATE TABLE total_data(
-                                        idx int PRIMARY KEY,
-                                        job_name varchar(50) NOT NULL,
-                                        job_section varchar(16384) NOT NULL,
-                                        link varchar(500) NOT NULL,
-                                        cn_name varchar(50) NOT NULL
-                                    );
-                                """)
-            self.conn.commit()
-        except:
-            pass
+        self.cur.execute("""CREATE TABLE total_data(
+                                    idx int PRIMARY KEY,
+                                    job_name varchar(50) NOT NULL,
+                                    job_section varchar(16384) NOT NULL,
+                                    link varchar(500) NOT NULL,
+                                    cn_name varchar(50) NOT NULL
+                                );
+                            """)
+        self.conn.commit()
 
     def create_site_table(self,opt):
         """
@@ -83,69 +72,76 @@ class connect_db:
                             4: all\n
                             -1: None
         """
+
+        print("Create_Table!")
         self.cur.execute("SELECT tablename  FROM pg_catalog.pg_tables where schemaname = 'public';")
         table_check = self.cur.fetchall()
         self.conn.commit()
         # print(table_check,type(table_check))
         if(opt==-1):
-            pass
+            print("opt1 pass")
         else:
             self.c_table_data_split()
 
         if(opt==0):
-            if("saramin" in table_check):
-                pass
-            else:
+            if("saramin" not in table_check):
                 self.c_table_saramin()
+            else:
+                print("saramin check")
 
         elif(opt==1):
-            if("wanted" in table_check):
-                pass
-            else:
+            if("wanted" not in table_check):
                 self.c_table_wanted()
+            else:
+                print("wanted check")
 
         elif(opt==2):
-            if("saramin" in table_check):
-                if("wanted" in table_check):
-                    pass
-                else:
+            if("saramin" not in table_check):
+                if("wanted" not in table_check):
                     self.c_table_wanted()
+                else:
+                    print("wanted check")
             else:
                 self.c_table_saramin()
-                if("wanted" in table_check):
-                    pass
-                else:
+                if("wanted" not in table_check):
                     self.c_table_wanted()
+                else:
+                    print("wanted check")
 
         elif(opt==3):
-            if("total_data" in table_check):
+            if("total_data" not in table_check):
                 self.c_table_total_data()
             else:
-                pass
+                print("total check")
 
         elif(opt==4):
-            if("saramin" in table_check):
-                if("wanted" in table_check):
-                    if("total_data" in table_check):
-                        pass
-                    else:
+            if("saramin" not in table_check):
+                if("wanted" not in table_check):
+                    if("total_data" not in table_check):
                         self.c_table_total_data()
+                        self.c_table_wanted()
+                        self.c_table_saramin()
+                    else:
+                        self.c_table_wanted()
+                        self.c_table_saramin()
                 else:
-                    self.c_table_wanted()
-                    if("total_data" in table_check):
-                        pass
-                    else:
+                    if("total_data" not in table_check):
                         self.c_table_total_data()
+                        self.c_table_saramin()
+                    else:
+                        print("total check")
             else:
-                self.c_table_saramin()
-                if("wanted" in table_check):
-                    pass
-                else:
+                if("wanted" not in table_check):
                     self.c_table_wanted()
-                    if("total_data" in table_check):
-                        pass
-                    else:
+                    if("total_data" not in table_check):
                         self.c_table_total_data()
+                    else:
+                        print("total check")
+                else:
+                    if("total_data" not in table_check):
+                        self.c_table_total_data()
+                    else:
+                        print("total check")
 
     def display_table_value(self,table_name):
         print("="*100)
@@ -183,7 +179,7 @@ class connect_db:
     def split_data_load(self,df):
         for idx in range(0,df.shape[0]):
             split_data =[]
-            data = df.loc['job_section'][idx]
+            data = df['job_section'].loc[idx]
             split_data = data_scaling.text_split(data)
             split_data.insert(0,idx)
             try:    
