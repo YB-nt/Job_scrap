@@ -95,6 +95,7 @@ class sarmain:
         dic_job_scrap['cn_name'] = temp_list_cname
 
         df = self.make_df(dic_job_scrap)
+
         return df
 
 

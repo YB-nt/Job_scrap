@@ -4,11 +4,12 @@ from psycopg2.errors import UniqueViolation
 from util import data_scaling
 
 class connect_db:
-    def __init__(self,host,database,user,password):
+    def __init__(self,host,database,user,password,testopt):
         self.input_host = host
         self.input_database = database
         self.input_user = user
         self.input_password = password
+        self.testopt = testopt
         # print("="*150)
         self.conn = psycopg2.connect(
             host=self.input_host,
@@ -17,52 +18,61 @@ class connect_db:
             password=self.input_password)
         self.cur = self.conn.cursor()
     def c_table_data_split(self):
-        self.cur.execute("""CREATE TABLE split_data(
-                                    idx int PRIMARY KEY,
-                                    lnk VARCHAR(500) not null,
-                                    job_main VARCHAR(10000) not null,
-                                    require VARCHAR(10000) not null,
-                                    common VARCHAR(10000) not null,
-                                    pt VARCHAR(8000)
-                                );
-                            """)
-        self.conn.commit()
-
+        try:
+            self.cur.execute("""CREATE TABLE split_data(
+                                        idx int PRIMARY KEY,
+                                        lnk VARCHAR(500) not null,
+                                        job_main VARCHAR(16384),
+                                        require VARCHAR(16384),
+                                        common VARCHAR(16384),
+                                        pt VARCHAR(8000)
+                                    );
+                                """)
+            self.conn.commit()
+        except:
+            pass
 
     def c_table_saramin(self):
-        self.cur.execute("""CREATE TABLE saramin(
-                                        idx int PRIMARY KEY,
-                                        job_name varchar(50) NOT NULL,
-                                        job_section varchar(16384) NOT NULL,
-                                        link varchar(500) NOT NULL,
-                                        cn_name varchar(50) NOT NULL
-                                    );
-                                """)
-        self.conn.commit()
-
+        try:
+            self.cur.execute("""CREATE TABLE saramin(
+                                            idx int PRIMARY KEY,
+                                            job_name varchar(500) NOT NULL,
+                                            job_section varchar(16384) NOT NULL,
+                                            link varchar(500) NOT NULL,
+                                            cn_name varchar(50) NOT NULL
+                                        );
+                                    """)
+            self.conn.commit()
+        except:
+            pass
     def c_table_wanted(self):
-        self.cur.execute("""CREATE TABLE wanted(
+        try:
+            self.cur.execute("""CREATE TABLE wanted(
+                                            idx int PRIMARY KEY,
+                                            job_name varchar(500) NOT NULL,
+                                            job_section varchar(16384) NOT NULL,
+                                            link varchar(500) NOT NULL,
+                                            cn_name varchar(50) NOT NULL
+                                        );
+                                    """)
+            self.conn.commit()
+        except:
+            pass
+    def c_table_total_data(self):
+        try:
+            self.cur.execute("""CREATE TABLE total_data(
                                         idx int PRIMARY KEY,
-                                        job_name varchar(50) NOT NULL,
+                                        job_name varchar(500) NOT NULL,
                                         job_section varchar(16384) NOT NULL,
                                         link varchar(500) NOT NULL,
                                         cn_name varchar(50) NOT NULL
                                     );
                                 """)
-        self.conn.commit()
-
-    def c_table_total_data(self):
-        self.cur.execute("""CREATE TABLE total_data(
-                                    idx int PRIMARY KEY,
-                                    job_name varchar(50) NOT NULL,
-                                    job_section varchar(16384) NOT NULL,
-                                    link varchar(500) NOT NULL,
-                                    cn_name varchar(50) NOT NULL
-                                );
-                            """)
-        self.conn.commit()
-
+            self.conn.commit()
+        except:
+            pass
     def create_site_table(self,opt):
+        self.test_init()
         """
                             Create Database\n
                             0: saramin\n
@@ -143,6 +153,26 @@ class connect_db:
                     else:
                         print("total check")
 
+    def test_init(self):
+        if(self.testopt is True):
+            print("="*30)
+            print("TESTING!! ---- drop table")
+            print("="*30)
+            self.cur.execute("SELECT tablename  FROM pg_catalog.pg_tables where schemaname = 'public';")
+            table_check = self.cur.fetchall()
+            print(table_check)
+            for i in table_check:
+                try:
+                    self.cur.execute(f"drop table {i[0]}")
+                except:
+                    try:
+                        self.cur.execute("rollback")
+                        self.cur.execute(f"drop table {i[0]}")
+                    except:
+                        pass
+            self.conn.commit()
+                    
+
     def display_table_value(self,table_name):
         print("="*100)
         print(">> Complte Data load")        
@@ -169,27 +199,41 @@ class connect_db:
                     self.cur.execute("rollback")
                     self.cur.execute(f"INSERT INTO {table_name} VALUES {tuple(value)}")
                 except UniqueViolation:
-                    print('--URL OVERLAB--')
+                    print('--OVERLAB--')
                     continue
-      
-        
+                
         self.conn.commit()
         self.display_table_value(table_name=table_name)
 
     def split_data_load(self,df):
+        print('='*100)
         for idx in range(0,df.shape[0]):
-            split_data =[]
+            job_main=''
+            require=''
+            common_require=''
+            pref=''
+
             data = df['job_section'].loc[idx]
-            split_data = data_scaling.text_split(data)
-            split_data.insert(0,idx)
+            lnk = df['link'].loc[idx]
+
+            job_main,require,common_require,pref = data_scaling.text_split(data)
+            if(len(job_main)>8500 or \
+                len(require)>8500 or \
+                len(common_require)>8500 or \
+                len(pref)>8500):
+                continue
+            
+
+            value =[idx,lnk,job_main,require,common_require,pref]
+            # print(tuple(value))                        
             try:    
-                self.cur.execute(f"INSERT INTO split_data VALUES {tuple(split_data)}")
+                self.cur.execute(f"INSERT INTO split_data VALUES {tuple(value)}")
             except:
                 try:
-                    self.cur.execute("rollback")
-                    self.cur.execute(f"INSERT INTO  VALUES {tuple(split_data)}")
-                except UniqueViolation:
-                    print('--URL OVERLAB--')
+                    self.cur.execute("rollback;")
+                    self.cur.execute(f"INSERT INTO split_data VALUES {tuple(value)}")
+                except Exception as e:
+                    print(e)
                     continue
 
     def exit_db(self):
