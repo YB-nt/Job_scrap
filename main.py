@@ -33,9 +33,9 @@ class Job_scraping:
                 if(str(col)=='job_section'):
                     data_scaling.col_preprocessing(df,str(col))
                 elif(str(col)=='link'):
-                    data_scaling.col_preprocessing2(df,str(col))
+                    data_scaling.col_preprocessing_l(df)
                 else:
-                    data_scaling.col_preprocessing2(df,str(col))
+                    data_scaling.col_preprocessing_n(df,str(col))
                 
 
         return sarmain_df,wanted_df

@@ -5,10 +5,15 @@ def text_preprocessing(page_text):
     r1 = re.sub('\s{2,}','',r2)
     return r1
 
-def text_preprocessing2(page_text):
-    r_t = re.sub('[^\uAC00-\uD7A3가-힣0-9a-zA-Z\.]','',page_text)
+def name_preprocessing(page_text):
+    r_t = re.sub('[^\uAC00-\uD7A3가-힣0-9a-zA-Z]','',page_text)
     r = re.sub('\n',' ',r_t)
     return r
+
+def link_preprocessing(page_text):
+    r = re.sub('[^0-9a-zA-Z\.\/\:]','',page_text)
+    return  r
+
 
 def col_preprocessing(df,col_name):
     temp =[]
@@ -20,16 +25,22 @@ def col_preprocessing(df,col_name):
 
     return df 
 
-def col_preprocessing2(df,col_name):
+def col_preprocessing_n(df,col_name):
     temp =[]
     for data in df[col_name]:
-        pre_data = text_preprocessing2(data)
+        pre_data = name_preprocessing(data)
         temp.append(pre_data)
 
     df[col_name] = temp
 
     return df 
+def col_preprocessing_l(df):
+    temp =[]
+    for data in df['link']:
+        pre_data = link_preprocessing(data)
+        temp.append(pre_data)
 
+    df['link'] = temp
 
 def text_split(page_text):
     global common_require
