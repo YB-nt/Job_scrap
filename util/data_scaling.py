@@ -2,7 +2,7 @@ import re
 
 def text_preprocessing(page_text):
     r2 = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace('\n',' ')
-    r1 = re.sub('\s{2,}','',r2)
+    r1 = re.sub('\s{2,}','',r2).replace('\xa0',' ')
     return r1
 
 def name_preprocessing(page_text):
@@ -11,7 +11,7 @@ def name_preprocessing(page_text):
     return r
 
 def link_preprocessing(page_text):
-    r = re.sub('[^0-9a-zA-Z\.\/\:\&\_\=\+\-\%]','',page_text)
+    r = re.sub('[^\uAC00-\uD7A3가-힣0-9a-zA-Z\.\/\:\&\_\=\+\-\%\?]','',page_text)
     return  r
 
 

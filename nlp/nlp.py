@@ -42,9 +42,30 @@ for col_name in ["job_main","require","common","pt"]:
         noun = Okt().nouns(data[0])
         count = Counter(noun)
         common_list = count.most_common(10)
-        temp_list.append(common_list)
+        temp_list.extend(common_list)
 
-    
+temp_main.sort(key=lambda x:-x[1])
+temp_require.sort(key=lambda x:-x[1])
+temp_common.sort(key=lambda x:-x[1])
+temp_pt.sort(key=lambda x:-x[1])
+
+
+temp_main = [t for t in temp_main if t[1]!= 1]
+temp_require = [t for t in temp_require if t[1]!= 1]
+temp_common = [t for t in temp_common if t[1]!= 1]
+temp_pt = [t for t in temp_pt if t[1]!= 1]
+
+
+# tuple removing duplication
+duplication_d = set()
+_temp_pt = []
+for a,b in temp_pt:
+    if not a in duplication_d:
+        duplication_d.add(a)
+        _temp_pt.append((a,b))
+
+temp_pt = _temp_pt
+
 print('='*100)
 print(temp_main)
 print('='*100)
