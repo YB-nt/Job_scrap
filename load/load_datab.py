@@ -4,7 +4,9 @@ from psycopg2.errors import UniqueViolation
 from util import data_scaling
 
 class connect_db:
-    def __init__(self,host,database,user,password,testopt):
+    def __init__(self,keyword,must_keyword,host,database,user,password,testopt):
+        self.must_keyword = must_keyword
+        self.keyword = keyword
         self.input_host = host
         self.input_database = database
         self.input_user = user
@@ -216,7 +218,17 @@ class connect_db:
             data = df['job_section'].loc[idx]
             lnk = df['link'].loc[idx]
 
-            job_main,require,common_require,pref = data_scaling.text_split(data)
+
+            if(any(k in data for k in self.must_keyword)):
+                pass
+            else:
+                continue
+            
+
+            
+            
+
+            job_main,require,common_require,pref = data_scaling.text_split(data,self.keyword)
             if(len(job_main)>8500 or \
                 len(require)>8500 or \
                 len(common_require)>8500 or \

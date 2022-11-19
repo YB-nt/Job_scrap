@@ -6,7 +6,7 @@ import pandas as pd
 
 class sarmain:
     def __init__(self,keyword):
-        self.keyword = keyword
+        self.keyword = keyword[0]
         self.headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.122 Whale/3.16.138.27 Safari/537.36'}
         self.search_base_url = "https://www.saramin.co.kr/zf_user/search?searchword="
         self.add_url = self.search_base_url + self.keyword

@@ -9,7 +9,7 @@ from selenium import webdriver
 
 class wanted:
     def __init__(self,keyword):
-        self.keyword = keyword
+        self.keyword = keyword[0]
         # request_headers = { 'User-Agent' : ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37'), } 
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37')

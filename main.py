@@ -6,8 +6,9 @@ import pandas as pd
 
 
 class Job_scraping:
-    def __init__(self,keyword,cdb,host,database,user,password,test):
+    def __init__(self,must_keyword,keyword,cdb,host,database,user,password,test):
        self.keyword = keyword
+       self.must_keyword = must_keyword
        self.cdb = cdb
        self.host = host
        self.database = database
@@ -42,7 +43,7 @@ class Job_scraping:
         
     def load(self):
 
-        load_data = load_datab.connect_db(self.host,self.database,self.user,self.password,self.test) 
+        load_data = load_datab.connect_db(self.keyword,self.must_keyword,self.host,self.database,self.user,self.password,self.test) 
         saramin,wanted = self.transfrom()
         
         load_data.create_site_table(self.cdb)
@@ -79,15 +80,18 @@ class Job_scraping:
        
 
 if __name__=="__main__":
-    _keyword = "데이터 엔지니어"
+    _keyword = ["데이터 엔지니어","data engineer"]
     _cdb = 4
     _testopt = True
     _host ="arjuna.db.elephantsql.com"
     _database="xbegavim"
     _user ="xbegavim"
     _password ="m7_4leTxqwHlcCKKYhhuL3SXO2dHUmo5"
+    _must_keyword=["data","Data"]
 
-    scrap = Job_scraping(keyword=_keyword,cdb=_cdb\
+    scrap = Job_scraping(keyword=_keyword\
+                ,must_keyword =_must_keyword\
+                ,cdb=_cdb\
                 ,host=_host\
                 ,database=_database\
                 ,user=_user\
