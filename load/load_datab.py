@@ -84,8 +84,8 @@ class connect_db:
                             4: all\n
                             -1: None
         """
-
         print("Create_Table!")
+        print("##CREATE TABLE##")
         self.cur.execute("SELECT tablename  FROM pg_catalog.pg_tables where schemaname = 'public';")
         table_check = self.cur.fetchall()
         self.conn.commit()
@@ -218,13 +218,11 @@ class connect_db:
             data = df['job_section'].loc[idx]
             lnk = df['link'].loc[idx]
 
-
-            if(any(k in data for k in self.must_keyword)):
-                pass
-            else:
-                continue
-            
-
+            if("saramin" in lnk ):
+                if(any(k in data for k in self.must_keyword)):
+                    pass
+                else:
+                    continue
             
             
 
