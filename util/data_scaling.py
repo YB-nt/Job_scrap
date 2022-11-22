@@ -1,8 +1,8 @@
 import re
 
 def text_preprocessing(page_text):
-    r2 = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace('\n',' ')
-    r1 = re.sub('\s{2,}','',r2)
+    r2 = re.sub('[^ \uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace('\n',' ')
+    r1 = re.sub('\s{2,}',' ',r2)
     return r1
 
 def name_preprocessing(page_text):
@@ -19,6 +19,7 @@ def col_preprocessing(df,col_name):
     temp =[]
     for data in df[col_name]:
         pre_data = text_preprocessing(data)
+        pre_data = pre_data.replace("\xa0"," ")
         temp.append(pre_data)
 
     df[col_name] = temp
@@ -29,6 +30,7 @@ def col_preprocessing_n(df,col_name):
     temp =[]
     for data in df[col_name]:
         pre_data = name_preprocessing(data)
+        pre_data = pre_data.replace("\xa0"," ")
         temp.append(pre_data)
 
     df[col_name] = temp
@@ -39,7 +41,6 @@ def col_preprocessing_l(df):
     for data in df['link']:
         pre_data = link_preprocessing(data)
         temp.append(pre_data)
-
     df['link'] = temp
 
 def text_split(page_text,keyword):
@@ -68,7 +69,7 @@ def text_split(page_text,keyword):
     if('Requirements' in require):
         require = require[len('Requirements')+1:]
 
-    require = require.replace("\n","")
+    require = require.replace("\n"," ")
     require = require.replace("            ㆍ기타 필수 사항","")
     require = require.replace("및","없음")
     
