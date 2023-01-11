@@ -43,7 +43,8 @@ for col_name in ["job_main","require","common","pt"]:
             temp_list = temp_common
         elif(idx==3):
             temp_list = temp_pt
-        # 영어 counter
+
+
         _data = data[0]
         counter = Counter(t.morphs(_data))
         eng_data = [i for i in counter.most_common() if i[0].encode().isalpha()]
@@ -59,6 +60,47 @@ sorted_main = sorted(list(set(d for d in temp_main if len(d[0])>1)),key=lambda x
 sorted_require = sorted(list(set(d for d in temp_require if len(d[0])>1)),key=lambda x :-x[-1])
 sorted_common = sorted(list(set(d for d in temp_common if len(d[0])>1)),key=lambda x :-x[-1])
 sorted_pt = sorted(list(set(d for d in temp_pt if len(d[0])>1)),key=lambda x :-x[-1])
+
+
+temp_main.sort(key=lambda x:-x[1])
+temp_require.sort(key=lambda x:-x[1])
+temp_common.sort(key=lambda x:-x[1])
+temp_pt.sort(key=lambda x:-x[1])
+
+
+temp_main = [t for t in temp_main if t[1]!= 1]
+temp_require = [t for t in temp_require if t[1]!= 1]
+temp_common = [t for t in temp_common if t[1]!= 1]
+temp_pt = [t for t in temp_pt if t[1]!= 1]
+
+
+# tuple removing duplication
+duplication_d = set()
+_temp_pt = []
+for a,b in temp_pt:
+    if not a in duplication_d:
+        duplication_d.add(a)
+        _temp_pt.append((a,b))
+
+temp_pt = _temp_pt
+
+print('='*100)
+print(temp_main)
+print('='*100)
+print(temp_require)
+print('='*100)
+print(temp_common)
+print('='*100)
+print(temp_pt)
+print('='*100)
+
+
+
+
+
+
+
+>>>>>>> cd2111053b0607e37fa208f03ca970fff1b4a317
 
 
 print("="*100)

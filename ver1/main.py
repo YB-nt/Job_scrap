@@ -47,8 +47,12 @@ class Job_scraping:
         saramin,wanted = self.transfrom()
         
         load_data.create_site_table(self.cdb)
+        
         total = load_data.merge_df(saramin,wanted)
+
+        # total data transfrom 
         load_data.split_data_load(total)
+        
         if(self.cdb==-1):
             load_data.load_data(wanted, table_name = "saramin") 
             load_data.load_data(wanted, table_name = "wanted")
