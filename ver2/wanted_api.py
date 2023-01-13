@@ -35,44 +35,39 @@ import urllib.request
 
 search_keyword =""
 
+# 잘못된 api를 불러와서 전체 데이터를 수집할수없었다. 
+# 새로 찾아서 테스트 해보았다.
 def req_get_list(search_keyword):
-    target_url = parse.urlparse(f"https://www.wanted.co.kr/api/v4/search/summary?&locations=all&job_sort=company.response_rate_order&years=-1&country=kr&query={search_keyword}")
+    target_url = parse.urlparse(f"https://www.wanted.co.kr/api/v4/jobs?&country=kr&job_sort=company.response_rate_order&locations=all&years=-1&query={search_keyword}&limit=100&")
     query = parse.parse_qs(target_url.query)
     url_query = parse.urlencode(query, doseq=True)
-    result_url ='https://www.wanted.co.kr/api/v4/search/summary?&'+ url_query
+    result_url ='https://www.wanted.co.kr/api/v4/jobs?&'+ url_query
 
     r = simplejson.load(urllib.request.urlopen(result_url))
-
-
+    # print(len(r['data']))
     return r
 
-def make_company_info(r):
-    id_list =[]
-    
-    
 
-    for i in r['jobs']['data']:
-        id_list.append(i['id'])
-        company_name_list.append(i['company']['name'])
-        company_industry_list.append(i['company']['industry_name'])
-        position_list.append(i['position'])
+def split_dict(dic,i):
+    id_list=[]  
+    company_name_list =[]
+    company_industry_list  =[]
+    position_list =[]
 
-    #position info dataframe
+    for j in range(0,len(dic['data'])):
+        id = dic['data'][j]['id']
+        cn = dic['data'][j]['company']['name']
+        cin = dic['data'][j]['company']['industry_name']
+        pos = dic['data'][j]['position']
     
+        id_list.append(id)    
+        company_name_list.append(cn)
+        company_industry_list.append(cin)
+        position_list.append(pos)
 
-    return df,id_list
-def binary_search_id_list(value,id_list):
-    sorted_id_list  = id_list.sort()
-    start = 0
-    last = len(sorted_id_list)
-    while(start<=last):
-        if(id_list[last//2] ==value):
-            return int(0)
-        if(id_list[last//2]>value):
-            last=id_list[last//2]-1
-        else:
-            start = id_list[last//2]+1
-    return int(1)
+    return id_list,company_name_list,company_industry_list,position_list
+
+    
 
 
 def deduplicatesId_N_makeDf(key_word_list):
@@ -81,19 +76,33 @@ def deduplicatesId_N_makeDf(key_word_list):
     company_name_list =[]
     company_industry_list  =[]
     position_list =[]
-    for i,v in enumerate(key_word_list):
-        locals()[f"r{str(i+1)}"]= req_get_list(v)
-        if(id_list!=0):
-            opt = binary_search_id_list(locals()[f"r{str(i+1)}"],id_list)
-
-        if(opt==1):
-            id_list.append(locals()[f"r{str(i+1)}"]['jobs']['data']['id'])    
-            company_name_list.append(locals()[f"r{str(i+1)}"]['jobs']['data']['company']['name'])
-            company_industry_list.append(locals()[f"r{str(i+1)}"]['jobs']['data']['company']['industry_name'])
-            position_list.append(locals()[f"r{str(i+1)}"]['jobs']['data']['position'])
-        else:
-            continue
+    # opt=1
     
+    for i,v in enumerate(key_word_list):
+        # print(v)
+        locals()[f"r{str(i+1)}"]= req_get_list(v)
+        # print(len(locals()[f"r{str(i+1)}"]['jobs']['data']))
+        # print("load data")
+        a,b,c,d = split_dict(locals()[f"r{str(i+1)}"],i)
+
+        id_list.extend(a)
+        company_name_list.extend(b)
+        company_industry_list.extend(c)
+        position_list.extend(d)
+
+        # 나중에 중복제거하고 저장하는 방식으로 수정 
+        # 우선 지금은 무조건 저장 하는 방식으로 수행 
+        # if(len(id_list)>0):
+        #     if(locals()[f"r{str(i+1)}"]['data'][0]['id'] in id_list):
+        #         continue
+        #     else:
+        #         print("load data")
+        #         id_list,company_name_list,company_industry_list,position_list = split_dict(locals()[f"r{str(i+1)}"],i)        
+        # else:
+        #     print("load data")
+        #     id_list,company_name_list,company_industry_list,position_list = split_dict(locals()[f"r{str(i+1)}"],i)
+    
+    # print(id_list)
     df = pd.DataFrame()
     df['id'] = id_list 
     df['company_name'] = company_name_list
@@ -118,22 +127,16 @@ def req_get_jobcard(card_num,df):
     
     return df
 
-
-
-
-# job card 상세 내용
-card_num = ''
-
-
-
-
 keyword =["데이터 엔지니어",'데이터엔지니어','data engineer','MLOps']
 
-df,search_list = deduplicatesId_N_makeDf(keyword)
+company_df,search_list = deduplicatesId_N_makeDf(keyword)
+# print(search_list)
 job_detail = pd.DataFrame(columns=['requirements','preferred_points','main_tasks','intro','benefits'])
 for num in search_list:
     job_detail = req_get_jobcard(num,job_detail)
-    
+
+
+print(company_df)
 print(job_detail)
 
 
