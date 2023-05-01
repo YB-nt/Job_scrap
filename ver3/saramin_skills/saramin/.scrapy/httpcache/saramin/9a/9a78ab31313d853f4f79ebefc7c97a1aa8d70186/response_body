@@ -1,0 +1,265 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230427163317" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230427163317" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><font color="#0a7f99"></font><font color="#2fe679"></font><div style="max-width:860px;font-family:'Apple SD Gothic', '맑은고딕', 'Nanum Gothic', sans-serif;">
+    <div style="width:100%;height:120px;padding:30px 20px;box-sizing:border-box;background:url(//cdn.jumpit.co.kr/jumpit/bnr_sri_position_pc@2x.png) no-repeat 50% 50%;background-size:cover;display:table">
+        <strong style="display:table-cell;vertical-align:middle;font-size:24px;font-weight:bold;letter-spacing:0;text-align:center;line-height:30px;color: #fff">
+        데이터 엔지니어        </strong>
+    </div>
+    <div style="padding:40px 20px 30px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                서비스 소개</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">위메이드는 20여년간 게임사업에서 그 명성을 유지하며 활약하고 있습니다.
+우리는 게임을 기반으로 다양한 문화 영역에서 무한한 상상을 현실로 만드는 창조 집단으로서 훌륭한 프로의식, 인격, 열정을 갖춘 인재들이 모여 있습니다.
+미르4를 성공적으로 출시하여 게임업계에 “Play to Earn”이라는 새로운 패러다임을 이끌었습니다.
+또한, 블록체인 선두주자로서 자체 메인넷 WEMIX3.0과 블록체인 게이밍 플랫폼 WEMIX Play, NFT와 DAO 플랫폼인 Nile, Defi 플랫폼 WEMIX.Fi를 통해 블록체인 생태계 구축에 박차를 가하고 있습니다.
+이외에도 위메이드그룹은 IP확장 및 메타버스 등의 미래사업에 대한 공격적인 투자활동과 사업다각화를 적극 추진하며 독보적인 성장을 하고 있는 글로벌 종합 플랫폼 기업입니다.
+
+우리는 각자의 분야에서 최고가 되기 위한 꿈과 열정을 지니고, 맡은 미션을 훌륭하게 수행하여 단순한 결과가 아닌 멋진 성과를 보여주고 있습니다.
+또한 서로에 대한 믿음으로 팀워크와 협업의 시너지를 창출하는 최고의 파트너로 활약하고 있습니다.
+무한한 상상력을 현실로 만드는 위메이드 그룹과 함께 하실 분은 지원해주세요.</pre>
+            </div>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                모집부문 / 상세내용</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <dl style="margin:0;padding:0">
+                <dt style="display:block;margin:0;padding:0 0 12px;max-width:610px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    사용 기술
+                </dt>
+                <dd style="margin:0;padding:0">
+                    <span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="Dw" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Dw</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/PowerBI.png" alt="PowerBI" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> PowerBI</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="Dm" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Dm</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/azuredatafactory.png" alt="Azure Data Factory" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Azure Data Factory</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="BI" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> BI</span>                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    주요업무
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• BI(Business Intelligence) 구축 및 운영
+• Data WareHouse(DW), Mart(DM) 설계,구축 및 운영
+• 데이터 파이프라인 구축 및 운영(배치, 데이터 적재 및 가공, 통계 개발 등)
+• 데이터 시각화 설계 및 개발(리포트, 대시보드)
+• 로그 분석을 통한 이상 탐지, 장애 탐지, 알람 제공, 데이터 제공
+• 외부 데이터 수집 및 활용(크롤링, API 활용)					</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    자격요건
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 데이터 파이프라인 구축, 운영 경력 5년 이상
+• BI 대시보드, 리포트 개발, 운영 경력 5년 이상
+• DW, DM 설계, 구축, 운영 경력 5년 이상</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    우대사항
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 게임 시스템에 대한 전반적인 이해와 로그 기반의 데이터 분석 경험이 있으신 분
+• Azure Data Factory, SSIS 등의 Workflow 관리 도구를 사용해보신 분
+• PowerBI 등의 데이터 시각화툴을 통해 BI 시스템 구축 경험이 있으신 분
+• 통계에 대한 기본 지식과 머신러닝 기반의 데이터 분석에 대한 경험과 이해가 있으신 분
+• 데이터 기반 문제 해결 능력을 보유하신 분</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    마감일 및 근무지
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                 • 마감일 : ~2023-05-31<br>• 근무지<br> - 경기 성남시 분당구 대왕판교로644번길 49, 코리아벤처타운업무시설 비블럭                </dd>
+            </dl>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                복지 및 혜택</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 배려와 존중으로 함께 일하는 최고의 팀 동료들이 있어요
+• 취향에 따라, 기분에 따라 마음에 드는 메뉴를 선택하실 수 있도록 식사포인트를 지원해 드려요
+• 최상의 원두와 전문 바리스타가 있는 카페테리아에서 언제든 커피 혹은 음료는 무료로 마음껏 드세요
+• 수면실, 샤워룸, 수유실, 스포츠센터 등 위메이드인들을 위한 다양한 편의시설도 있어요
+• 연간 200만원 지급되는 복지포인트로 다양한 문화 혹은 취미 생활 누리세요
+• 일과 생활의 균형을 위해 자유롭게 연차를 사용하세요
+• 다양한 경조사에 대한 경조 지원금, 유급휴가를 지원해 드려요
+• 단체보험가입, 종합건강검진, 독감예방접종 지원받으시고 건강도 챙기면서 일해요
+• 가족의 종합건강검진도 함께 챙겨요
+• 자녀의 진학에 부담갖지 않으시길 바라며 입학축하금 및 대학교 학자금을 지원해 드려요
+• 열일 후 달콤한 휴식을 위해 레지던스 및 리조트회원권을 준비했어요
+• 위메이드에서 오래도록 기여해주신 장기근속 위메이드인에게는 포상금을 지급해요</pre>
+            </div>
+        </div>
+    </div>
+        <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                채용절차 및<br>기타 지원 유의사항</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">[전형절차]
+• 서류전형 - 실무면접 - 임원면접 - 최종합격
+* 서류전형의 경우, 합격자 분들에 한하여 개별 안내드립니다.
+* 직무에 따라 면접 전형 전후로 과제 전형이 추가될 수 있습니다.
+* 본 공고는 적격자 채용 시 마감될 수 있음을 알려드립니다.
+* 장애인, 국가보훈대상자는 관계 법령에 의거하여 우대합니다.
+* 지원서 내용이 사실과 다를 경우 합격 및 입사가 취소될 수 있습니다.</pre>
+            </div>
+        </div>
+    </div>
+     <div style="padding:50px 0;overflow:hidden;">
+      <a href="https://api.jumpit.co.kr/position/16304/link" target="_blank" title="점핏 새창열림" style="display:block;margin:0 auto;text-align:center;text-decoration:none">
+          <div style="width:100%;height:200px;">
+          <picture>
+               <source media="(max-width: 500px)" srcset="https://api.jumpit.co.kr/position/16304/mobile-banner">
+                   <img src="https://api.jumpit.co.kr/position/16304/banner" style="width:100%;object-fit:cover;" alt="배너" />
+          </picture>
+          </div>
+      </a>
+  </div>
+</div><font color="#4be6ad"></font><font color="#67e6d7"></font><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45575231', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

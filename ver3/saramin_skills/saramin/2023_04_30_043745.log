@@ -1,0 +1,914 @@
+INFO:scrapy.utils.log:Scrapy 2.7.1 started (bot: saramin)
+INFO:scrapy.utils.log:Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.13 (default, Oct 19 2022, 17:54:22) - [Clang 12.0.0 ], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform macOS-10.16-x86_64-i386-64bit
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'saramin',
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_ENABLED': True,
+ 'NEWSPIDER_MODULE': 'saramin.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['saramin.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG:scrapy.utils.log:Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+INFO:scrapy.extensions.telnet:Telnet Password: 5a7fb1cec6ba2440
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:scrapy_fake_useragent.middleware:Loaded User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+INFO:scrapy_fake_useragent.middleware:Using '<class 'scrapy_fake_useragent.providers.FakeUserAgentProvider'>' as the User-Agent provider
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'saramin.middlewares.SaraminDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['saramin.pipelines.SaraminPipeline', 'saramin.pipelines.JsonWriterPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:saramin:Spider opened: saramin
+DEBUG:scrapy.extensions.httpcache:Using filesystem cache storage in /Users/y_bin/solo_project/job_scraping/ver3/saramin_skills/saramin/.scrapy/httpcache
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:filelock:Attempting to acquire lock 140400543643296 on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Lock 140400543643296 acquired on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Attempting to release lock 140400543643296 on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Lock 140400543643296 released on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4> (referer: None) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45433416',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45517496',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45575166',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45477264',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45447808',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45541706',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45593040',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45561842',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45534589',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45524833',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '42526132',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45517678',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45283390',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45491862',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44122294',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45524738',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45528148',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45460935',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45520673',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45570712',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45514067',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45419410',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45491774',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45582728',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45594978',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '43197817',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44049928',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45527832',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45121012',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45591454',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45269531',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44880544',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45549873',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45599461',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45486824',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45200259',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45403487',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45506762',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45283451',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45575231',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45306811',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching  전형절차-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 ㆍ 근무일시  주 5일월금 탄력근무제 ㆍ 근무지역  03909 서울 마포구 상암산로 34 15층',
+ '담당업무': 'ㆍ 추천 시스템 관련 개인화 콘텐츠 추천 시스템 구축 ㆍ검색 시스템 관련 검색 연계된 NLP 기반 모델 구축 ㆍ 이미지 '
+         '기반 모델 관련 썸네일 동영상 내 메타 추출 및 분류 모델 구축 시스템 연계   지원자격 ㆍ 관련 분야 3년이상의 실무 '
+         '경험을 보유하신 분 ㆍ 추천 또는 검색 모델에 대한 관심이 있으신 분 ㆍ 다음 분야 중 하나 이상의 분야에서 MLDL '
+         '기반의 개발 및 서비스 적용 실무 경험을 보유하신 분  추천 혹은 검색컴퓨터 비전시계열 예측 ㆍPython 또는 JVM '
+         '언어 중 하나 이상의 언어로의 능숙한 개발 능력을 보유하신 분 ㆍ 우수한 문서 커뮤니케이션 능력을 보유하신 분 ㆍ 강한 '
+         '자율성과 책임감 리더십을 보유하신 분 ㆍ 함께 성장하고 배우는 것에 가치를 두는 자세를 보유하신 분',
+ '우대사항': 'ㆍ  MLDL 관련 논문 학술지 등재 경험을 보유하신 분 ㆍ 추천 또는 검색 서비스 구축 경험을 보유하신 분 ㆍ  MLDL '
+         '관련 학과 석사 이상의 학위를 소지하신 분 ㆍ Kaggle 등 AI 경진대회 상위권 수상하신 분 지원하기',
+ '전형절차': '는 직무별로 다르게 운영 될 수 있으며 일정 및 상황에 따라 변동 될 수 있습니다',
+ '접수기간_및_방법': 'ㆍ 접수기간   20230430일 ㆍ 접수방법  홈페이지 지원 ㆍ 이력서양식  자사양식 유의사항 ㆍ입사지원 서류에 '
+              '허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '데이터 ETL 프로세스 설계 개발   Airflow Spark Kafka 등을 활용한 데이터 파이프라인 설계 구축 개발   '
+         'Data Warehouse 설계 및 운영',
+ '우대사항': 'GCP에서의 프로젝트 경험   대용량 데이터 파이프라인 시스템 구축 경험과 운영 경험   Airflow Kafka '
+         'Spark 업무상 이용 경험   Elastic Stack 관련 업무 '
+         '경험                                                                                           '
+         '마감일 및 근무지                                                          '
+         '마감일  상시  근무지  서울 영등포구 여의나루로 60 19층',
+ '자격요건': '데이터 파이프라인 개발 구축 경력  3년 이상   데이터 전처리 경험   데이터 어플리케이션 개발을 위한 프로그래밍 '
+         '언어Python Go 언어 등 개발 능력 보유   클라우드 환경에서 대용량 데이터 처리 경험'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '가상발전소 플랫폼DERShare 백엔드 모듈 개발 및 유지보수  전력데이터수요 발전 데이터 수집 가공TCPUDP IoT '
+         'Network Data Engineering  태양광 발전소 발전 예측 발전 이상 검출 모듈 개발 및 유지보수ML DL '
+         'Serving  전력거래 최적화 모듈 개발 및 유지보수Optimization Serving  서비스 API 개발  '
+         '전력O2O 서비스 프론트엔드용 Restful API 개발  활용 기술 스택  언어 Python 3  주요 라이브러리 '
+         'FastAPI pandas Requests SQLAlchemy Google Admin SDK  데이터베이스 RDB '
+         'Redis Google Firestore  플랫폼 Linux Docker Kubernetes Google Cloud '
+         'Platform  도구 VisualStudio Code Notion Google Workspace Git',
+ '우대사항': '최신 기술과 검증된 기술을 결합하여 중단없는 백앤드 서비스 플랫폼을 구축하려는 자세  데이터 분석 및 프론트앤드 영역까지 '
+         '풀스택 개발자를 목표로 끊임없이 공부하는 자세  스타트업 기업에 참여하여 새로운 사업 영역에서 기술적으로 선점하고자 하는 '
+         '자세                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '2023-05-31  근무지  - 서울시 강남구 학동로 402 천마빌딩 5층',
+ '자격요건': '국내 외 4년제 소프트웨어 개발 관련학과 졸업자  Python 3 Linux RDB 개발 경험자  Restful API '
+         '개발 경험자  Cloud Platform Docker Kubernetes 등 컨테이너 환경 백엔드 개발 경험자  IoT '
+         'Network 개발 경험자'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 계약직 프리랜서 ㆍ 근무일시  ㆍ 근무지역  03926 서울 마포구 매봉산로 75 12층 - '
+         '경의중앙선 수색 에서 500m 이내',
+ '담당업무': 'ㆍ  모집분야  BIDW 데이터엔지니어    00명   - 모     듈  분석설계개발  필수  - DW 빅데이터 정보계 '
+         '프로젝트 분석  설계 숙련 - ETL Tool Informatica Datastage Terasteam 등   또는 SQL '
+         'PLSQL  활용한 데이터  pipeline  구축 경험',
+ '우대사항': '- CDS VIEW  기반으로  BW4HANA  구축 경험 - SAC  개발    연동 경험  모집분야  SAP '
+         'SAC      0명   - 모     듈  개발자  필수  - SAP SAC  기반 사업 수행  1 년 '
+         '이상              ㆍ기타 필수 사항',
+ '자격요건': 'ㆍ학력  대졸 이상 23년 DW 데이터엔지니어 및 SAP BW SAC 경력 채용  00명',
+ '전형절차': '서류전형  면접  인성검사  채용검진  최종합격 접수방법 ㆍ 접수방법  사람인 입사지원 홈페이지 지원 ㆍ 이력서양식  '
+         '사람인 온라인 이력서 유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 '
+         '채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '과제 이해를 통해서 분석 목적에 맞는 데이터 식별하여 수집 및 활용  대용량 데이터 파이프 라인 구축운영 ETL '
+         'Airflow등  수집 성능 또는 가공처리시 성능 이슈에 대한 진단 및 고도화   DWDM 구축 및 운영',
+ '우대사항': '대용량 DB SQL 성능 튜닝 경험이 있으신 분  빅데이터 관련 서비스 개발 경험이 있으신 분  빅데이터 프로젝트를 3건 '
+         '이상 수행해본 경험이 있으신 '
+         '분                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '상시  근무지  - 서울시 종로구 종로5길 7',
+ '자격요건': '학력 및 경력 사항  4년제 대학교 이상 학위를 보유하신 분 통계학 컴퓨터 공학 산업공학 등 유관전공  4년 이상 데이터 '
+         '엔지니어 경력 혹은 이에 준하는 역량을 보유하신 분  필요역량  대용량 데이터 수집가공처리 역량을 보유하신 분  분석 지원 '
+         '언어패키지 SQLRPythonSpark 활용에 익숙하신 분  Hadoop 기반의 빅데이터 플랫폼 사용 경험이 있으신 분  '
+         '데이터 플로우 자동화 수행 경험이 있으신 분  PythonSQL 을 활용한 데이터 파이프라인 개발 경험이 있으신 분  '
+         '데이터 분석 영역에서의 기술적 네트워크 및 유관 업무 경험이 있으신 분'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  유연근무제 ㆍ 근무지역  06192 서울 강남구 선릉로 428 위워크 '
+         '선릉3호점 15층 120호 - 서울 2호선 선릉 에서 200m 이내',
+ '담당업무': 'ㆍ 지원자격 ㆍ경력  무관 신입도 지원 가능 1 웹 개발자   - 기본 사항      HTML5 CSS ja vasc '
+         'ript을 통한 개발이 가능하신 분      Java  Spring fr amework 개발이 가능하신 분      '
+         'RDBMS 사용 경험자 MS SQL Server MariaDB   - 우대 사항      VueJs Angular '
+         'React 등의 프론트엔드 프레임워크 경험자      Spring Security 통한 보안 개발 경험자      HTTP '
+         'API 클라이언트 개발 경험      유연한 커뮤니케이션을 바탕으로 협업에 능숙하신 분 2 데이터 사이언티스트  '
+         'Python 가능한 사람 인공지능을 활용한 예측분석  정형비정형 융합분석 등 관련 교육이수자  관련분야 교육 경험자 '
+         '직무기술서 또는 프로젝트 포트폴리오 첨부 시 우대                ㆍ기타 필수 사항',
+ '자격요건': 'ㆍ학력  대졸 이상 23년 에듀테크 데이터사이언티스트 개발자 채용  0명  원자',
+ '전형절차': '서류전형  1차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 7일 금 16시   상시 ㆍ 접수방법  사람인 입사지원 ㆍ 이력서양식  사람인 '
+              '온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 '
+              '허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 '
+              '유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  ㆍ 근무지역  06180 서울 강남구 테헤란로 518 한국섬유산업연합회',
+ '담당업무': 'O  Data Flow 아키텍처 설계 O  다양한 환경의 고객 데이터 연결수집 및 대상 데이터 분석 O  ETL 파이프라인 '
+         '개발 및 전처리적재 O  Data Warehouse 및 Data Mart 구축 O  SQL Query 및 Index 최적화 '
+         'DB 파티션 구성 O  정형비정형Image Sound Text file 데이터 처',
+ '우대사항': 'O  관련 전공자 컴퓨터공학 정보통신 전산 통계 등 O  SQL Query 및 프로시저 작성이 능숙하신 분 O  DB 성능 '
+         '개선에 대한 경험이 많으신 분 O  다양한 출처의 데이터를 여러 기술들을 활용해 ETL 가능하신 분 O  Google '
+         'cloud consol 또는 cloud command line 사용이 가능하신 분 O  동종업계 MS AWS Google '
+         'Naver 등 비즈니스 클라우드에 대한 이해도가 높으신 분 O  BI 솔루션에 대한 이해도가 높고 협업이 가능하신 '
+         '분              ㆍ기타 필수 사항',
+ '자격요건': 'ㆍ학력  무관 BI 개발자 MS or Google  원자',
+ '전형절차': '서류전형  1차면접 2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수방법  사람인 입사지원 ㆍ 제출서류  사람인 온라인 이력서 포트폴리오 유의사항 ㆍ학력 성별 연령을 보지않는 '
+              '블라인드 채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 '
+              'ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': 'BIBusiness Intelligence 구축 및 운영  Data WareHouseDW MartDM 설계구축 및 운영  '
+         '데이터 파이프라인 구축 및 운영배치 데이터 적재 및 가공 통계 개발 등  데이터 시각화 설계 및 개발리포트 대시보드  로그 '
+         '분석을 통한 이상 탐지 장애 탐지 알람 제공 데이터 제공  외부 데이터 수집 및 활용크롤링 API 활용',
+ '우대사항': '-                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '2023-05-31  근무지  - 경기 성남시 분당구 대왕판교로644번길 49 코리아벤처타운업무시설 비블럭',
+ '자격요건': 'SQL 활용이 가능한 분  Python을 통한 프로젝트 경험이 있는 분  데이터 전처리 경험대회 Dacon Kaggle 이 '
+         '있는 분  Excel SpreadSheet 활용 경험이 있는 분'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 ㆍ 근무일시  ㆍ 근무지역  13591 경기 성남시 분당구 분당로 55 분당 퍼스트타워 10층 - '
+         '수인분당선 서현 에서 300m 이내',
+ '담당업무': '전사 공용 데이터 구축 및 운영        전사 공통 지표  BI  리포트 개발 및 운영  지원자격   유관 업무 경력 '
+         '3년 이상    능숙한  SQL  활용 능력        한개 이상의 프로그래밍 언어 사용 가능자  ex java go '
+         'python 등',
+ '우대사항': 'BI  솔루션 운영 및 개발 경험 보유  ex Tableau Power BI     데이터모델링 및  OLAP  환경 경험 '
+         '보유    ETL  운영 경험 보유    GCP Bigquery  사용 경험 보유    대용량 데이터 처리 경험 '
+         '보유               게임 서비스 데이터에 대한 높은 이해도',
+ '전형절차': '서류전형  면접전형  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 26일 수  2023년 5월 31일 수 24시 ㆍ 접수방법  사람인 입사지원 ㆍ '
+              '이력서양식  사람인 온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  '
+              'ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다  채용절차 공정화에 관한 '
+              '법률에 따라 제출된 서류는 채용 목적 이외에는 사용되지 않으며 구직자의 채용 여부가 확정된 이후 구직자확정된 '
+              '채용대상자는 제외함가 채용서류의 반환을 청구하는 경우에는 본인임을 확인한 후 법에서 정하는 바에 따라 반환합니다 '
+              '다만 홈페이지 또는 전자우편으로 제출된 경우나 구직자가 구인자의 요구 없이 자발적으로 제출한 경우에는 그러하지 '
+              '아니합니다 또한 당사의 경우 해당 전형 최종합격 발표 이후 반환하지 아니한 채용서류는 즉시 파기됨을 알려드립니다 '
+              'ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': 'Java Python 개발 및 유지보수  REST API 개발 및 유지보수  AI 서비스 유지 보수',
+ '우대사항': '오픈소스 공헌 및 관련 활동 경험자  hadoop hive spark kakfa 등 빅데이터 이해 '
+         '가능자                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '상시  근무지  - 서울 영등포구 여의대로 108 파크원 타워2 19층',
+ '자격요건': '4년제 대학 졸업학사 이상  실무 경력 5년 이상  ETL데이터 개발 유지보수 또는 DB관리 경험  리눅스 사용 가능'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  ㆍ 근무지역  04637 서울 중구 후암로 10층 티머니남대문로5가 - '
+         '서울 4호선 서울역 에서 200m 이내',
+ '담당업무': 'ㆍ 지원자격 ㆍ경력  경력 5년 이상 ㆍ희망경력 업무     - 빅데이터 시스템 구축 및 운영     - Data ETL '
+         '및 Data Mart 구축 및 운영     - DB 설계 구축 및 운영 직무내용 ㆍ빅데이터 시스템 및 DWData '
+         'Warehouse 기획 및 운영관리 ㆍ빅데이터 시스템 운영 ㆍ빅데이터 시스템 Data 관련 기획 및 운영관리',
+ '우대사항': 'ㆍSAP HANA Memory DB Server 운영 ㆍKT Nexr NDAP 운영 ㆍ마케팅 Data Engineering',
+ '자격요건': 'ㆍ학력  대졸 이상 4년 데이터 엔지니어 빅데이터팀 0명  원자',
+ '전형절차': '서류전형  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 4일 화 16시   채용시 ㆍ 접수방법  홈페이지 지원 ㆍ 이력서양식  자사양식 ㆍ '
+              '제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 '
+              '채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': '근무형태 정규직   수습기간 3개월                                    근무일시 '
+         '09301830                                  근무지역  08789  서울 관악구 봉천로 '
+         '545 - 서울 2호선 낙성대 에서 500m '
+         '이내                                                                                        '
+         '복리후생                                                  '
+         '급여제도                                 4대 보험 '
+         '연차수당                                 '
+         '지원금보험                                 건강검진 각종 경조사 '
+         '지원                                 '
+         '근무환경                                 유연근무제  8시  10시 '
+         '출근                                  '
+         '교육                                 직무능력 향상교육 도서 구입비 자격증 취득지원 교육인강 '
+         '포함비 워크샾                                 '
+         '생활                                 명절선물 저녁식사 간식 및 음료제공 자율복장',
+ '담당업무': '서비스 데이터를 효율적으로 처리관리하기 위해 관리 시스템을 구축합니다 Python Django '
+         'MS-SQL                                     수집 및 정제가공 처리 현황에 대한 모니터링 '
+         '대쉬보드를 구성합니다 Grafana MS-SQL                                     자사 '
+         '서비스 전반에 필요한 데이터를 수집합니다 Python MS-SQL Airflow '
+         'RabbitMQ                                     프로그램 개발에 의한 데이터 매핑 및 '
+         '검증을 진행하고 일부 데이터는 수기로 작업합니다 '
+         'MS-SQL                                     팀원들과 소통하고 협력하며 효율적인 협업을 '
+         '위해 팀 문화를 개선해 '
+         '나갑니다                                                                                                     '
+         '기업 및 서비스 소개                                                   '
+         '빅테크플러스주는 부동산 분야의 전문가들이 모여 만든 핀테크  프롭테크 '
+         '스타트업입니다                                 우리 팀에서 꿈과 비젼을 같이 키울 젊고 유능한 '
+         '인재를 구합니다                                  따라서 단기 근무하실 분보다는 회사와 같이 '
+         '성장할 인재를 우선합니다                                     부동산을 투자대상이 아니라 '
+         '이용자의 거주를 위한 공간으로 생각하고                                 부동산 이용자 관점에서 '
+         '부동산시장의 정보비대칭성을 해소하고자 합니다                                 이를 위해 '
+         '공간정보지오데이터 뿐만 아니라 빅데이터 인공지능AI를 연구하고 개발 '
+         '중입니다                                   부동산 자산 관리 서비스 홈큐  바로가기  를 '
+         '오픈하여 서비스중에 있습니다                                  등기 대장 플랙폼 독큐  바로가기  '
+         '를 오픈하여 서비스중에 있습니다',
+ '우대사항': '해당직무 근무경험이 있는 분                                  컴퓨터 관련학과 전공자이신 '
+         '분                                   정보처리기사 자격증을 보유하신 '
+         '분                                  효율적인 데이터 관리에 진심이신 분',
+ '전형절차': '서류전형                                                                                              '
+         '기초코딩 및 '
+         '면접                                                                                              '
+         '인적성 '
+         '검사                                                                                              '
+         '최종합격',
+ '접수기간_및_방법': '접수기간 2023년 3월 22일 수 09시  상시                                  '
+              '접수방법 사람인 입사지원                                  이력서양식 사람인 온라인 '
+              '이력서                                  '
+              '제출서류                                  아래 링크로 보여줄수 있는 자신의 작품을 '
+              '부끄러워 하지 말고 꼭 적어주세요                                  아래 링크 외에도 '
+              '보여줄 수 있는 개인 홈페이지 참여한 프로젝트의 URL도 있으면 꼭 '
+              '적어주세요                                                                                                                                                                                                  '
+              '유의사항                                                   공고기간 중 '
+              '수시 면접을 진행하며 채용확정시 조기 공고 마감할 수 '
+              '있습니다                                  입사지원 서류에 허위사실이 발견될 경우 '
+              '채용확정 이후라도 채용이 취소될 수 있습니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  ㆍ 근무지역  06194 서울 강남구 테헤란로78길 14-6 동성빌딩 '
+         '5층 대치동 동성빌딩대치동 - 서울 2호선 선릉 에서 800m 이내',
+ '우대사항': 'ㆍ해당직무 근무경험 이런 분들께서 지원이 가능합니다    ㆍ컴퓨터 공학적 지식에 익숙하신 분    ㆍHadoop Spark '
+         '와 같은 분산 처리 시스템에 대한 경험이 있는 분    ㆍ클라우드 서비스AWS GCP Azure 에 대한 경험이 있는 '
+         '분    ㆍ통계적 분석에 대한 경험이 있는 분    ㆍSQL Python JVM 환경에 익숙하신 분 아래와 같은 일을 하게 '
+         '됩니다    ㆍ다양한 데이터 소스로부터의 수집부터 서비스에서 사용되는 데이터베이스까지의 데이터 파이프         라인을 '
+         '구성합니다    ㆍ클라우드에서의 DataOps MLOps 를 수행합니다    ㆍ학술 데이터를 기반으로 한 지표를 탐색하고 '
+         '개발합니다    ㆍ다른 개발자들과 협업하여 학술 서비스를 개발합니다    ㆍ데이터를 관리할 수 있는 사내 서비스를 '
+         '구현합니다    ㆍ학술 서비스에서 사용되는 자연어 처리 및 기타 모델을 개발합니다 이런 성향을 가진 분을 찾고 있어요    '
+         'ㆍ복잡하고 어려운 문제를 만나더라도 집요하게 파고들어 끈기있게 해결하는 분    ㆍ변화에 대해 거부감을 가지기 보다는 '
+         '빠르게 적응하여 성장의 기회로 삼고자 하는 분    ㆍ새로운 기술에 호기심이 많고 동료와의 코드 리뷰 및 기술 공유를 통해 '
+         '함께 성장하길 원하는 분    ㆍ품질 좋은 소프트웨어 개발을 추구하고 이를 위해 지속적으로 노력하는 분    ㆍ항상 유저를 '
+         '기준으로 고민하고 유저에게 가치를 전달하는 것에 보람을 느끼는 분 이런 경험이 있다면 더 좋아요    ㆍ학술 데이터 관련 '
+         '업무 수행    ㆍ논문 작성 및 연구 경험    ㆍ데이터베이스 RDBMS NoSQL 운영 경험    ㆍScalable 한 '
+         '분산 처리 시스템 운영 경험    ㆍ웹 서비스 개발 경험    ㆍGCP 사용 경험    ㆍ기계학습모델을 개발하고 학습시킨 '
+         '경험    ㆍ리눅스 환경    ㆍ다양한 프로그래밍 언어 사용 경험    ㆍAgile  Scrum Team 에서의 업무 '
+         '경험    ㆍPair Programming  Code Review 경험',
+ '자격요건': 'ㆍ학력  무관 ㆍ경력  신입  경력 3년 이상 Data Engineer Core Team 0명',
+ '전형절차': '서류전형 포트폴리오 필수 제출  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 2월 15일 수 10시   채용시 ㆍ 접수방법  홈페이지 지원 ㆍ 이력서양식  자유양식 '
+              'ㆍ 제출서류  유의사항 ㆍ신입경력 구분 없이 수습기간이 3개월이 적용됩니다 ㆍ입사지원 서류에 허위사실이 발견될 '
+              '경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ1차 합격 후 졸업증명서 전 근무지 원천징수영수증 기타 자격증 '
+              '사본을 필수 제출합니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다 복리후생 ㆍ 점심 식대 무제한 '
+              'ㆍ장기 근속 2주년에 따른 Refresh 휴가 ㆍ법정 휴가 이외에 추가유급휴가 5개 지급 ㆍ각종 경조사 휴가 및 '
+              '비용 지원 ㆍ명절 선물 생일 선물 지급 ㆍ유료 건강검진 지원매년 1회'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  주 5일월금 09001800  금요일 17시 퇴근 ㆍ 근무지역  '
+         '48058 부산 해운대구 센텀서로 30 22층 2202호 - 부산 2호선 센텀시티 에서 500m 이내',
+ '담당업무': 'ㆍ하둡 기반의 빅데이터 분석 플랫폼 개발운영 ㆍ실시간 데이터 수집 처리 적재 등의 파이프라인 설계 및 자동화 ㆍ Kafka '
+         'airflow Spark streaming 프로그램 개발운영 ㆍ 다양한 오픈소스 클라우드 등을 활용하여 분석 플랫폼 '
+         '아키텍처 개선 ㆍ EDW환경RDB과 빅데이터 분석 플랫폼 간의 연계 설계개발 ㆍ 분석 업무를 위한 데이터 마트 개발 및 '
+         '구축 ㆍ 기계학습 모형 서비스를 위한 파이프라인 개발 및 구축 ㆍ 플랫폼 운영 및 모니터링을 위한 자동화 및 도구 개발 '
+         '지원요건 ㆍ경력  무관 신입도 지원 가능 주임연구원 팀원급 ㆍ Python Java Kotlin Scala 중 하나 이상의 '
+         '언어에 능통하신 분 ㆍ  데이터 파이프라인 시스템 사용 경험이 있으신 분 ㆍ  UnixLinux 환경 경험 및 RDBMS '
+         '및 NoSQL 또는 HiveQL에 능통하신 분 ㆍ  hadoop Spark airflow Kafaka 등 대용량 분산 '
+         '컴퓨팅에 이해할 수 있는 분              ㆍ기타 필수 사항',
+ '우대사항': 'ㆍ데이터 수집 및 처리를 위한 효율적인 파이프라인 설계 및 구현이 가능하신 분자동화 ㆍ 대용량 데이터 파이프라인 시스템 '
+         '구축 및 관리 경험이 있고 목적에 따른 시스템을 설계할 수 있으신 분 ㆍ 로그 수준의 데이터를 가공하고 분석 후 피쳐를 '
+         '발굴하여 모델링까지 전체 프로세스를 경험하신 분 ㆍ 하나의 모델링 문제에 대해 가능성 있는 다양한 실험을 설계하고 성능 '
+         '비교를 해본 경험이 있으신 분 ㆍ 오픈소스 기여 경험이 있는 분 kafka airflow docker ignite mdd '
+         'spring sql mlops ㆍ공학계열 컴퓨터시스템공학 수학통계학 ㆍ정보처리기사 빅데이터 분석기사 ㆍ인근거주자 해당직무 '
+         '근무경험 공모전 입상자 석사학위 수여자',
+ '자격요건': 'ㆍ학력  대졸 이상 4년 신입ㆍ경력 빅데이터 및 데이터 엔지니어 채용 부설연구소 0명',
+ '전형절차': '서류전형  면접전형  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 10일 월 14시   2023년 5월 10일 수 24시 ㆍ 접수방법  사람인 '
+              '입사지원 ㆍ 이력서양식  사람인 온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 '
+              '채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 '
+              '마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 ㆍ 근무일시  주 5일월금 09300530 ㆍ 근무지역  05838 서울 송파구 충민로 66 리빙관 '
+         '7층 제엘-71507151',
+ '담당업무': 'ㆍ 지원자격 ㆍ경력  무관 신입도 지원 가능 우대조건 ㆍDB보안솔루션 Email보안솔루션 Pem솔루션 Backup솔루션 有 '
+         '경험자              ㆍ기타 필수 사항',
+ '자격요건': 'ㆍ학력  무관 IT보안 솔루션 기술 엔지니어 모집 보안 기술 엔지니어 1명  원자',
+ '전형절차': '서류전형  1차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 18일 화 14시   2023년 6월 17일 토 24시 ㆍ 접수방법  사람인 '
+              '입사지원 ㆍ 이력서양식  자유양식 ㆍ 제출서류  신입  자기소개서  경력  자기소개서  경력증명서 유의사항 ㆍ학력 '
+              '성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 '
+              '취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '자사 서비스에서 수집된 주차정보 빅데이터 플랫폼 구축 업무   DATA Analyst    - 자사 서비스에서 수집된 '
+         'data 분석 및 의미있는 데이터를 통계적으로       파악하고 알고리즘 제안   DATA Scientist    - '
+         'data분석 결과를 알고리즘으로 변화 및 비즈니스 조직 구현 및 알고리즘 설계   DATA Engineer     - '
+         'data를 수집하는 파이프라인 제작 및 데이터수집기 개발 업무    - 머신러닝에 필요한 전후처리 업무    - 알고리즘 '
+         '코드화 및 개발',
+ '우대사항': '슬랙Slack 노션Notion 지라Jira 피그마Figma 사용 경험이 있으신 분  자율주행 및 빅테이터 플랫폼 구축 '
+         '유경험자  관련 학과 석박사 및 자격증 '
+         '소유자                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '2023-05-31  근무지  - 경기 성남시 수정구 대왕판교로 815 849호  - 서울 마포구 백범로31길 21 본관 '
+         '5층 530호  - 경기 안양시 동안구 엘에스로116번길 118 안양2차 SKV1 926호',
+ '자격요건': '개발 전공자소프트웨어 컴퓨터공학 등  Python SAS R SQL 등 프로그램 가능자  컴퓨터 및 수학 통계 관련 '
+         '전공자  빅데이터 플랫폼 구축에 이해도가 높거나 관심이 많으신 분'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '후후 스팸알림서비스 빅데이터 엔지니어',
+ '우대사항': 'Vuejs Kafka Elastic Search Airlow Docker 사용 경험 및 '
+         '가능자                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '상시  근무지  - 서울 중구 을지로 170 동관 13층',
+ '자격요건': 'PythonFlask Hadoop Spark Linux 사용 경험 및 가능자'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 ㆍ 근무일시  주 5일월금 오전 9시오후 6시 ㆍ 근무지역  13638 경기 성남시 분당구 구미로 '
+         '8구미동 - 수인분당선 오리 에서 300m 이내',
+ '담당업무': 'ㆍ 주요 업무 - Cloud 환경에서 대용량 데이터 수집 가공 플랫폼 개발 - 데이터 분석을 위한 데이터 구조화 및 ETL '
+         '환경 구축 및 운영 - Data Lake Warehouse Mart 등 설계 구현 및 운영 자격 요건 - 데이터 수집처리 '
+         '관련 경력 3년 이상 또는 그에 준하는 역량 - Python SQL Shell sc ript 등 한가지 이상의 언어를 '
+         '활용한 데이터 처리 경험 - 클라우드GCP AWS Azure 등 기반 인프라 구축 경험 - 데이터 플랫폼 관련 프로젝트 '
+         '수행 경험              ㆍ기타 필수 사항',
+ '자격요건': 'ㆍ학력  대졸 이상 4년 유명그룹사 데이터 엔지니어 경력직  0명',
+ '전형절차': '서류전형  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 28일 금 12시   2023년 5월 28일 일 24시 ㆍ 접수방법  사람인 '
+              '입사지원 ㆍ 이력서양식  사람인 온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 '
+              '채용입니다  ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 '
+              '마감일이 상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직 ㆍ 근무일시  ㆍ 근무지역  06221 서울 강남구 언주로 431 삼봉빌딩 - 서울 2호선 선릉 에서 '
+         '800m 이내',
+ '담당업무': 'ㆍ 지원자격 대기업 데이터 엔지니어    - Cloud 환경에서 대용량 데이터 수집 가공 플랫폼 개발  - 데이터 분석을 '
+         '위한 데이터 구조화 및 ETL 환경 구축 및 운영  - Data Lake Warehouse Mart 등 설계 구현 및 '
+         '운영  - MLOps DataOps 플랫폼 구축 및 운영 - 데이터 수집처리 관련 경력 3년 이상 또는 그에 준하는 역량 '
+         '- Python SQL Shell sc ript 등 한가지 이상의 언어를 활용한 데이터 처리 경험 - 클라우드GCP AWS '
+         'Azure 등 기반 인프라 구축 경험 - 데이터 플랫폼 관련 프로젝트 수행 경험',
+ '자격요건': 'ㆍ학력  대졸 이상 4년 대기업 데이터 엔지니어  1명  원자',
+ '전형절차': '서류전형  1차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2022년 11월 17일 목 15시   2022년 12월 17일 토 24시 ㆍ 접수방법  사람인 '
+              '입사지원 ㆍ 이력서양식  자유양식 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  '
+              'ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 '
+              '상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  주 5일월금 09301830 ㆍ 근무지역  05836 서울 송파구 '
+         '법원로9길 26 D동 6층 - 서울 8호선 문정 에서 800m 이내',
+ '담당업무': '1    ML 서비스를 위한 데이터 파이프라인 설계   개발   운영    2     대용량  실시간 처리  확장성을 '
+         '고려한 클라우드 AWSGCP 기반의 구현 및 개선    3     지속적인 개선 및 자동화를 고려한 아키텍쳐 설계   구축 '
+         '지원자격 1    경력  2 년 이상    2       Python Scala  등 파이프라인 구축 업무를 수행할 수 '
+         '있는 하나 이상의 개발 언어 숙련자    3       AWS  클라우드 환경하에서 데이터 분석 시스템 운영 경험 '
+         '보유자    4       NoSQLMongoDB Elasticsearch 등   사용  운영 '
+         '경험자              ㆍ기타 필수 사항',
+ '우대사항': '1   수학   통계학   컴퓨터 사이언스 전공 우대    2       데이터를 활용한  End to End  프로젝트 '
+         '경험    3       Hadoop Spark 등 분산처리 기술 이해    4       Airflow 등의 워크 플로우 '
+         '개발    관리 경험    5       Kafka Flume Storm 등 실시간 스트리밍 처리    6       '
+         '스스로 문제를 찾고 개선 의지 및 동료들과 적극적인 소통의지가 높으신분',
+ '자격요건': 'ㆍ학력  대졸 이상 23년 데이터엔지니어 CDECloud data Engineering팀 1명  원자',
+ '전형절차': '서류전형  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 27일 목 13시   채용시 ㆍ 접수방법  사람인 입사지원 ㆍ 이력서양식  사람인 '
+              '온라인 이력서 ㆍ 제출서류  이력서 자기소개서  이력서에 사진 및 긴급 연락처를 반드시 기재 바랍니다  제출된 '
+              '서류는 일체 반환하지 않습니다 유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 '
+              '허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 '
+              '유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '에너지 관련 데이터가 증가함에 따라 데이터를 잘 정비하고 수요에 따라 데이터를 서비스합니다 체계적으로 데이터를 정리하며 '
+         '앞으로 실시간으로 유입될 데이터에 대한 대비를 함께 해주실 분을 찾고 있습니다  여러 서비스에서 공용으로 사용되는 성격의 '
+         '데이터들을 관리하고 서비스로 만들어 사내 개발자들에게 배포하는 일을 맡게 됩니다 주로 데이터에 대한 정리 정비 역할을 '
+         '하시는 분들 찾고 있습니다     데이터베이스 데이터 웨어하우스 스키마 설계 구현 운영 유지 보수   SQL 및 퍼포먼스 '
+         '튜닝 정규화 성능 분석 등 개발 지원   데이터 마이그레이션 및 백업 복구 등 데이터 관리   실시간 데이터 관리',
+ '우대사항': 'AWS RDS Aurora 등 AWS 클라우드 경험   Redis DynamoDB 등 사용 경험   데이터베이스 관련 '
+         '자격증 소유   초보 이상 수준의 Python 프로그래밍에 대한 이해 스크립트 작성 '
+         '경험                                                                                           '
+         '마감일 및 근무지                                                          '
+         '마감일  상시  근무지  서울 송파구 법원로 128 A동 706호',
+ '자격요건': '관련 업무 경험 3년 이상인 분   Postgresql Oracle MySQLMariaDB 등 DB 스키마 설계 구현 '
+         '경험   SQL Stored Procedure 작성 능력이 있는 분   ER 다이어그램 작성 능력   데이터베이스에 대한 '
+         '이해가 있으신 분   데이터베이스 튜닝으로 성능 향상 경험이 있으신 분'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시  주 5일월금 탄력근무제 ㆍ 근무지역  06241 서울 강남구 강남대로 '
+         '372 FINE TOWER - 신분당선 강남 에서 200m 이내',
+ '담당업무': 'ㆍ',
+ '우대사항': '- 팀 프로젝트 경험이 있으신 분 - 창업 스타트업 개인 프로젝트 또는 오픈소스 프로젝트 경험이 있으신 분 - 미디어광고 '
+         '플랫폼 또는 데이터 분석 도메인 경험이 있으신 분 - PHP PDO Reflection trait 활용 경험이 있으신 분 '
+         '- 마이크로서비스 프레임워크 기반 RestAPI 제작 경험이 있으신 분 - 여러 프로그래밍 언어 프레임워크 활용 경험이 '
+         '있으신 분     JavaJSPSpring 및 Django jQuery dockerkubernetes 제외  복리후생 - '
+         '복지 포인트 연간 기준 70만원 지급 - 통신비 체력단련비 매월 일정액 지원  - 유동적 변동 성과급 지급 - 임직원 전용 '
+         '식당 운영 식대 보조 - 임직원 전용 진료실 지원 - 임직원 건강검진 지원 단체상해보험 가입 - 각종 경조사 지원 - 어학 '
+         '직무관련 교육비시험비 실비 지원 - 유연근로시간제 운영 - 자율적 업무환경 및 복장',
+ '자격요건': '- 전문학사 이상이신 분 - 웹 개발 기술을 보유하신 분 - 단독으로 웹 서비스 BackFrontDBDeploy 포함 구축 '
+         '및 배포가 가능하신 분 -  2년 이상의 경력이 있으신 분 대학원 포함 -  github bitbucket 등 개인 '
+         'repository 포트폴리오 제출 필수',
+ '전형절차': '서류전형  1차면접  2차 면접  레퍼런스체크  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 04월 18일 화 18시   2023년 04월 30일 일 24시 ㆍ 접수방법  홈페이지 '
+              '지원 ㆍ 제출서류  자유양식 유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 '
+              '허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ국가보훈대상자 및 장애인은 관련 법규에 의거 '
+              '우대함  본 채용은 수시진행으로 우수인력 채용시 마감될 수 있습니다  ㆍ모집분야별로 마감일이 상이할 수 있으니 '
+              '유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': '빅데이터 플랫폼 아키텍처 설계 및 구축',
+ '우대사항': '커뮤니케이션 및 대인관계 능력   Hadoop ecosystem 운영 및 개발 경험    대용량 데이터 실시간 처리 시스템 '
+         '설계 및 운영경험이 있으신 분   클라우드 활용 경험 및 지식   리눅스 시스템에 익숙하신 분   문제 해결을 적극적으로 '
+         '시도하고 책임감이 강하신 분   긍정적 마인드를 가진 팀 '
+         '플레이어                                                                                           '
+         '마감일 및 근무지                                                          '
+         '마감일  상시  근무지  서울 강서구 마곡중앙8로 5길 40 마곡동 주엑셈',
+ '자격요건': '경력  3년 이상   Hadoop Hive Hbase Spark 등 대용량 분산처리 시스템 구축 및 운영   확장성신뢰성을 '
+         '갖춘 서비스 중심의 아키텍처 설계 및 구축'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': 'AI 지능형 IT 운영 솔루션 개발에 필요한 데이터들을 수집하고 관리   데이터 분석가를 위한 분석 환경 구축',
+ '우대사항': '카프카kafka에 대한 개발과 관련 분야 유경험자   백엔드파이프라인 개발과 관련 분야 유경험자   AIOps에 대한 '
+         '이해와 관련 분야 유경험자   적극적이고 유연한 마인드를 소유한 '
+         '자                                                                                           '
+         '마감일 및 근무지                                                          '
+         '마감일  상시  근무지  서울 강서구 마곡중앙8로 5길 40 마곡동 주엑셈',
+ '자격요건': '데이터 ETL추출 변환 적재 유경험자   데이터베이스 쿼리 작성 가능자   Java 기반의 백엔드 관련 개발 경력 '
+         '2년이상   Spring framework을 이용한 application 개발경험'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 2개월 ㆍ 근무일시  주5일제월금 월목 0900  1830  금 0900  1600 ㆍ '
+         '근무지역  05836 서울 송파구 법원로11길 7 문정현대지식산업센터1-2 C동 1101호문정동  - 서울 8호선 문정 '
+         '에서 300m 이내',
+ '담당업무': 'ㆍ 지원자격 ㆍ신입 ㆍ건축관련학과 전공필수              ㆍ기타 필수 사항',
+ '우대사항': 'ㆍ한글 엑셀 파워포인트 캐드사용자',
+ '자격요건': 'ㆍ학력  대졸 이상 23년 건축물 안전진단 진단팀 0명  원자',
+ '전형절차': '서류전형  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 3월 20일 월 16시   채용시 마감 ㆍ 접수방법  사람인 입사지원 ㆍ 이력서양식  '
+              '자유양식 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 허위사실이 '
+              '발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 '
+              '바랍니다 복리후생 ㆍ경조휴가 반차 반반차 제도 등 ㆍ복지포인트 지급 생일 및 개인경조금 지급 건강검진 지원 가정의 '
+              '달연말명절 선물 장기근속포상 휴양시설커피도서구입비 지원    아침간식 제공 등'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': 'BIBusiness Intelligence 구축 및 운영  Data WareHouseDW MartDM 설계구축 및 운영  '
+         '데이터 파이프라인 구축 및 운영배치 데이터 적재 및 가공 통계 개발 등  데이터 시각화 설계 및 개발리포트 대시보드  로그 '
+         '분석을 통한 이상 탐지 장애 탐지 알람 제공 데이터 제공  외부 데이터 수집 및 활용크롤링 API 활용',
+ '우대사항': '게임 시스템에 대한 전반적인 이해와 로그 기반의 데이터 분석 경험이 있으신 분  Azure Data Factory SSIS '
+         '등의 Workflow 관리 도구를 사용해보신 분  PowerBI 등의 데이터 시각화툴을 통해 BI 시스템 구축 경험이 '
+         '있으신 분  통계에 대한 기본 지식과 머신러닝 기반의 데이터 분석에 대한 경험과 이해가 있으신 분  데이터 기반 문제 해결 '
+         '능력을 보유하신 '
+         '분                                                                                      '
+         '마감일 및 근무지                                                       마감일  '
+         '2023-05-31  근무지  - 경기 성남시 분당구 대왕판교로644번길 49 코리아벤처타운업무시설 비블럭',
+ '자격요건': '데이터 파이프라인 구축 운영 경력 5년 이상  BI 대시보드 리포트 개발 운영 경력 5년 이상  DW DM 설계 구축 운영 '
+         '경력 5년 이상'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:check except text
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'근무조건': 'ㆍ 근무형태  정규직수습기간- 3개월 ㆍ 근무일시   09001800 ㆍ 근무지역  420-851 경기 부천시 원미구 '
+         '중2동 1123-1 금호프라자 5067호 - 서울 7호선 신중동 에서 800m 이내',
+ '담당업무': 'ㆍ 지원자격 ㆍ경력  신입  경력 1년이상 주임연구원 선임연구원 연구원급 ㆍ    GIT  사용 경험자 ㆍja vasc '
+         'ript SQL  사용 경험자 ㆍ    CSS3  웹표준 구사 가능 ㆍ React Vuejs svelte '
+         'AngularJs  등 모던 프론트엔드 라이브러리 중  1 개 이상 사용 경험자              ㆍ기타 필수 사항',
+ '우대사항': 'ㆍ공학계열 ㆍDocker  경험자 ㆍAWS  경험자 ㆍCICD  사용 경험자 ㆍIoT  관련 프로젝트 경험자 ㆍvuejs  '
+         '경험자 ㆍtwitter bootstrap  사용 경험자 ㆍ정보처리기사 ㆍ해당직무 근무경험',
+ '자격요건': 'ㆍ학력  대졸 이상 4년 SW 개발자RD full-stack 부설연구소 0명  원자',
+ '전형절차': '서류전형  1차면접  2차면접생략가능  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 17일 월 11시  2023년 5월 15일 월 24시 ㆍ 접수방법  사람인 입사지원 '
+              'ㆍ 이력서양식  사람인 온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  '
+              'ㆍ입사지원 서류에 허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 '
+              '상이할 수 있으니 유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'우대사항': 'Data Pipeline 설계 및 개발  근무 조건 ㆍ 근무형태  정규직 ㆍ 근무일시  주 5일월금 ㆍ 근무지역  '
+         '13595 경기 성남시 분당구 황새울로 216 휴맥스빌리지 8층수내동 - 수인분당선 수내 에서 200m 이내',
+ '자격요건': '학력  학사이상   경력  3년 이상   데이터 수집 및 전처리 구축 경험이 있는 3년 이상의 경력자 또는 그에 준하는 '
+         '실력을 갖춘 분     숙련된 SQL 능력과 Pyrthon 데이터 처리 경험을 보유한 분',
+ '전형절차': '서류전형  1차면접  2차면접  최종합격',
+ '접수기간_및_방법': 'ㆍ 접수기간  2023년 4월 3일 월 11시   채용시 ㆍ 접수방법  사람인 입사지원 ㆍ 이력서양식  사람인 '
+              '온라인 이력서 ㆍ 제출서류  유의사항 ㆍ학력 성별 연령을 보지않는 블라인드 채용입니다  ㆍ입사지원 서류에 '
+              '허위사실이 발견될 경우 채용확정 이후라도 채용이 취소될 수 있습니다 ㆍ모집분야별로 마감일이 상이할 수 있으니 '
+              '유의하시길 바랍니다'}
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=>
+{'담당업무': 'Data Pipeline 설계 및 개발',
+ '우대사항': '온프레미스 기반 서버 네트워크 설계구축 경험이 있는 분   Data Lake 구축 프로젝트 리딩 경험이 있는 분   '
+         'Hadoop eco system 에 대한 이해도가 높은 분   고가용성 시스템 설계 구축 가능한 '
+         '분                                                                                           '
+         '마감일 및 근무지                                                          '
+         '마감일  상시  근무지  경기 성남시 분당구 황새울로 216 휴맥스빌리지',
+ '자격요건': '학력  학사 이상   경력  3년 이상   데이터 수집 및 전처리 구축 경험이 있는 3년 이상의 경력자 또는 그에 준하는 '
+         '실력을 갖춘 분   숙련된 SQL 능력과 Python 데이터 처리 경험을 보유한 분'}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 30336,
+ 'downloader/request_count': 42,
+ 'downloader/request_method_count/GET': 42,
+ 'downloader/response_bytes': 2498174,
+ 'downloader/response_count': 42,
+ 'downloader/response_status_count/200': 42,
+ 'elapsed_time_seconds': 0.59552,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 4, 29, 19, 37, 46, 858979),
+ 'httpcache/hit': 42,
+ 'httpcompression/response_bytes': 608881,
+ 'httpcompression/response_count': 39,
+ 'item_scraped_count': 82,
+ 'log_count/DEBUG': 134,
+ 'log_count/INFO': 218,
+ 'memusage/max': 64905216,
+ 'memusage/startup': 64905216,
+ 'request_depth_max': 1,
+ 'response_received_count': 42,
+ 'scheduler/dequeued': 42,
+ 'scheduler/dequeued/memory': 42,
+ 'scheduler/enqueued': 42,
+ 'scheduler/enqueued/memory': 42,
+ 'start_time': datetime.datetime(2023, 4, 29, 19, 37, 46, 263459)}
+INFO:scrapy.core.engine:Spider closed (finished)
