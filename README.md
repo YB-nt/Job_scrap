@@ -1,7 +1,7 @@
 # job_scraping
 
-## ver1
--------------
+## Ver1
+
 ### Crawling
 - Selenium (Saramin)
 - requests+bs4 (wanted)
@@ -11,8 +11,8 @@
 - konlpy
 
 
-## ver2
--------------
+## Ver2
+
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin,jobkorea)
@@ -22,8 +22,8 @@
 다른 방법으로도 시도를 해보았지만 인코딩문제로 인해서 프로젝트를 중단하게 되었다.
 
 
-## ver3(진행중)
--------------
+## Ver3(진행중)
+
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin) ver1+ver2+a
