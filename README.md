@@ -1,7 +1,7 @@
 # job_scraping
-***
+=============
 ## ver1
-
+-------------
 ### Crawling
 - Selenium (Saramin)
 - requests+bs4 (wanted)
@@ -10,9 +10,9 @@
 ### NLP
 - konlpy
 
-***
-## ver2
 
+## ver2
+-------------
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin,jobkorea)
@@ -21,9 +21,9 @@
 기존의 생각했던 방식으로는 iframe과 다양한 문제들 때문에 크롤링을 정상적으로 진행하기 힘들다. 
 다른 방법으로도 시도를 해보았지만 인코딩문제로 인해서 프로젝트를 중단하게 되었다.
 
-***
-## ver3(진행중)
 
+## ver3(진행중)
+-------------
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin) ver1+ver2+a
