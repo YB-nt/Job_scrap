@@ -1,7 +1,7 @@
 # job_scraping
 ***
 ## ver1
-***
+
 ### Crawling
 - Selenium (Saramin)
 - requests+bs4 (wanted)
@@ -12,7 +12,7 @@
 
 ***
 ## ver2
-***
+
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin,jobkorea)
@@ -23,6 +23,7 @@
 
 ***
 ## ver3(진행중)
+
 ### Crawling
 - requests를 사용한 API호출(wanted)
 - Scrapy(saramin) ver1+ver2+a
