@@ -33,11 +33,12 @@
   
 ### Data Load
 - json
-
+- MongoDB
 
 ### 앞으로 추가할 기능들
 - ~~데이터 중복,누락 예외처리~~
 - 데이터베이스 연동후 데이터베이스에 자동 저장(진행중)
+ - postgresql 추가 후 옵션으로 mongodb,postgresql 선택기능 추가
 - 각 채용사이트 데이터 통합
 - Airflow
 - 서버연동
