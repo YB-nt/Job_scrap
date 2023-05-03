@@ -27,7 +27,7 @@
 
 ### Crawling
 - requests를 사용한 API호출해서 데이터 저장(wanted)
-- ~~~requests를 사용해서 API호출해서 데이터 저장(programmers)(중단)
+- ~~~requests를 사용해서 API호출해서 데이터 저장(programmers)(중단)~~~
   - 공고의 다양성이 적어서 제외
 - Scrapy(saramin) ver1+ver2+a
   - scrapy를 사용해서 ver1에서 사용했던 detail_page를 활용해서 scrapy를 사용해서 크롤링 진행
