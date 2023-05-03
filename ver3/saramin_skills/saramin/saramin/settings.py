@@ -13,6 +13,13 @@ SPIDER_MODULES = ["saramin.spiders"]
 NEWSPIDER_MODULE = "saramin.spiders"
 
 
+MONGODB_USER = 'yb-nt'
+MONGODB_PASSWORD ="ixXEWpXMUFUQADM0"
+MONGODB_SERVER = "cluster0.l0auzyf.mongodb.net"
+MONGODB_PORT = 27017
+MONGODB_DB = "job_scrap"
+MONGODB_COLLECTION = "job_scrap"
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "saramin (+http://www.yourdomain.com)"
 
@@ -67,6 +74,7 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     'saramin.pipelines.JsonWriterPipeline': 800,
     "saramin.pipelines.SaraminPipeline": 300,
+    'saramin.pipelines.MongoDBPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

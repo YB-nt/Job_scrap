@@ -16,7 +16,7 @@ class JobSpider(scrapy.Spider):
     ]
     now = str(datetime.now().strftime('%Y_%m_%d_%H%M%S'))
         
-    logging.basicConfig(filename=f'{now}.log', level=logging.INFO)
+    logging.basicConfig(filename=f'./log/{now}.log', level=logging.INFO)
 
     def __init__(self):
         pass

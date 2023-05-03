@@ -1,0 +1,71 @@
+INFO:scrapy.utils.log:Scrapy 2.8.0 started (bot: saramin)
+INFO:scrapy.utils.log:Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.13 (default, Oct 19 2022, 22:38:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.19045-SP0
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'saramin',
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_ENABLED': True,
+ 'NEWSPIDER_MODULE': 'saramin.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['saramin.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG:scrapy.utils.log:Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO:scrapy.extensions.telnet:Telnet Password: 2ab1302184c815b1
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:scrapy_fake_useragent.middleware:Loaded User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+INFO:scrapy_fake_useragent.middleware:Using '<class 'scrapy_fake_useragent.providers.FakeUserAgentProvider'>' as the User-Agent provider
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'saramin.middlewares.SaraminDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+CRITICAL:twisted:Unhandled error in Deferred:
+CRITICAL:twisted:
+Traceback (most recent call last):
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\twisted\internet\defer.py", line 1697, in _inlineCallbacks
+    result = context.run(gen.send, result)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\crawler.py", line 122, in crawl
+    self.engine = self._create_engine()
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\crawler.py", line 136, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\core\engine.py", line 79, in __init__
+    self.scraper = Scraper(crawler)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\core\scraper.py", line 101, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\middleware.py", line 68, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\middleware.py", line 43, in from_settings
+    mwcls = load_object(clspath)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\site-packages\scrapy\utils\misc.py", line 60, in load_object
+    mod = import_module(module)
+  File "C:\Users\ybnt\anaconda3\envs\job_scrap\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'myproject'

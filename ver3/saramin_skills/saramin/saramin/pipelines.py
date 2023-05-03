@@ -8,15 +8,15 @@
 from itemadapter import ItemAdapter
 from saramin.items import SaraminItem_info,SaraminItem
 import json
-
+import pymongo
 
 class SaraminPipeline:
     def __init__(self):
-        self.file = open("saramin_item.json", "w", encoding="utf-8")
-        self.info_file = open("saramin_info.json", "w", encoding="utf-8")
+        self.file = open("./data/saramin_item.json", "w", encoding="utf-8")
+        self.info_file = open("./data/saramin_info.json", "w", encoding="utf-8")
     def open_spider(self, spider):
-        self.file = open("saramin_item.json", "w", encoding="utf-8")
-        self.info_file = open("saramin_info.json", "w", encoding="utf-8")
+        self.file = open("./data/saramin_item.json", "w", encoding="utf-8")
+        self.info_file = open("./data/saramin_info.json", "w", encoding="utf-8")
 
     def close_spider(self, spider):
         self.file.close()
@@ -32,7 +32,44 @@ class SaraminPipeline:
         return item
 
 
-
+class MongoDBPipeline(object):
+    def __init__(self, mongo_server, mongo_port, mongo_db, mongo_collection,mongo_user,mongo_password):
+        self.mongo_user = mongo_user
+        self.mongo_password = mongo_password
+        self.mongo_server = mongo_server
+        self.mongo_port = mongo_port
+        self.mongo_db = mongo_db
+        self.mongo_collection = mongo_collection
+    
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            mongo_user=crawler.settings.get('MONGODB_USER'),
+            mongo_password=crawler.settings.get('MONGODB_PASSWORD'),
+            mongo_server=crawler.settings.get('MONGODB_SERVER'),
+            mongo_port=crawler.settings.get('MONGODB_PORT'),
+            mongo_db=crawler.settings.get('MONGODB_DB'),
+            mongo_collection=crawler.settings.get('MONGODB_COLLECTION')
+        )
+    
+    def open_spider(self, spider):
+        URI = f"mongodb+srv://{self.mongo_user}:{self.mongo_password}@{self.mongo_server}/?retryWrites=true&w=majority"
+        self.client = pymongo.MongoClient(URI)
+        # self.mongo_server,
+        # self.mongo_port,
+        # username=self.mongo_user, 
+        # password=self.mongo_password, 
+        # authSource='job_scrap',
+        # authMechanism='SCRAM-SHA-256'   
+    # )
+        self.db = self.client[self.mongo_db]
+    
+    def close_spider(self, spider):
+        self.client.close()
+    
+    def process_item(self, item, spider):
+        self.db[self.mongo_collection].insert_one(dict(item))
+        return item
 
 class JsonWriterPipeline:
     def __init__(self):
@@ -41,8 +78,8 @@ class JsonWriterPipeline:
         self.file = None
 
     def open_spider(self, spider):
-        self.info_file = open('saramin_info.json', 'w', encoding='utf-8')
-        self.item_file = open('saramin_item.json', 'w', encoding='utf-8')
+        self.info_file = open('./data/saramin_info.json', 'w', encoding='utf-8')
+        self.item_file = open('./data/saramin_item.json', 'w', encoding='utf-8')
 
     def process_item(self, item, spider):
         if isinstance(item, SaraminItem_info):

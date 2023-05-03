@@ -1,13 +1,13 @@
 import re
 
 def text_preprocessing(page_text):
-<<<<<<< HEAD
+
     r2 = re.sub('[^ \uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace('\n',' ')
     r1 = re.sub('\s{2,}',' ',r2)
-=======
+
     r2 = re.sub('[^\uAC00-\uD7A30-9a-zA-Z\s]','',page_text).replace('\n',' ')
     r1 = re.sub('\s{2,}','',r2).replace('\xa0',' ')
->>>>>>> cd2111053b0607e37fa208f03ca970fff1b4a317
+
     return r1
 
 def name_preprocessing(page_text):
