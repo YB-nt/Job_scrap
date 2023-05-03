@@ -48,20 +48,14 @@ class JobSpider(scrapy.Spider):
         yield self.preprocess(text)
         
     def preprocess(self, text):
-        item = SaraminItem_info()
         cp_text = copy.deepcopy(text)
         if cp_text is not None:
             text = str(cp_text)
             text = re.sub(r'[^\w\s-]', '', text)
             regex = re.compile(r'자격요건|우대사항|지원자격|지원요건|담당업무|주요업무|근무조건|전형절차|접수기간 및 방법')
-            
+            except_list  = ['지원자격','지원요건','자격요건','temp']
             matches = regex.finditer(text)
-            # chk = re.search(r'지원자격',text)
-            # if chk:
-            #     start = chk.start()+1
-            #     end = chk.end()-1
-            #     except_text = text[start:end]
-            #     logging.info(f"check except text") 
+            temp_dic = {}
             for match in matches:
                 key = match.group()
                 logging.info(f"Searching  {key}-Data")
@@ -69,8 +63,6 @@ class JobSpider(scrapy.Spider):
                 next_match = regex.search(value)
                 if next_match:
                     value = value[:next_match.start()]
-                # if(key=='자격요건' and chk):
-                #     value = value+" "+except_text
                 
                 # 추가적인 전처리     
                 value = value.strip()
@@ -84,18 +76,34 @@ class JobSpider(scrapy.Spider):
                         key = "담당업무"
 
                     
-                    item[key] = value
-            # if item:
-            #     item_lenght = [len(x) for x in item.values()]
-            #     check_empty_item = reduce(lambda x, y: x & y, item_lenght)
-            #     if(check_empty_item == 0):
-            #         return 
+                    temp_dic[key] = value
+            
+            check_item = [x for x in temp_dic.keys() if x in except_list]
+            if(len(check_item)>1):
+                for i,v in enumerate(check_item):    
+                    if(v=='자격요건'):
+                        continue
+                    temp_dic['자격요건']+=str(" "+temp_dic[v])
+                    del(temp_dic[check_item[i]])
+            elif(len(check_item)==1):
+                if(check_item[0]!='자격요건'):
+                    temp_value = temp_dic[check_item[0]]
+                    del(temp_dic[check_item[0]])
+                    temp_dic['자격요건'] = temp_value
+            else:
+                pass
 
-            return item
-
+            if(len(temp_dic.keys())>0):
+                return self.return_item(temp_dic)
         else:
-            print("Crawling Faild")
-            print(cp_text)
+            logging.debug(f"Failed Load Data:{cp_text}")
 
 
-    
+    def return_item(self,temp_dict):
+        item = SaraminItem_info()
+        for k in temp_dict.keys():
+            item[k] = temp_dict[k]
+        return item
+
+
+        

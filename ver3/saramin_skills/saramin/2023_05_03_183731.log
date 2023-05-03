@@ -1,0 +1,457 @@
+INFO:scrapy.utils.log:Scrapy 2.7.1 started (bot: saramin)
+INFO:scrapy.utils.log:Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.13 (default, Oct 19 2022, 17:54:22) - [Clang 12.0.0 ], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform macOS-10.16-x86_64-i386-64bit
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'saramin',
+ 'DOWNLOAD_DELAY': 3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'HTTPCACHE_ENABLED': True,
+ 'NEWSPIDER_MODULE': 'saramin.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['saramin.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG:scrapy.utils.log:Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+INFO:scrapy.extensions.telnet:Telnet Password: d367b2737decbb6b
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:scrapy_fake_useragent.middleware:Loaded User-Agent provider: scrapy_fake_useragent.providers.FakeUserAgentProvider
+INFO:scrapy_fake_useragent.middleware:Using '<class 'scrapy_fake_useragent.providers.FakeUserAgentProvider'>' as the User-Agent provider
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'saramin.middlewares.SaraminDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['saramin.pipelines.SaraminPipeline', 'saramin.pipelines.JsonWriterPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:saramin:Spider opened: saramin
+DEBUG:scrapy.extensions.httpcache:Using filesystem cache storage in /Users/y_bin/solo_project/job_scraping/ver3/saramin_skills/saramin/.scrapy/httpcache
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:filelock:Attempting to acquire lock 140272851273280 on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Lock 140272851273280 acquired on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Attempting to release lock 140272851273280 on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:filelock:Lock 140272851273280 released on /Users/y_bin/.cache/python-tldextract/3.8.13.final__job_scrap__913a03__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4> (referer: None) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45433416',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45517496',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45575166',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45477264',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45447808',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45541706',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45593040',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45561842',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45534589',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45524833',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '42526132',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45517678',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45283390',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45491862',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44122294',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45524738',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45528148',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45460935',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45520673',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45570712',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45514067',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45419410',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45491774',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45582728',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45594978',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '43197817',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44049928',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45527832',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45121012',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45591454',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45269531',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '44880544',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45549873',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45599461',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45486824',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45200259',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45403487',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45506762',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45283451',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45575231',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4>
+{'job_num': '45306811',
+ 'summary_link': 'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=> (referer: https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4) ['cached']
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45433416&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=42526132&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524833&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45534589&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45561842&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45593040&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45541706&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45447808&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45477264&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575166&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517496&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45582728&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491774&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45419410&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45514067&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45570712&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45520673&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45460935&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45528148&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45524738&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44122294&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45491862&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283390&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45517678&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45403487&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45200259&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45486824&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45599461&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45549873&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44880544&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45269531&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45591454&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45121012&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45527832&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=44049928&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=43197817&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45594978&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45306811&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45575231&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  주요업무-Data
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45283451&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching URL ::https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx=45506762&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=
+INFO:root:Searching  자격요건-Data
+INFO:root:Searching  담당업무-Data
+INFO:root:Searching  지원자격-Data
+INFO:root:Searching  우대사항-Data
+INFO:root:Searching  근무조건-Data
+INFO:root:Searching  전형절차-Data
+INFO:root:Searching  접수기간 및 방법-Data
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 30680,
+ 'downloader/request_count': 42,
+ 'downloader/request_method_count/GET': 42,
+ 'downloader/response_bytes': 2498174,
+ 'downloader/response_count': 42,
+ 'downloader/response_status_count/200': 42,
+ 'elapsed_time_seconds': 0.486413,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 3, 9, 37, 32, 396969),
+ 'httpcache/hit': 42,
+ 'httpcompression/response_bytes': 608881,
+ 'httpcompression/response_count': 39,
+ 'item_scraped_count': 41,
+ 'log_count/DEBUG': 93,
+ 'log_count/INFO': 223,
+ 'memusage/max': 64937984,
+ 'memusage/startup': 64933888,
+ 'request_depth_max': 1,
+ 'response_received_count': 42,
+ 'scheduler/dequeued': 42,
+ 'scheduler/dequeued/memory': 42,
+ 'scheduler/enqueued': 42,
+ 'scheduler/enqueued/memory': 42,
+ 'start_time': datetime.datetime(2023, 5, 3, 9, 37, 31, 910556)}
+INFO:scrapy.core.engine:Spider closed (finished)
