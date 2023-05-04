@@ -73,7 +73,7 @@
 
 ## Ver.3(진행중)
 ---
-**Use Skill :**  `reuqests`,`scrapy`,`MongoDB`
+**Use Skill :**  `urllib`,`scrapy`,`MongoDB`
 <br><br>
 ver2에서 jobkorea 크롤링을 시도하였지만 실패하여서 가능한 사이트 위주로 진행하게 되었다. 
 <br><br>
