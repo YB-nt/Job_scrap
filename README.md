@@ -9,7 +9,6 @@
 <br><br>
 
 ## 프로젝트 과정 
----
 <br>
 
 1. 데이터 수집 <br><br>
@@ -23,7 +22,6 @@
 
 # 프로젝트 상세내용
 ## Ver.1
----
 <br>
 
 **Use Skill :**  `reuqests`,`selenium`,`beutifullsoup4`,`psycopg2`,`postgreDB`,`konlpy`
@@ -50,7 +48,6 @@
 <br><br>
 
 ## Ver.2
----
 
 ### Crawling
 - requests를 사용한 API호출(wanted)
@@ -72,7 +69,6 @@
 <br><br><br>
 
 ## Ver.3(진행중)
----
 **Use Skill :**  `urllib`,`scrapy`,`MongoDB`
 <br><br>
 ver2에서 jobkorea 크롤링을 시도하였지만 실패하여서 가능한 사이트 위주로 진행하게 되었다. 
