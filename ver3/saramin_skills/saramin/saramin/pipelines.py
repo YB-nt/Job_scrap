@@ -10,6 +10,7 @@ from saramin.items import SaraminItem_info,SaraminItem
 import json
 import pymongo
 
+# LOAD_OPTION = crawler.settings.get('LOAD_OPTION')
 class SaraminPipeline:
     def __init__(self):
         self.file = open("./data/saramin_item.json", "w", encoding="utf-8")

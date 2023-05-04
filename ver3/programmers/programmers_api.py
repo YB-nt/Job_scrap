@@ -4,16 +4,6 @@ import ast
 from bs4 import BeautifulSoup
 
 headers ={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39"}
-base_url ="https://career.programmers.co.kr/job?page=1&order=recent&"
-
-"""
-하나씩 찾지말고 리스트 목록 불러오고 
-그걸 통해서 찾기 
-"""
-
-
-def page_check():
-    pass
 
 
 def job_category_ids_search(target_name):
@@ -41,12 +31,16 @@ def job_category_select(l):
 
     return add_url
 
-def taget_load():
-    # 스케쥴링을 사용해서 자동으로 로딩하려면 이렇게 수동으로 id를 입력해주는게 불편하다고 생각이 들어서 추가예정.
-    pass
+
+# 0을 선택하면 전체 공고를 확인할수 있다.
 
 # target_name = ["서버/백엔드", "프론트엔드", "웹 풀스택",0]
 # print(job_category_select(target_name))
 
+
+ 
+
+url = "https://career.programmers.co.kr/job?page=1&order=recent&job_category_ids=0"
+requests.get(url,headers=headers)
 
     
