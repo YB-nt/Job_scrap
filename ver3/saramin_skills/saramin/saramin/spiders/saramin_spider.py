@@ -16,21 +16,19 @@ class JobSpider(scrapy.Spider):
     ]
     now = str(datetime.now().strftime('%Y_%m_%d_%H%M%S'))
         
-    logging.basicConfig(filename=f'./log/{now}.log', level=logging.INFO)
+    logging.basicConfig(filename=f'./log/{now}.log', level=logging.debug)
 
     def __init__(self):
         pass
 
     def parse(self, response):
-        item = SaraminItem()
         a_job_tits = response.xpath('//h2[@class="job_tit"]')
         for a_job_tit in a_job_tits:
             job_num = a_job_tit.xpath('./a/@href').get()
             extract_num = re.findall(r'(?<=rec_idx=)[0-9]+',job_num)[0]
-            item['job_num'] = extract_num
-            item['summary_link'] = f'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx={extract_num}&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='
-            yield Request(url=item['summary_link'],callback=self.datail_parse)
-            yield item
+            summary_link = f'https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx={extract_num}&rec_seq=0&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content='
+            yield Request(url=summary_link,callback=self.datail_parse)
+            
 
     def datail_parse(self, response):
         logging.info(f"Searching URL ::{response.url}")
@@ -58,24 +56,23 @@ class JobSpider(scrapy.Spider):
             temp_dic = {}
             for match in matches:
                 key = match.group()
+
+                # 현재 어떠한 데이터를 저장하고있는지 시각화해서 보기 위한 로그 
                 logging.info(f"Searching  {key}-Data")
+
                 value = text[match.end():]
                 next_match = regex.search(value)
+
                 if next_match:
                     value = value[:next_match.start()]
-                
-                # 추가적인 전처리     
                 value = value.strip()
                 value = re.sub(r'\s', ' ', value)
-                # except_list = ['자격요건,지원자격']
 
                 if value:
                     if(key == "접수기간 및 방법"):
                         key = "접수기간_및_방법"
                     elif(key == "주요업무"):
-                        key = "담당업무"
-
-                    
+                        key = "담당업무"                    
                     temp_dic[key] = value
             
             check_item = [x for x in temp_dic.keys() if x in except_list]

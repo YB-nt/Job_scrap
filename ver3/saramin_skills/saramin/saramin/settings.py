@@ -16,9 +16,10 @@ NEWSPIDER_MODULE = "saramin.spiders"
 MONGODB_USER = 'yb-nt'
 MONGODB_PASSWORD ="ixXEWpXMUFUQADM0"
 MONGODB_SERVER = "cluster0.l0auzyf.mongodb.net"
-MONGODB_PORT = 27017
 MONGODB_DB = "job_scrap"
-MONGODB_COLLECTION = "job_scrap"
+MONGODB_COLLECTION = "saramin_data"
+
+URI = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "saramin (+http://www.yourdomain.com)"
