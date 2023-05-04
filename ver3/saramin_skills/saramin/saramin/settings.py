@@ -19,7 +19,7 @@ MONGODB_SERVER = "cluster0.l0auzyf.mongodb.net"
 MONGODB_DB = "job_scrap"
 MONGODB_COLLECTION = "saramin_data"
 
-URI = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority"
+MONGODB_URI = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "saramin (+http://www.yourdomain.com)"
@@ -73,10 +73,9 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'saramin.pipelines.JsonWriterPipeline': 800,
     "saramin.pipelines.SaraminPipeline": 300,
     'saramin.pipelines.MongoDBPipeline': 300,
-}
+}#    'saramin.pipelines.JsonWriterPipeline': 800,
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -7,14 +7,14 @@ import scrapy
 
 
 
-class SaraminItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    # title = scrapy.Field()
-    # requirements = scrapy.Field()
-    job_num = scrapy.Field()
-    summary_link = scrapy.Field()
-    text = scrapy.Field()
+# class SaraminItem(scrapy.Item):
+#     # define the fields for your item here like:
+#     # name = scrapy.Field()
+#     # title = scrapy.Field()
+#     # requirements = scrapy.Field()
+#     job_num = scrapy.Field()
+#     summary_link = scrapy.Field()
+#     text = scrapy.Field()
 
 
 class SaraminItem_info(scrapy.Item):

@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.http import Request
-from saramin.items import SaraminItem,SaraminItem_info
+from saramin.items import SaraminItem_info
 from saramin.pipelines import SaraminPipeline
 import re,copy
 # from pprint import pprint
@@ -16,7 +16,7 @@ class JobSpider(scrapy.Spider):
     ]
     now = str(datetime.now().strftime('%Y_%m_%d_%H%M%S'))
         
-    logging.basicConfig(filename=f'./log/{now}.log', level=logging.debug)
+    logging.basicConfig(filename=f'./log/{now}.log', level=10)
 
     def __init__(self):
         pass
@@ -72,7 +72,8 @@ class JobSpider(scrapy.Spider):
                     if(key == "접수기간 및 방법"):
                         key = "접수기간_및_방법"
                     elif(key == "주요업무"):
-                        key = "담당업무"                    
+                        key = "담당업무"
+    
                     temp_dic[key] = value
             
             check_item = [x for x in temp_dic.keys() if x in except_list]
