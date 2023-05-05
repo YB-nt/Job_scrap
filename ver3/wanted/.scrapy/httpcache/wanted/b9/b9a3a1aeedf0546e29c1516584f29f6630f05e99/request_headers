@@ -1,0 +1,5 @@
+Referer: https://www.wanted.co.kr/api/v4/jobs?&country=kr&job_sort=company.response_rate_order&locations=all&years=-1&query=data%20engineer&limit=100&
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6
+Accept-Encoding: gzip, deflate
