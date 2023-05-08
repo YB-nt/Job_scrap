@@ -63,17 +63,20 @@ class MongoDBPipeline(object):
         self.client.close()
     
     def process_item(self, item, spider):
-        try:
-            self.db[self.mongo_collection].insert(dict(item))
-        except: 
+        item_id = item.get('id')
+        if self.collection.count_documents({'id':item_id}) > 0:
+            return item
+        else:
             try:
-                self.db[self.mongo_collection].insert_one(dict(item))
-                
-            
-            except Exception as e:
-                
-                with open('./data/except_wanted.json', 'a') as f:
-                    f.write(json.dumps(dict(item)) + '\n')
+                self.db[self.mongo_collection].insert(dict(item))
+            except: 
+                try:
+                    self.db[self.mongo_collection].insert_one(dict(item))
+                    
+                except Exception as e:
+                    print(e) 
+                    with open('./data/except_wanted.json', 'a') as f:
+                        f.write(json.dumps(dict(item)) + '\n')
 
         return item
         
