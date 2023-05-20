@@ -22,9 +22,9 @@
     - 데이터베이스에 저장되어있는 데이터를 분석에 용이하도록 추가적으로 nlp를 사용해서 수정과 처리<br>
 <br><br><br>
 
-##프로젝트 상세설명,과정 
-[ver1] https://github.com/YB-nt/Job_scrap/blob/main/ver1/README.md
-[ver2] https://github.com/YB-nt/Job_scrap/blob/main/ver2/README.md
-[ver3] https://github.com/YB-nt/Job_scrap/blob/main/ver3/README.md
+## 프로젝트 상세설명,과정 
+[ver1] https://github.com/YB-nt/Job_scrap/blob/main/ver1/README.md<br>
+[ver2] https://github.com/YB-nt/Job_scrap/blob/main/ver2/README.md<br>
+[ver3] https://github.com/YB-nt/Job_scrap/blob/main/ver3/README.md<br>
 
 
