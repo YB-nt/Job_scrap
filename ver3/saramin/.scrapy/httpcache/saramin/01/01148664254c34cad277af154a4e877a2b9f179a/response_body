@@ -1,0 +1,263 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><font color="#0b7fcc"></font><font color="#2da86a"></font><div style="max-width:860px;font-family:'Apple SD Gothic', '맑은고딕', 'Nanum Gothic', sans-serif;">
+    <div style="width:100%;height:120px;padding:30px 20px;box-sizing:border-box;background:url(//cdn.jumpit.co.kr/jumpit/bnr_sri_position_pc@2x.png) no-repeat 50% 50%;background-size:cover;display:table">
+        <strong style="display:table-cell;vertical-align:middle;font-size:24px;font-weight:bold;letter-spacing:0;text-align:center;line-height:30px;color: #fff">
+        [SW] MLOps Engineer        </strong>
+    </div>
+    <div style="padding:40px 20px 30px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                서비스 소개</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">도심형 자율주행 로봇 배달 플랫폼 뉴빌리티는 라스트 마일 서비스 비용을 절감하고, 사용자 경험을 혁신합니다.
+배달 시장은 증가되는 펜데믹의 여파, 배달 시장의 보편화, 1인 가구의 추세 등으로 인해 더욱 폭발적으로 성장 중입니다. 하지만, 기존의 배달 서비스는 인건비로 인해 비용 절감에 한계가 있을 수밖에 없고 사용자와 판매자 모두에게 부담이 되고 있습니다.
+뉴빌리티는 이제껏 세상에 없었던 비용-합리적이고 강건한 도심형 라스트 마일 RaaS(Robotics as a Service)를 시장에 제공하여 음식 배달은 물론 모든 라스트 마일 시장의 비용 구조를 혁신합니다.
+새로운 로봇 서비스를 만들 수 있는 곳, 뉴빌리티에서 시장을 혁신하는 즐거운 여정을 함께할 용감하고 성실한 동료들을 찾습니다.</pre>
+            </div>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                모집부문 / 상세내용</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <dl style="margin:0;padding:0">
+                <dt style="display:block;margin:0;padding:0 0 12px;max-width:610px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    사용 기술
+                </dt>
+                <dd style="margin:0;padding:0">
+                    <span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/pytorch.png" alt="PyTorch" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> PyTorch</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/docker.png" alt="Docker" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Docker</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/python.png" alt="Python" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Python</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/tensorflow.png" alt="TensorFlow" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> TensorFlow</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="DeepLearning" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> DeepLearning</span>                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    주요업무
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 배달 로봇에서 수집되는 데이터 Pipeline부터 Deep Learning Model(Object Detection, Segmentation 등)을 만드는 Pipeline을 개발하고 배포하는 일을 합니다.
+• 데이터 파이프라인, Model 학습/배포 파이프라인 구축 및 운영
+• MLOps System을 위한 Infrastructure 구축 및 운영</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    자격요건
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• Python을 사용한 개발 경험자
+• Docker 기반 서비스 배포 경험자
+• Deep Learning 프레임워크(Tensorflow, Pytorch) 사용 경험자
+• MLOps(CI/CD, ML Pipeline, AutoML) 구축 경험자</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    우대사항
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• AWS 등 클라우드 플랫폼 사용 경험자
+• Multi-GPU 모델 트레이닝 경험자
+• 컨테이너 환경(Docker & Kubernetes)에서 개발 / 배포 경험자
+• Computer vision 또는 이와 유관한 분야 학사 수료(또는 그에 상응하는 경험)
+• Production 레벨의 서비스에서 마주할 수 있는 영상/문자 등을 포함하는 비정형 데이터를 이용한 개발 경험자
+• TensorRT 사용 경험자</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    마감일 및 근무지
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                 • 마감일 : 상시<br>• 근무지<br> - 서울 성동구 왕십리로 115, 2층                </dd>
+            </dl>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                복지 및 혜택</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 유연한 출퇴근 시간
+ - 유연근무 : 8~11시 사이 자유롭게 출근(코어타임 : 13시 - 17시)
+
+• 최상의 업무환경
+ - 업무에 필요한 최신 장비 지원
+ - 듀얼 모니터 지원
+ - 시디즈 의자 기본 제공
+ - 커피 머신 구비, 다양한 간식 제공 및 식대 지원
+
+• 자기계발 지원
+- 자기 계발을 위한 도서 구매비 지원
+
+• 친목 및 교류
+ - 왜곡된 회식문화, 음주문화 없음
+ - 매월 1회 팀 회식비 지원
+ - 주기적인 타운홀 미팅 진행
+
+• 기타 복지
+ - 생일 휴가 지원(1일)
+ - 백신 휴가 지원(1일)
+ - 야근 택시 비 지원(11시 이후)
+ - 법적 복리후생 지원(4대 보험 및 퇴직 연금)</pre>
+            </div>
+        </div>
+    </div>
+        <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                채용절차 및<br>기타 지원 유의사항</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 서류 지원 → 기술 과제 및 1차(직무) 인터뷰 → 2차(임원) 인터뷰 → 레퍼런스 체크 → 최종 합격</pre>
+            </div>
+        </div>
+    </div>
+     <div style="padding:50px 0;overflow:hidden;">
+      <a href="https://api.jumpit.co.kr/position/12707/link" target="_blank" title="점핏 새창열림" style="display:block;margin:0 auto;text-align:center;text-decoration:none">
+          <div style="width:100%;height:200px;">
+          <picture>
+               <source media="(max-width: 500px)" srcset="https://api.jumpit.co.kr/position/12707/mobile-banner">
+                   <img src="https://api.jumpit.co.kr/position/12707/banner" style="width:100%;object-fit:cover;" alt="배너" />
+          </picture>
+          </div>
+      </a>
+  </div>
+</div><font color="#4be68e"></font><font color="#6d76aa"></font><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('44870285', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

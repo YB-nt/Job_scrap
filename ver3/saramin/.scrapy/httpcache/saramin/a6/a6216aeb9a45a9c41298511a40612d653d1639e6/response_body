@@ -1,0 +1,294 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><font color="#0b7fcc"></font><font color="#2da86a"></font><div style="max-width:860px;font-family:'Apple SD Gothic', '맑은고딕', 'Nanum Gothic', sans-serif;">
+    <div style="width:100%;height:120px;padding:30px 20px;box-sizing:border-box;background:url(//cdn.jumpit.co.kr/jumpit/bnr_sri_position_pc@2x.png) no-repeat 50% 50%;background-size:cover;display:table">
+        <strong style="display:table-cell;vertical-align:middle;font-size:24px;font-weight:bold;letter-spacing:0;text-align:center;line-height:30px;color: #fff">
+        [100억투자] 데이터 플랫폼 엔지니어        </strong>
+    </div>
+    <div style="padding:40px 20px 30px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                서비스 소개</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">“당신을 통해 국민 절반의 신용점수를 바꿀 수 있다면?”
+  
+  
+ㆍ대한민국 국민의 절반은 중저신용자, 이들의 75%는 은행에서 거절되는 사실을 알고 계셨나요? 
+ㆍ피플펀드는 이런 기존 금융의 부조리함을 해결하며 합리적이고 신뢰할 수 있는 금융을 만들어가고 있습니다.
+ㆍ중저신용자에게 더 나은 조건의 대출을 제공하고, 국내 금융기관들을 위한 리스크 관리 기술력 고도화를 지원하고 있어요.
+    
+  
+“No. 1 PEOPLEFUND”
+ㆍ피플펀드는 누적대출액 1조 6천억 원, 개인신용대출 시장점유율 59.1%, 주택담보대출 시장점유율 24.5%로, 업계를 선도하고 있어요. (‘22년 12월)
+ㆍ비은행권 최고의 AI 신용평가 및 리스크 관리 기술을 바탕으로 손실률과 연체율을 업계 최저 수준으로 유지하고 있죠.
+ㆍ‘23년 1월, 유동성 한파 속에서도 베인캐피탈 리드로 10여 곳의 기존 주주사로부터 추가 투자를 유치해 업계 최대 규모인 누적 1,261억 원을 달성했답니다.
+  
+  
+“최고의 동료들과 마음이 즐거운 일을 함께해요”
+ㆍ피플펀드에는 금융 산업의 구조적 문제에 공감하고, 이를 해결해보려는 회사의 미션에 매료된 각 분야의 인재들이 모여있어요.
+  
+   
+“그리고 지금, 대한민국 금융을 바꾸는 여정에 함께 할 최고의 동료를 찾고 있습니다.”</pre>
+            </div>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                모집부문 / 상세내용</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <dl style="margin:0;padding:0">
+                <dt style="display:block;margin:0;padding:0 0 12px;max-width:610px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    사용 기술
+                </dt>
+                <dd style="margin:0;padding:0">
+                    <span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/java.png" alt="Java" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Java</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/aws.png" alt="AWS" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> AWS</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/mysql.png" alt="MySQL" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> MySQL</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/sql.png" alt="SQL" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> SQL</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/kotlin.png" alt="Kotlin" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Kotlin</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/python.png" alt="Python" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Python</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="Spark" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Spark</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/hadoop.png" alt="Hadoop" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Hadoop</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="Etl" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Etl</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/noStack.png" alt="Tableau" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Tableau</span>                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    주요업무
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 월 40조에 육박하는 대출 신청 데이터를 비롯한 방대한 데이터를 분석하여 고객의 가치를 극대화하는 역할을 담당합니다.
+• 안정적이고 신뢰성 있는 데이터를 기반으로 합리적인 의사결정을 할 수 있는 토대를 마련합니다.
+• 다양한 소스로부터 데이터 사용자까지의 안정적인 데이터 ETL 파이프라인을 구축합니다.
+• 엔지니어, 데이터 분석가 등 다양한 팀원들과 협업하며 비즈니스 문제를 해결하고 분석 및 실험을 통해 머신러닝 사용 사례를 강화합니다.</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    자격요건
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 5년 이상 10년 이하의 클라우드 기반 데이터 플랫폼 구축 및 운영에 익숙한 분
+• 데이터 어플리케이션 개발을 위한 프로그래밍 언어(Python 등) 스킬을 보유한 분
+• 데이터 ETL 파이프라인 구축 및 운영 경험이 있는 분
+• 새로운 기술 및 트렌드를 추적하고 실 업무에 적용해보는 열정과 도전의식이 있는 분</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    우대사항
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• AWS와 AWS의 서비스(GLUE, EMR, EKS, Redshift)를 다뤄 본 경험이 있는 분
+• 대규모 분산 시스템에서 대량 데이터를 처리하는 데 필요한 기술과 경험 (Hadoop, Spark, Hive, Kafka 등) 이 있는 분
+• 금융업계 도메인에서 요구하는 보안항목들을 이해하며 규제 범위 내에서의 작업 경험이 있는 분
+• ETL 파이프라인을 통해 BI 시각화를 위한 툴(QuickSight, Looker, Tableau 등)에 리포팅 해본 경험이 있는 분</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    마감일 및 근무지
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                 • 마감일 : 상시<br>• 근무지<br> - 서울특별시 서초구 서초대로74길 14, The Asset 16층                </dd>
+            </dl>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                복지 및 혜택</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">[Support & Refresh]
+• 시차출퇴근제를 운영하고 있어 출근시간을 유연하게 조정할 수 있어요.
+• 일주일에 최대 3일까지 집중 업무를 위한 재택 근무가 가능해요.
+• 점심 시간은 자유롭게 지정해서 사용할 수 있어요.
+• 야근 후 퇴근 시 택시비를 전액 지원해요.
+• 입사 첫 날, 환영하는 마음을 담은 웰컴 키트를 제공해요.
+• 강남역에서 도보 2분 거리! 사무실이 역과 바로 연결되어 있어요.
+• 안마의자, 휴게실/수면실, 게이밍 공간 등 휴식을 위한 다양한 공간이 준비되어 있어요.
+• 의자계의 에르메스, 사무용 의자의 끝판왕이라 불리는 허먼밀러 의자를 구비했어요.
+
+[Healthy to be Wealthy]
+• 점심 식대 만 원, 야근 시 저녁 식대 만 원을 지급해요.
+• 그래놀라, 견과류, 탄산수, 우유 등 건강한 간식을 상시 비치해요.
+• 매주 수요일 오후는 ‘해피아워’로, 맛있고 건강한 간식을 랜덤으로 제공해요.
+• 피플러와 가족의 건강 관리를 위해 연 1회 종합건강검진을 전액/할인 지원해요.
+
+[Family-Oriented]
+• 가족에게 중요한 일이 생기면, 유연·단축 근무를 활용할 수 있어요.
+• 생일을 맞은 피플러에게 유급 반차와 상품권을 선물로 드려요.
+• 결혼 시 유급 휴가 2주, 축하금, 축하 화환을 지급해요.
+• 경조사 종류에 따라 유급 휴가 및 경조금, 화환을 제공해요.
+• 설, 추석 명절 각각에 상품권을 선물로 드려요.
+• 본인 및 배우자 출산 시 유급 휴가, 재택 근무 등이 가능해요.
+
+[Good Time with Good People]
+• 2주에 한 번 랜덤으로 모여 서로를 알아가는 점심 식사를 해요.
+• 신규 입사자를 위한 짝꿍(buddy)을 매칭해주고, 안정적인 적응을 돕고 있어요.
+• 팀 빌딩을 위한 회식비를 지원해요.
+• 취미를 함께 즐길 수 있도록 사내 동호회 활동을 지원해요.
+
+[Growth for Next Step]
+• 무제한 도서 지원 제도를 운영해요.
+• 신규입사자들이 피플펀드에 대해 더 깊이 알 수 있도록 NJT(New Joiner Training)를 진행해요.
+• 업무와 밀접한 연관이 있는 외부 교육 참석을 지원해요.
+• 피플러가 가진 다양한 스킬 및 재능을 공유하는 사내 클래스를 운영해요.
+
+피플펀드 일상이 궁금하다면?
+https://pf-recruit.oopy.io/3a619869-d3d0-49eb-af71-0d3a0ccb7c9c</pre>
+            </div>
+        </div>
+    </div>
+        <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                채용절차 및<br>기타 지원 유의사항</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 서류 전형 → 온라인 코딩테스트 → 1-2차 직무 인터뷰 → 컬처핏 인터뷰 → 처우 협의 → 최종 합류
+• 지원 서류: 자유 양식의 이력서(필수), 포트폴리오(선택) / PDF 형식 권장</pre>
+            </div>
+        </div>
+    </div>
+     <div style="padding:50px 0;overflow:hidden;">
+      <a href="https://api.jumpit.co.kr/position/16218/link" target="_blank" title="점핏 새창열림" style="display:block;margin:0 auto;text-align:center;text-decoration:none">
+          <div style="width:100%;height:200px;">
+          <picture>
+               <source media="(max-width: 500px)" srcset="https://api.jumpit.co.kr/position/16218/mobile-banner">
+                   <img src="https://api.jumpit.co.kr/position/16218/banner" style="width:100%;object-fit:cover;" alt="배너" />
+          </picture>
+          </div>
+      </a>
+  </div>
+</div><font color="#4be68e"></font><font color="#6d76fc"></font><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45540974', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

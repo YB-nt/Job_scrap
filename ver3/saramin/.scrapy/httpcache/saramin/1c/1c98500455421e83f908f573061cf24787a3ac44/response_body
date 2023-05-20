@@ -1,0 +1,161 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><div class="pc_recruit_template ver2 navy check"><table class="info_recruit_template"><tbody><tr><td><table class="top_recruit_template"><tbody><tr><td><div class="top_area type6"><div class="info_top"><div class="img_top" id="template_image"><img src="//www.saraminimage.co.kr/sri/vix/template/toptype/talent4.png" alt></div><div class="wrap_top" style="height:349px"><div class="cont_top"><div class="inner"><div class="tit_top" id="template_common_title"><div>[JOYCITY] 데이터사이언티스트<br>모집 (신입/경력)</div></div></div></div></div></div><div class="desc_top" id="template_common_company_intro" style="display:none;"><div>1994년 05월 30일에 설립된 유선 온라인 게임 소프트웨어 개발 및 공급업업종의 온라인/모바일 게임 개발 및 퍼블리싱사업을 하는 코스닥,  중소기업,  외부감사법인,  주식회사,  수출입 기업 입니다.</div></div></div></td></tr></tbody></table></td></tr><tr><td><table class="cont_recruit_template"><tbody><tr><td><h2 class="tit_template" id="template_divisions_title"><span class="ico"></span>모집부문 및 상세내용</h2><div class="wrap_tbl_template"><table class="tbl_template" id="divisionTable"><colgroup><col width="184"><col></colgroup><thead><tr><th scope="col">모집부문</th><th scope="col">상세내용</th></tr></thead><tbody><tr id="common_table"><th scope="row"><span class="tit" id="template_common_qualification_title"><span class="tit" id="template_divisions_recruitment_title_0" data-group="recruit_division_0" style="display: inline !important;"><b><span style="color: rgb(37, 37, 37);">데이터사이언티스트</span><br><span style="font-size: 15px;"><br></span><span style="color: rgb(37, 37, 37);">(DA)</span></b></span></span></th><td><table class="tbl_list __se_tbl_ext" style="font-size: 15px; line-height: normal; width: 628.5px; max-width: 860px !important;"><tbody><tr><td id="template_common_education"><table class="tbl_list __se_tbl_ext" style="font-size: 15px; line-height: 15px; width: 628.5px; max-width: 860px !important;"><tbody><tr><td><p style="line-height: 1.8;"><strong class="tit" id="template_divisions_qualification_title_0"><span style="font-size: 11pt; color: rgb(37, 37, 37);">주요업무</span></strong></p></td></tr><tr><td><p style="line-height: 1.8;"><span id="template_divisions_Career_0" data-group="recruit_division_0" style="font-size: 11pt; color: rgb(37, 37, 37);">ㆍ</span><span style="font-size: 11pt; color: rgb(37, 37, 37);">업무 영역:&nbsp;</span><span style="color: rgb(37, 37, 37); font-size: 11pt;">게임</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;"> / </span><span style="color: rgb(37, 37, 37); font-size: 11pt;">마케팅</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;"> / </span><span style="color: rgb(37, 37, 37); font-size: 11pt;">이상 탐지</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;"> / </span><span style="color: rgb(37, 37, 37); font-size: 11pt;">예측 및 분류</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;"> /
+Machine Learning & AI</span></p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt;"><span style="mso-bidi-font-size:10.0pt;line-height:115%;
+mso-fareast-font-family:"맑은 고딕";mso-fareast-theme-font:minor-latin;color:black;
+mso-themecolor:text1"><span lang="EN-US"><o:p></o:p></span></span></p><p malgun gothic";" style="position: relative; font-size: 16px; color: rgb(51, 51, 51); line-height: 1.8;"><span style="font-size: 11pt; color: rgb(37, 37, 37);">ㆍ</span><span style="color: rgb(37, 37, 37); font-size: 11pt;">모델</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;">/</span><span style="color: rgb(37, 37, 37); font-size: 11pt;">알고리즘 구현을 위한 탐색적 데이터 분석</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;">(EDA) </span><span style="color: rgb(37, 37, 37); font-size: 11pt;">업무</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;"> (</span><span style="color: rgb(37, 37, 37); font-size: 11pt;">게임</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;">/</span><span style="color: rgb(37, 37, 37); font-size: 11pt;">마케팅
+등</span><span lang="EN-US" style="color: rgb(37, 37, 37); font-size: 11pt;">)</span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>마케팅<span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"> KPI </span>예측 및 타겟 최적화 지원<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>사용자 행동 예측<span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);">, </span>이상 행동 및 사기 탐지<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>ML/AI </span>적용을 통해 자사 제품이나 유관 부서 업무 프로세스에
+대한 개선 제안<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+<span style="font-size: 11pt; line-height: 115%; font-family: "맑은 고딕"; color: rgb(37, 37, 37);">ㆍ<span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);">ML/Algorithm Products </span>운영
+및 개선</span></p></td></tr><tr class="display_req_0" id="template_divisions_req_0" data-group="recruit_division_0"><td><br><table class="tbl_list __se_tbl_ext" style="font-size: 15px; line-height: 15px; width: 628.5px; max-width: 860px !important;"><tbody><tr><td><p style="line-height: 1.8;"><strong class="tit" id="template_divisions_qualification_title_0"><span style="font-size: 11pt; color: rgb(37, 37, 37);">지원자격</span></strong></p></td></tr><tr><td><p style="line-height: 1.8;"><span id="template_divisions_Career_0" data-group="recruit_division_0" style="font-size: 11pt; color: rgb(37, 37, 37);">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">수학</span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">/</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">통계<font color="#0b7fcc"></font></span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">/</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">컴퓨터공학</span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">/</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">산업공학 등 관련 학과를 전공하신 분</span></p><p class="MsoNormal" align="left" style="margin-left: 54pt; text-indent: -18pt; line-height: normal; word-break: keep-all;"><span lang="EN-US"><o:p></o:p></span></p><p malgun gothic";" style="position: relative; line-height: 1.8;"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">SQL</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">을 활용한 대용량 데이터 처리 능력 보유<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">중급 이상의</span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);"> R/Python </span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">활용 능력<br></span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt; text-indent: 0px;">ㆍ</span>Machine Learning </span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">방법론과 학습 과정에 대한 이해도를 가지신 분<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">데이터 파악과 지표에 대한 이해도가 뛰어나신 분<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">분석적 사고력과 원활한 커뮤니케이션 능력을 보유하신 분<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">분석</span><span lang="EN-US" style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">/</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">예측 알고리즘에 대한 이해도를 갖추고 새로운 방법론
+도입에 적극적이신 분<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="text-indent: -18pt; font-size: 11pt; color: rgb(37, 37, 37);">프로토타입을 빠르게 개발하고 실무에 적용하여 개선하는 과정을 선호하시는 분<br></span><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span><span style="font-size: 11pt; color: rgb(37, 37, 37);">문제를 인식하고 이를 분석</span><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);">/</span><span style="font-size: 11pt; color: rgb(37, 37, 37);">모델링에 기반하여 해결하거나
+효과를 극대화 하는 과정에 관심이 많으신 분</span></p></td></tr></tbody></table><br><table class="tbl_list __se_tbl_ext" style="font-size: 15px; line-height: 15px; width: 628.5px; max-width: 860px !important;"><tbody><tr><td><p style="line-height: 1.8;"><strong class="tit" id="template_divisions_qualification_title_0"><span style="font-size: 11pt; color: rgb(37, 37, 37);">우대사항</span></strong></p></td></tr><tr><td><p style="line-height: 1.8;"><span id="template_divisions_Career_0" data-group="recruit_division_0" style="font-size: 11pt; color: rgb(37, 37, 37);">ㆍ</span><span style="font-size: 11pt; color: rgb(37, 37, 37);">직무 관련 학과 석사 이상 우대</span><br></p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>ML/AI</span>를 실생활 혹은 서비스에 적용해 본 경험<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>Kubeflow </span>등<span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);">
+MLOps fr<!--x-->amework </span>활용 경험<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>Marketing Science </span>분야에 대한 관심 또는 직무
+경험<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+</p><p class="MsoNormal" align="left" style="margin-bottom: 0.0001pt; line-height: 1.8;"><span style="line-height: 115%; color: rgb(37, 37, 37); font-size: 11pt;"><span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);"><span style="color: rgb(37, 37, 37); font-size: 11pt;">ㆍ</span>Tableau</span>를 활용한 시각화<span lang="EN-US" style="font-size: 11pt; color: rgb(37, 37, 37);">/</span>지표 운영 경험<span lang="EN-US"><o:p></o:p></span></span></p><p style="line-height: 1.8;">
+
+<span style="font-size: 11pt; line-height: 115%; font-family: "맑은 고딕"; color: rgb(37, 37, 37);">ㆍ다양한 장르의 게임을 접해 보셨거나 게임에 대한 애정이 남다르신 분</span></p></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr><tr><td><h2 class="tit_template" id="template_job_type_title"><table class="cont_recruit_template __se_tbl_ext" style="font-family: " malgun gothic", dotum, gulim, sans-serif; font-size: 12px; color: rgb(34, 34, 34); letter-spacing: -1px; background-color: white; line-height: 12px;"><tbody></tbody></table></h2><h2 class="tit_template" id="template_step_title"><span class="ico"></span>근무조건<font color="#2da86a"></font></h2><div class="wrap_list_template"><table class="list_template"><tbody><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_job_type_title">근무형태</span><span class="colon">:</span><span class="txt" id="template_job_type_job_type">정규직(수습기간)-<span style="color:#ababab">3개월</span></span></td></tr><tr class="work_shift display_work_shift" style><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_work_shift_title" data-group="work_shift">근무일시</span><span class="colon">:</span><span class="txt" id="template_job_type_work_shift" data-group="work_shift">10 : 00 ~ 19 : 00 (유연근무제)</span></td></tr><tr class="address display_address"><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_address_title">근무지역</span><span class="colon">:</span><span class="txt"><span id="template_job_type_aw_post_address">(13591) 경기 성남시 분당구 분당로 55 분당 퍼스트타워 10층(서현동) - 수인분당선 서현 에서 300m 이내<br><br></span></span></td></tr></tbody></table></div></td></tr><tr class="display_hiring_process_list"><td><h2 class="tit_template" id="template_step_title"><span class="ico"></span>전형절차</h2><ol class="step_template_type step_template_type4" id="template_step_hiring_process_list"><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 서류전형</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 과제전형</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 면접전형</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 최종합격</strong><span class="txt_step"></span></div></div></li></ol></td></tr><tr><td><h2 class="tit_template" id="template_how_to_apply_title"><span class="ico"></span>접수기간 및 방법<font color="#4be68e"></font></h2><div class="wrap_list_template"><table class="list_template"><tbody><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_period_title">접수기간</span><span class="colon">:</span><span class="txt emph" id="template_how_to_apply_period">2023년 05월 04일 (목) ~ 2023년 05월 31일 (수)&nbsp;</span></td></tr><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_howtoapply_title">접수방법<font color="#6d7dc6"></font></span><span class="colon">:</span><span class="txt" id="template_how_to_apply_howtoapply">사람인 입사지원</span></td></tr><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_apply_form_title">이력서양식</span><span class="colon">:</span><span class="txt" id="template_how_to_apply_apply_form">사람인 온라인 이력서</span></td></tr><tr class="display_required_documents required_documents" style="display:none;"><td><span class="dot">ㆍ</span><span class="tit" id="template_step_required_documents_title" data-group="required_documents">제출서류</span><span class="colon">:</span><span class="txt" id="template_step_required_documents" data-group="required_documents"></span></td></tr></tbody></table></div></td></tr><tr id="template_caution"><td><h2 class="tit_template"><span class="ico"></span>유의사항</h2><div class="wrap_list_template"><table class="list_template"><tbody><tr id="blindCaution" style="display:none;"><td>ㆍ학력, 성별, 연령을 보지않는 블라인드 채용입니다. </td></tr><tr><td>ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.<br><br type="_moz"><b><span style="font-size: 9pt;">※ 채용절차 공정화에 관한 법률에 따라 제출된 서류는 채용 목적 이외에는 사용되지 않으며, 구직자의 채용 여부가 확정된 이후 구직자(확정된 채용대상자는 제외함)가 채용서류의 반환을 청구하는 경우에는 본인임을 확인한 후 법에서 정하는 바에 따라 반환합니다. 다만, 홈페이지 또는 전자우편으로 제출된 경우나 구직자가 구인자의 요구 없이 자발적으로 제출한 경우에는 그러하지 아니합니다. 또한, 당사의 경우 해당 전형 최종합격 발표 이후 반환하지 아니한 채용서류는 즉시 파기됨을 알려드립니다.</span></b><br type="_moz"></td></tr><tr class="divisions_caution" style="display:none;"><td><span style="font-size: 9pt;">ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다.</span></td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></div><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45641139', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

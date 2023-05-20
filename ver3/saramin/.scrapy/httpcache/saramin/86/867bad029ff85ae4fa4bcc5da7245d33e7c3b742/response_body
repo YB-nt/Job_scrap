@@ -1,0 +1,1364 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><div class="wrap_break_recruit">
+<table width="860" border="0px" cellspacing="0px" cellpadding="0px" align="center" >
+  <tr>
+    <td>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+          <td><img src="https://www.saraminimage.co.kr/recruit/os_mmp/226_konantec_top_230131.png"  alt="㈜코난테크놀로지 2023년 상반기 각 부문 신입/경력 상시 채용" /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+  <tr>
+    <td style="padding:0 20px"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+      <tr>
+        <td style="font-family: malgun gothic, 맑은 고딕; font-size: 30px; line-height: 25px; letter-spacing: -2px; color: #222222;"> <span style="color:#384f9e;"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit5/kn_210727.png" alt="아이콘
+" border="0" style="vertical-align:top"/></span>모집부문 </td>
+      </tr>
+      <tr>
+        <td height="15"></td>
+      </tr>
+      <tr>
+        <td><table width="100%" align="center" cellpadding="10px"
+                                   style="border-spacing:0;border-collapse:collapse; border:0px solid #; font-size:15px; letter-spacing:-1px; line-height:25px; color:#222">
+          <thead>
+            <tr>
+              <th width="58" align="center" bgcolor="#FFFFFF"
+                                            style="border-style: solid; border-color: #ccc; font-family: malgun gothic, 맑은 고딕; font-size: 15px;text-align: center; line-height: 25px; border-width: 1px 1px 1px 0px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" scope="col"><b>직군</b></th>
+              <th scope="col" width="83" align="center" bgcolor="#FFFFFF"
+                                            style="border-style: solid; border-color: #ccc; font-family: malgun gothic, 맑은 고딕; font-size: 15px; text-align: center;line-height: 25px; border-width: 1px 1px 1px 0px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>채용부문</b></th>
+              <th scope="col" width="38" align="center" bgcolor="#FFFFFF"
+                                            style="border-style: solid; border-color: #ccc; font-family: malgun gothic, 맑은 고딕; font-size: 15px; text-align: center;line-height: 25px; border-width: 1px 1px 1px 0px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>인원</b></th>
+              <th scope="col" width="210" align="center" bgcolor="#FFFFFF"
+                                            style="border-style: solid; border-color: #ccc; font-family: malgun gothic, 맑은 고딕; font-size: 15px;text-align: center; line-height: 25px; border-width: 1px 1px 1px 0px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"> <b>담당업무</b></th>
+              <th scope="col" width="317" align="center" bgcolor="#FFFFFF"
+                                            style="border-style: solid; border-color: #ccc; font-family: malgun gothic, 맑은 고딕; font-size: 15px; text-align: center;line-height: 25px; border-width: 1px 0px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건 및 우대사항</b></th>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>제품개발<br>
+                /관리</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ챗봇 제품, 서비스 개발 및 관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 10년 이상<br>
+                ㆍ직급 : 팀장급<br>
+               ㆍ컴퓨터공학 및 전산 관련 전공<br>
+               ㆍJava 프로그래밍 언어 가능자<br>
+               ㆍ스프링 프레임워크 기반 개발 가능자<br>
+                <b><br>
+                우대사항</b><br>
+                ㆍ관련 프로젝트 수행 경험<br>
+                ㆍPM 수행 경험<br>
+                ㆍ클라우드 서비스 개발 및 운영 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>프론트엔드<br>
+                개발<br>
+                (엔진)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ분석/검색 제품 프론트엔드 및<br>
+                &nbsp;&nbsp;
+                멀티플랫폼 클라이언트 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ프론트엔드개발 경력 2년 이상<br>
+                ㆍJavaScript에 대한 깊은 이해<br>
+                ㆍUX팀 및 백엔드 팀과 협업 능력<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍ백엔드 개발 경험 또는 기본적인 이해<br>
+                ㆍd3.js 이용 라이브러리 제작 경험<br>
+                ㆍFlutter등 모바일 크로스 플랫폼 개발 경험<br>
+                ㆍReact, Vue.js 등 JS 프레임웍 사용 경험<br>
+                ㆍ데스크탑 어플리케이션 개발 경험<br>
+                ㆍ컴퓨터공학 및 전산 관련 전공</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>백엔드 개발<br>
+                (엔진)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ분석/검색 제품 백엔드 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ서버 또는 백엔드 개발 경력 2년 이상<br>
+                ㆍC/C++ 개발 가능자<br>
+                ㆍ네트워크 프로그래밍 유경험자<br>
+                <b><br>
+                우대사항</b><br>
+                ㆍ검색/분석엔진 개발 경험<br>
+                ㆍ실시간 대용량 트래픽 처리 시스템 개발 경험<br>
+                ㆍUnix/Windows 등 다양한 플랫폼 개발 경험<br>
+                ㆍDocker, Kubernetes 등 컨테이너 환경 구성 경험<br>
+                ㆍ컴퓨터공학 및 전산 관련 전공</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>분석서비스<br>
+개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"> ㆍ자연어처리 AI 모델 개발<br>
+                ㆍ소셜 빅데이터 AI 분석서비스<br>
+                &nbsp;&nbsp;
+개발<br>
+                ㆍ글쓰기 AI 첨삭 서비스 개발<br>
+                ㆍ다품종, 대용량의 언어 데이터<br>
+                &nbsp;&nbsp;
+파이프라인 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상 (석사 기본우대)<br>
+                ㆍ경력: 무관<font color="#0b7fcc"></font><br>
+                ㆍ직급: 연구원~선임연구원<br>
+                ㆍAI 분석서비스의 설계, 개발, 운영에 관심 <br>
+               &nbsp;&nbsp; 있으신 분<br>
+                ㆍ자연어처리 및 딥러닝에 대한 지식이 있고<br>
+&nbsp;&nbsp; 구현이
+                가능하신 분<br>
+                ㆍPython, C/C++, Java, JavaScript 중 사용이<br>
+&nbsp;&nbsp; 익숙한 언어가
+                있으신 분<br>
+                ㆍLinux, Git, Docker 사용이 익숙하신 분
+                <br>
+                <br>
+                <b>우대사항</b><br>
+                  ㆍ자연어처리를 전공하신 분 (석사 이상)<br>
+                  ㆍ빅데이터 분석 서비스 개발 또는 운영 경험이<br>
+&nbsp;&nbsp; 있으신 분<br>
+                  ㆍ공개된NLP 도구(구글 API 등) 이용해 서비스<br>
+&nbsp;&nbsp; 구현 경험이
+                  있으신 분<br>
+                  ㆍ언어 데이터 어노테이션 개발 또는 운영 경험이<br>
+&nbsp;&nbsp; 있으신 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>음성 개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ딥러닝 기반 음성인식 및 <br>
+                &nbsp;&nbsp; 음성합성 기술개발 업무 <br>
+                &nbsp;&nbsp; - 음성인식 엔진 및 서비스 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 기술개발 <br>
+                &nbsp;&nbsp; - 음성합성 엔진 및 서비스 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; 기술개발 <br>
+                &nbsp;&nbsp; - 음성인식/합성 전처리<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                기술개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"> <b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본우대)<br>
+                ㆍ경력 10년 이상<br>
+                ㆍ직급 : 팀장급<br>
+                ㆍLinux 환경 개발 가능자<br>
+                ㆍPython 프로그래밍 가능자<br>
+                ㆍ머신러닝/딥러닝 관련 지식 보유자<br>
+                ㆍ팀 플레이어 및 도전적인 자<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍTensorFlow, PyTorch 등의 딥러닝 프레임워크를<br>
+                &nbsp;&nbsp; 활용하여 AI 개발 경험이 있으신 분<br>
+                ㆍ음성인식 또는 음성합성 분야 최신 논문을<br>
+  &nbsp;&nbsp;
+                이해하고 구현할 수 있는 능력을 갖추신 분<br>
+                ㆍ음성인식 또는 음성합성 분야 석사 이상 <br>
+  &nbsp;&nbsp;
+                전공하신 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>구독 서비스 <br>
+                개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ구독 서비스 개발 및 운영</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 1년이상~10년이하<br>
+                ㆍ직급 : 연구원~선임연구원<br>
+                ㆍJava(Servlet), JSP, JavaScript, HTML5 개발 가능한 분<br>
+                ㆍSpring Framework, Spring Boot에서 개발 <br>
+               &nbsp;&nbsp; 가능한 분<br>
+                ㆍLinux 환경에서 서비스 개발 및 운영 가능한 분<br>
+                ㆍ책임감 강하고 성실하고, 협업에 원활한 분<br>
+                <br>
+                <b>우대사항</b> <br>
+                ㆍRDB/SQL 개발 및 운영에 능숙한 분<br>
+                ㆍVue.js, React 환경에서 개발 경험 있는 분 <br>
+                ㆍd3.js 및 chart library 사용에 능숙한 분<br>
+                ㆍReact Native, Flutter Mobile App 개발 경험이 <br>
+               &nbsp;&nbsp; 있는 분<br>
+                ㆍThreeJS 활용한 WebGL animation 개발 경험 <br>
+               &nbsp;&nbsp; 있는 분<br>
+                ㆍCloud, Kubernetes 환경에서 서비스 개발 운영 <br>
+               &nbsp;&nbsp; 가능한 분<br>
+                ㆍ대용량 데이터, 트래픽 처리에 경험이 있는 분<br>
+                ㆍ구독형 서비스(SaaS) 설계 및 기술리딩 가능한 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>모델링&amp;<br>
+                시뮬레이션<br>
+                (디지털 트윈)</b><b></b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ디지털 트윈을 위한 <br>
+               &nbsp;&nbsp; Model-based Simulation 개발<br>
+                ㆍ디지털 트윈을 이용한 제품 <br>
+               &nbsp;&nbsp; 건정성 관리 AI 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 10년 이상<br>
+                ㆍ직급 : 팀장급<br>
+                ㆍAI &amp; Simulation 관련분야 (기계학습, 응용수학,<br>
+               &nbsp;&nbsp; 기계공학 등) 전공자 또는 1년 이상 실무 경험<br>
+ㆍC/C++ 또는 Python 개발 가능<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍMathworks 등 수치해석 도구 활용 경험<br>
+                ㆍ센서데이터 활용 ML/DL 기반 예측기술 개발 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>강화학습<br>
+                개발자<br>
+                (디지털 트윈)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ심층 강화학습을 이용한 <br>
+                &nbsp;&nbsp; 최적화 및 자율화<br>
+                ㆍ제조 공정 최적화, <br>
+                &nbsp;&nbsp; UAV 자율 운행</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 1년 이상<br>
+                ㆍ직급 : 연구원~전임연구원<br>
+                ㆍAI (딥러닝) 전공자 또는 관련분야 1년 이상 <br>
+                &nbsp;&nbsp; 실무 경험<br>
+                ㆍTensorFlow, Pytorch 등의 python기반의 딥러닝<br>
+                &nbsp;&nbsp; 프레임워크를 활용한 실무 경험<br>
+                ㆍIT/SW 관련 개발 10년 이상 실무 경험 <br>
+                <b><br>
+                  우대사항</b><br>
+                ㆍ자율 주행 / 비행 관련 강화학습 개발 경험<br>
+                ㆍ게임 AI 개발 경험<br>
+                ㆍ산업 분야 딥러닝 AI 개발 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>Time-series<br>
+                data 기반<font color="#2da86a"></font><br>
+                AI 알고리즘<br>
+                개발<br>
+                (디지털 트윈)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ시계열 센서 데이터를 기반으로<br>
+                &nbsp;&nbsp;
+한 고장 진단 및 예측 알고리즘<br>
+ㆍ진동 주파수 특성 생성 및 예측</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 10년 이상<br>
+                ㆍ직급 : 팀장급<br>
+                ㆍAI (딥러닝) 전공자 또는 관련분야 1년 이상 <br>
+               &nbsp;&nbsp; 실무 경험<br>
+                ㆍPython 개발 가능<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍMathworks 등 수치해석 도구 활용 경험<br>
+                ㆍ산업 분야 딥러닝 AI 개발 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>Vision AI<br>
+Computer<br>
+                Vision<br>
+Engineer</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ영상 인식 어플리케이션<br>
+               &nbsp;&nbsp; (무인기, 영상 감시 등)에
+적용<br>
+&nbsp;&nbsp;
+가능한 다양한 종류의 <br>
+&nbsp;&nbsp;
+컴퓨터 비전 기술 개발<br>
+1) Object Detection<br>
+2) Visual Object Tracking<br>
+3) Multiple Object Tracking<br>
+4) Image Classification<br>
+5) Video Understanding</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력: 10년 이상<br>
+                ㆍ전공 : 컴퓨터공학 및 전산 관련 전공자<br>
+                ㆍ직급: 팀장급
+                <br>
+                - 주요 업무 중 1개 이상에 대해 10년 이상의<br>
+                &nbsp;
+기술 개발 경험 (아래 수행업무 참조)
+<br>
+                1) 컴퓨터 비전, 기계 학습, 딥러닝 이론에 대한 <br>
+               &nbsp;&nbsp;&nbsp; 전반적인 이해를 바탕으로 주어진 문제를 <br>
+              &nbsp;&nbsp;&nbsp; 해결할 수
+                있는 능력<br>
+                2) 컴퓨터 비전, 기계 학습, 딥러닝 프레임워크를<br>
+                &nbsp;&nbsp;&nbsp; 활용한 개발 경험<br>
+                &nbsp;&nbsp;&nbsp; (예: OpenCV, sklearn, PyTorch, TensorFlow 등)<br>
+                3) 하나 이상의 프로그래밍 언어(예: Python, C/C++)<br>
+                &nbsp;&nbsp;&nbsp; 및 Linux/Shell 프로그래밍 환경에 대한 경험<br>
+                <br>
+<b>우대사항</b><br>
+                  ㆍML 어플리케이션 개발 유경험자<br>
+                  ㆍ논문에서 제시하는 모델의 성능을 빠르게<br>
+                  &nbsp;&nbsp;
+재현할 수
+                  있는 능력<br>
+                  ㆍ영상 인식 분야의 상용화에 필요한 전체<br>
+                  &nbsp;&nbsp;
+프로세스(데이터 수집, 알고리즘 개발, 테스트) <br>
+&nbsp;&nbsp;
+경험<br>
+                  ㆍ다양한 협업 환경에서 일할 수 있는 능력<br>
+                  ㆍ모델 경량화 및 알고리즘 최적화 능력<br>
+                  ㆍ주요 업무관련 최신기술 동향에 대한 깊은 이해</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>MLOps<br>
+frontend<br>
+developer</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍMLOps 플랫폼 개발<br>
+1) K8s 기반의 MLOps 시스템<br>
+&nbsp;&nbsp;
+구축, 개발<br>
+2) Data management pipeline<br>
+&nbsp;&nbsp;
+구축, 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력: 3년 이상<br>
+                ㆍ전공: 컴퓨터공학 및 전산 관련 전공자<br>
+                ㆍ직급: 전임연구원~선임연구원<br>
+                - react, VueJS, 중 1가지 이상에 client side 언어에 <br>
+               &nbsp; 대해
+                중급 이상의 구현 기술 보유 및 실무 경험<br>
+                - Microservice Architecture에 대한 설계 및 구현 경험<br>
+                - GIT 사용 실무 경험<br>
+                - ML/DL Framework(pytorch 등)에 대한 이해
+                <b><br>
+                <br>
+                우대사항</b><br>
+                  ㆍ머신러닝에 대한 관심, 학문적 배경 혹은<br>
+                  &nbsp;&nbsp;
+실무 경험<br>
+                  ㆍAWS, GCP, Azure 같은 Cloud platform 기반<br>
+                  &nbsp;&nbsp;
+서비스 개발
+                  및 운영 경험<br>
+                  ㆍ솔루션 설계 경험<br>
+                  ㆍ팀 내 리더십 보유<br>
+                  ㆍ높은 자기 개발 의지 및 도전력 보유</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>MLOps <br>
+                backend<br>
+developer</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍMLOps 플랫폼 개발<br>
+1) K8s 기반의 MLOps 시스템 <br>
+&nbsp;&nbsp;
+구축, 개발<br>
+2) Data Management pipeline <br>
+&nbsp;&nbsp;
+구축, 개발<br>
+3) K8s GPU Cluster 관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력: 3년 이상<br>
+                ㆍ전공: 컴퓨터공학 및 전산 관련 전공자<br>
+                ㆍ직급: 전임연구원~선임연구원<br>
+                - Golang, java, Node.js 중 1가지 이상에 Server side<br>
+               &nbsp; 언어에 대해 중급 이상의 구현 기술 보유 및 <br>
+              &nbsp; 실무
+                경험<br>
+                - 3년 이상 Linux 인프라 세팅 및 백엔드 개발 실무
+                <br>
+               &nbsp; 경험<br>
+                - Docker 혹은 K8s를 활용한 서비스 오케스트레이션
+                <br>
+               &nbsp; 실무 경험<br>
+                - Microservice Architecture에 대한 설계 및 구현 경험<br>
+                - GIT 사용 실무 경험<br>
+                - ML/DL framework(pytorch 등)에 대한 이해
+                <b><br>
+                <br>
+                우대사항</b><br>
+                  ㆍETL Pipeline 구축 운영 경험<br>
+                  ㆍ머신 러닝에 대한 관심, 학문적 배경 혹은<br>
+                  &nbsp;&nbsp;
+실무 경험<br>
+                  ㆍAWS, GCP, Azure 같은 Cloud platform 기반<br>
+                  &nbsp;&nbsp;
+서비스
+                  개발 및 운영 경험<br>
+                  ㆍ솔루션 설계, 디자인 패턴 적용 경험<br>
+                  ㆍDevOps, MLOps 교육, 프로젝트 연계 경험<br>
+                  ㆍ팀 내 리더십 보유<br>
+                  ㆍ높은 자기개발 의지 및 도전력 보유</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>Deep<br>
+Learning<br>
+Framework<br>
+Developer</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍDeep Learning 연구개발에<br>
+                &nbsp;&nbsp;
+사용되는 자사 솔루션 개발 및<br>
+&nbsp;&nbsp;
+고도화<br>
+1) C/C++ 기반의 Deep Learning<br>
+&nbsp;&nbsp;
+Framework 개발<br>
+2) Python 지원을 위한 C-Python<br>
+&nbsp;&nbsp; API 설계 및 개발<br>
+3) PyTorch 비교 분석을 통한 <br>
+&nbsp;&nbsp; 자사 솔루션 검증<br>
+4) Linux 등 다양한 OS 지원을 <br>
+&nbsp;&nbsp; 위한 크로스 플랫폼 개발<br>
+5) GPU 또는 네트워크를 통한 <br>
+&nbsp;&nbsp; 병렬/분산화<br></td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력 : 관련경력 2년 이상<br>
+                ㆍ전공 : 컴퓨터공학 및 전산 관련 전공자<br>
+                ㆍ직급 : 연구원~선임연구원<br>
+                - C/C++ 중급 이상의 개발 능력 보유자<br>
+                - Python 및 PyTorch 개발 경험자<br>
+                - Deep Learning을 활용한 Product 또는<br>
+                &nbsp;
+Solution 개발 경험자<br>
+                - 최소 2인 이상의 협업을 통한 개발 경험자<br>
+                <br>
+<b>우대사항</b><br>
+                  ㆍGit 또는 SVN을 사용한 실무 개발 경험<br>
+                  ㆍDeep Learning 분야 논문을 읽고 제시된 모델을<br>
+                  &nbsp;&nbsp;
+구현할 수 있는 능력<br>
+                  ㆍPyTorch 소스 분석 경험<br>
+                  ㆍLinux 등 크로스 플랫폼 개발 경험<br>
+                  ㆍRestful API 기반 서버 구축 또는 서비스 개발 경험<br>
+                  ㆍCUDA를 이용한 GPU 기반 병렬처리 개발 경험<br>
+                </td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>정부 R&amp;D<br>
+과제 관리<br>
+                및 지원</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ정부 R&amp;D 과제를 위한 행정 <br>
+               &nbsp;&nbsp; 업무 및 예산 관리<br>
+1) 사업 예산 편성/집행 및 정산 등<br>
+&nbsp;&nbsp;
+재무 관리<br>
+2) 연구 장비 발주/집행 및 <br>
+&nbsp;&nbsp;
+자산 관리<br>
+3) 그 외 R&amp;D 과제 수행에 따르는<br>
+&nbsp;&nbsp;
+제반 업무 수행
+및 경영 지원</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상 (석사 기본 우대)<br>
+                ㆍ경력: 2년 이상<br>
+                ㆍ직급: 연구원~선임연구원<br>
+                - 정보통신기획평가원(IITP)이 주관하는 ICT 분야<br>
+                &nbsp;&nbsp;
+R&amp;D 과제 
+                참여 또는 관리 경력 2년 이상<br>
+                - 중급 이상의 한글/Excel 사용 능력<br>
+                - 재무/자산 관리 가능한 꼼꼼한 성격
+                <b><br>
+                <br>
+                우대사항</b><br>
+                  ㆍ3개 이상의 R&amp;D 과제 및 프로젝트 동시 관리 <br>
+                 &nbsp;&nbsp; 또는
+                  정산 경험자<br>
+                  ㆍICT 분야 R&amp;D 과제 사업계획서 작성 경험자 또는<br>
+                 &nbsp;&nbsp; 실무책임 경험자<br>
+                  ㆍICT 분야 R&amp;D 과제 “연구지원전문가” <br>
+                 &nbsp;&nbsp; 자격 요건을
+                  충족하는 IITP 교육 수료자<br>
+                  ㆍ머신 러닝에 대한 관심 및 학문적 배경을<br>
+                  &nbsp;&nbsp;
+보유한 자<br>
+                  ㆍ컴퓨터 활용능력 또는 문서작성 능력이<br>
+                  &nbsp;&nbsp;
+우수한 자</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>JAVA 개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍDigitalArc 웹 관련 제품 개발 및 <br>
+               &nbsp;&nbsp; 프로젝트 구축<br>
+                ㆍezFinder 유지 보수 및 추가 <br>
+               &nbsp;&nbsp; 개발 담당</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 3년 이상<br>
+                ㆍ직급 : 대리~과장급<br>
+                ㆍSpring Boot/framework 기반 개발 경험<br>
+                ㆍ3년 이상의 Java 웹 서비스 개발 경험<br>
+                ㆍJAVA, Mustache/Thymeleaf Template Engine, 
+                <br>
+                &nbsp;&nbsp;
+javascript 등 을 이용한 개발 경험자<br>
+ㆍOracle, Postgres 또는 타 RDBMS 운영 및<br>
+&nbsp;&nbsp;
+개발 경험<br>
+ㆍRESTful API 설계 및 개발 경험 (swaggerUI 경험)<br>
+ㆍHTML, CSS, javascript를 이용한 웹사이트 제작이
+<br>
+&nbsp;&nbsp;
+능숙한 분<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍ대용량 데이터 처리 및 분산 경험<br>
+                ㆍGit &amp; Gitlab &amp; Jira &amp; confluence 환경 개발 경험<br>
+                ㆍCache(Redis,ehcache) / Nginx 개발 및 설정 경험<br>
+                ㆍJava-Fx 경험<br>
+                ㆍApache kafka / spring webflux 경험<br>
+                ㆍPython 개발 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>Deep Learning /<br>
+Machine<br>
+Learning<br>
+                개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ인공지능 편향성 완화 <br>
+               &nbsp;&nbsp; 프레임워크 개발 및 응용 개발<br>
+ㆍML/DL 관련 최신 논문 구현<br>
+ㆍ자연어처리 ML/DL 모델 <br>
+&nbsp;&nbsp;
+개발 및 성능개선<br>
+ㆍ최신 NLP 프로젝트 및 <br>
+&nbsp;&nbsp;
+상용화 개발<br>
+ㆍ텍스트 데이터 전처리, <br>
+&nbsp;&nbsp;
+텍스트 마이닝 및 데이터 분석</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상 (석사 기본우대)<br>
+                ㆍ경력 : 유관경력 4년 이상<br>
+                ㆍ직급 : 대리~차장급<br>
+                ㆍ인공지능 편향성에 대한 기본 지식 보유<br>
+                ㆍPython 기반 ML/DL 개발에 익숙한 분
+                <br>
+                ㆍTensorflow, Keras, PyTorch 등의 딥러닝 <br>
+               &nbsp;&nbsp;&nbsp; 프레임워크
+활용에 익숙한 분<br>
+ㆍFlask, Django 등 REST API 개발 경험
+<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍ공학 계열 전공자<br>
+                ㆍ관련 학과 석사 이상 (컴퓨터공학, 전산학)<br>
+                ㆍ관련 논문을 이해하고 개발에 적용할 수 있는 <br>
+               &nbsp;&nbsp; 능력을 갖추신 분<br>
+ㆍ텍스트 비정형 데이터 분석 경험자 우대<br></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>솔루션<br>
+                구축개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ지능 분석 솔루션 개발<br>
+                ㆍ비정형 데이터 분석 프로젝트<br>
+                &nbsp;&nbsp;
+개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 3년이상~12년이하<br>
+                ㆍ직급 : 대리~차장급<br>
+                ㆍ컴퓨터공학 및 관련전공 <br>
+                ㆍ JAVA, Servlet, JavaScript, Linux/Unix 개발 및<br>
+                &nbsp;&nbsp;&nbsp;
+사용 가능하신 분<br>
+ㆍRDB/SQL 능숙하신 분<br>
+ㆍ책임감이 강하고 설계/기술 문서 작성을 통한<br>
+&nbsp;&nbsp;
+협업을&nbsp; 선호하시는 분<br>
+<b><br>
+우대사항</b><br>
+ㆍSpring(Boot) 혹은 전자정부 프레임워크 분석<br>
+&nbsp;&nbsp;
+경험 있는 분<br>
+ㆍPython 프로그램 개발이 우수한 분<br>
+ㆍVue.js 개발 경험이 있는 분<br>
+ㆍ서비스 운영 경험이 있는 분<br>
+ㆍ검색엔진 구축 경험이 있는 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>개발</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>Frontend/<br>
+                Backend<br>
+                개발<br>
+                (빅데이터<br>
+분석
+                시스템<br>
+개발)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ빅데이터 분석 서비스 개발<br>
+                &nbsp;&nbsp;
+업무<br>
+                ㆍ백엔드/프론트엔드/시각화 <br>
+               &nbsp;&nbsp; 개발<br>
+                ㆍ신규 사업을 위한 분석서비스<br>
+                &nbsp;&nbsp;
+신규 개발<br>
+                ㆍ기존 사업을 위한 분석서비스<br>
+                &nbsp;&nbsp;
+운영 및 개선 개발</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 사원급 또는 3년 이상<br>
+                ㆍ직급 : 사원~과장급<br>
+                ㆍ전공 : 무관<br>
+                ㆍJava/Spring framework 개발 경험<br>
+                ㆍREST API 기반 서비스 개발 경험<br>
+                ㆍRDBMS 연동 개발 경험<br>
+                ㆍjs 시각화 라이브러리 사용 경험 <br>
+                ㆍ(공통) HTML, CSS, Javascript, Ajax 관련 지식<br>
+                &nbsp;&nbsp;
+보유자<br>
+<br>
+<b>우대사항</b><br>
+ㆍ검색엔진/분석엔진 사용 경험<br>
+ㆍNLP/텍스트마이닝 관련 지식<br>
+ㆍ데이터분석 결과의 시각화 개발 경험<br>
+ㆍNoSQL 환경 개발 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM<br>
+                (분석 솔루션)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ지능분석 솔루션 기반<br>
+                &nbsp;&nbsp;
+SI 프로젝트 수행<br>
+                ㆍ민간/공공 부문 SI 프로젝트<br>
+                &nbsp;&nbsp;
+수행</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상<br>
+                ㆍ경력: PM 경력 3년 이상<br>
+                ㆍ직급: 대리~차장급<br>
+                - 컴퓨터공학 및 관련 전공<br>
+                - 책임감이 강하고 긍정적인 마인드를 소유하신 분<br>
+                - 제안서 및 문서 작성을 통한 협업을 선호하시는 분<br>
+                - 고객과의 커뮤니케이션 능력이 좋으신 분<br>
+                - 민간, 공공 프로젝트 관리경험이 있으신 분<br>
+               &nbsp; (지방 출장 가능)
+                <br>
+                <br>
+                <b>우대사항</b><br>
+                  ㆍ정보처리기사 자격증 소지자<br>
+                  ㆍ검색엔진 구축 경험이 있으신 분<br>
+                  ㆍ프로젝트 설계/분석 및 개발인력 리딩 경험이<br>
+                  &nbsp;&nbsp;
+있으신 분<br>
+                  ㆍAI 및 빅데이터 관련 SI 프로젝트 수행 경험이<br>
+                  &nbsp;&nbsp;
+있으신 분<br>
+                  ㆍCommerce부문 SI 프로젝트 수행 경험이<br>
+                  &nbsp;&nbsp;
+있으신분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM<br>
+                (공공·민간<br>
+SI사업<br>
+                제안/수행)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ솔루션 기반 SI 프로젝트 수행<br>
+                ㆍ민간/공공 SI 사업 수행<br>
+                &nbsp;&nbsp;
+(군 사업 포함)<br>
+                ㆍ금융권 사업 수행</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상<br>
+                ㆍ경력: PM경력 5년 이상<br>
+                ㆍ직급: 과장~부장급<br>
+                - 컴퓨터공학 및 관련 전공<br>
+                - 책임감이 강하고 커뮤니케이션 능력이 있으신 분<br>
+                - 제안서 작성 및 발표 경험이 있으신 분<br>
+                - 사업관리 산출물 작업이 가능하신 분<br>
+                - 지방출장 가능하신 분<br>
+                <br>
+                <b>우대사항</b><br>
+                  ㆍ정보처리기사 자격증 소지자<br>
+                  ㆍ솔루션 (챗봇, 분석, AICC) 구축 경험이 있으신 분<br>
+                  ㆍ프로젝트 설계/분석 등 개발 리딩 능력이<br>
+                  &nbsp;&nbsp;&nbsp;
+                  있으신 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>PM<br>
+                (데이터 분석 웹서비스/<br>
+                솔루션<br>
+사업관리)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ빅데이터 분석 서비스<br>
+                &nbsp;&nbsp;
+IN-HOUSE 프로젝트 수행<br>
+                ㆍ빅데이터 관련 솔루션 기반<br>
+                &nbsp;&nbsp;
+SI 프로젝트 수행<br>
+                ㆍ프로젝트 기획/분석/설계 및<br>
+                &nbsp;&nbsp;
+진행/변경 관리 수행<br>
+                ㆍ민간/공공 프로젝트<br>
+                &nbsp;&nbsp;
+제안서 작성<br>
+                ㆍ고객 및 내부 커뮤니케이션<br>
+                &nbsp;&nbsp;&nbsp;관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><p><b>자격요건</b><br>
+                ㆍ학력: 대학교졸업(4년) 이상<br>
+                ㆍ경력: PM 경력 3년 이상<br>
+                ㆍ직급: 대리~차장급<br>
+                - 컴퓨터공학 및 관련 전공<br>
+                - 제안서 작성 및 발표, 수행 경험<br>
+                - 책임감이 강하고 커뮤니케이션 능력이 좋으신 분<br>
+                - S/W 솔루션기반 SI 프로젝트 리딩 경험<br>
+                - 요구사항 분석/설계를 통한 기능정의, 화면기획<br>
+                &nbsp;&nbsp;
+및 산출물
+                작성 능력 보유<br>
+                - 협업 조직간 커뮤니케이션 능력 보유<br>
+                ㆍ특이사항: IN-HOUSE 프로젝트 수행직이며, <br>
+               &nbsp;&nbsp; 간헐적 출장
+                있을 수 있음</p>
+                <p><b>우대사항</b><br>
+                  ㆍ정보처리기사 자격증 소지자<br>
+                  ㆍ프로젝트 설계/분석 및 개발인력 리딩 경험<br>
+                  ㆍAI 및 빅데이터 관련 SI 프로젝트 수행 경험</p></td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>데이터<br>
+                부문</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>비정형 <br>
+                데이터 분석<br>
+                </b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"> ㆍ비즈니스 KPI 설계, 분석 및<br>
+                &nbsp;&nbsp;
+                보고서 작성<br>
+                ㆍ비정형 데이터(텍스트 데이터)<br>
+                &nbsp;&nbsp;
+전처리, 가공,  분석, 시각화 및<br>
+&nbsp;&nbsp;
+레포팅<br>
+                ㆍ정형/비정형 데이터 분석을 <br>
+                &nbsp;&nbsp; 통한 비즈니스/정무적<br>
+                &nbsp;&nbsp;
+인사이트 도출<br>
+                ㆍ정형/비정형 데이터 기반 실험 <br>
+  &nbsp;&nbsp;
+                설계 및 분석<br>
+  <br>
+                [사용언어 및 기술]<br>
+                SQL, Python, R (Java, pandas, <br>
+                scikit-learn, matplotlib, seaborn, <br>
+                Tensorflow, keras) 등</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 3년이상~8년이하<br>
+                ㆍ직급 : 대리~과장급<br>
+                ㆍ분석 보고서 작성 및 주기적 데이터 분석 리딩<br>
+                &nbsp;&nbsp; 경험이 있는 분<br>
+                ㆍ정형/비정형 분석 기술에 대한 이해가 있는 분<br>
+                ㆍ비즈니스/정무적 컨설팅에 대한 이해가 있는 분<br>
+                ㆍ텍스트 마이닝 기술에 대한 이해가 있는 분<br>
+                ㆍ검색 시스템의 검색어 Boolean expression 이해도<br>
+                ㆍ보고서 등 문서작성 능력이 우수한 분<br>
+                ㆍ꼼꼼하고 성실한 성격의 소유자<br>
+                ㆍ커뮤니케이션이 원만한 자<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍSQL, Python, R (Java, pandas, scikit-learn,<br>
+                &nbsp;&nbsp;&nbsp;matplotlib, 
+seaborn, Tensorflow, keras) 할용 능력<br>
+ㆍPowerPoint 디자인 및 활용 능력<br>
+                ㆍ마케팅/광고/홍보 관련 전공자 및 실무경험자<br>
+                ㆍ경영학 관련 전공자 및 실무경험자</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>데이터<br>
+                부문</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>웹크롤링<br>
+                /데이터<br>
+                엔지니어링</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">                ㆍ대용량 웹데이터 수집 및 <br>
+                &nbsp;&nbsp; 가공 업무<br>
+                ㆍ대용량 데이터 관리<br>
+                &nbsp;&nbsp;
+(RDBMS, NoSQL) <br>
+                ㆍ데이터 분석을 위한 엔지니어링<br>
+                &nbsp;&nbsp;
+                업무<br>
+                ㆍ수집용 서버, DBMS 관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 신입 또는 2년이상~10년이하<br>
+                ㆍ직급 : 사원~차장급<br>
+                ㆍ컴퓨터공학 및 관련 전공<br>
+                ㆍ웹크롤링 관련 업무 경험자<br>
+                ㆍ(공통) HTTP/HTTPS 프로토콜 관련 지식 보유자<br>
+                ㆍ(공통) HTML, CSS, Javascript, Ajax 관련 지식 <br>
+                &nbsp;&nbsp; 보유자<br>
+                ㆍ(경력) 1년 이상의 웹 데이터 수집 및 가공 경험<br>
+                ㆍ(경력)  1년 이상의 RDBMS/NoSQL 실무 경험<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍ상용 웹크롤러 개발 경험자<br>
+                ㆍ고효율 수집을 위한 Scale-up/Scale-Out 설계/<br>
+               &nbsp;&nbsp; 개발 경험자<br>
+                ㆍ멀티쓰레딩/분산처리 개발 경험자
+                <br>
+                ㆍ비정형 데이터 분석 유경험자<br>
+                ㆍHadoop/NoSQL 환경 경험자<br>
+                ㆍ데이터 분석 및 텍스트 마이닝에 대한 기본 <br>
+                &nbsp;&nbsp;
+                교육과정을 수료한 분</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>영업</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>IT기술영업<br>
+                (경력)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ자사 AI자연어처리 솔루션 <br>
+               &nbsp;&nbsp; 기술영업<br>
+                ㆍ영업목표 및 달성 전략 수립<br>
+                ㆍ제품 소개, 발표, 견적, <br>
+               &nbsp;&nbsp; 계약 및 정산<br>
+                ㆍ고객 관리<br>
+                ㆍ영업 관리<br>
+                ㆍ사업 관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 6년 이상~10년 이하 (유관경력)<br>
+                ㆍ직급 : 과장~차장급<br>
+                ㆍIT비즈니스 전반에 대한 이해가 뛰어나신 분<br>
+                ㆍ고객 및 유관 사업자간 커뮤니케이션 능력을<br>
+                &nbsp;&nbsp;
+가지고 계신 분<br>
+<b><br>
+우대사항</b><br>
+ㆍSI/솔루션 영업 경험자<br>
+ㆍIT 관련학과 전공<br>
+ㆍ프레젠테이션 능력을 가지고 계신 분<br>
+ㆍIT 제안서 작성 경험을 보유하신 분<br>
+ㆍOA 활용이 능숙하신 분<br>
+&nbsp;&nbsp;
+(엑셀, 파워포인트, 한글 등)</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>영업</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>영업<br>
+                (데이터<br>
+                비즈니스<br>
+                부문)</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ데이터 비즈니스 부문 영업대표<br>
+                &nbsp;&nbsp; (데이터판매, 데이터분석서비스,<br>
+                &nbsp;&nbsp;
+                데이터분석보고서)<br>
+                ㆍ영업기획<br>
+                ㆍ사업 제안 및 프리젠테이션<br>
+                ㆍ사업부 내 데이터/분석 사업의 <br>
+                &nbsp;&nbsp;
+                인바운드/아웃바운드 영업<br>
+                ㆍ고객 커뮤니케이션 및 관리</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 2년이상~10년이하<br>
+                ㆍ직급 : 사원~차장급<br>
+                ㆍ유관경력 2년 이상<br>
+                ㆍ데이터 분석 비즈니스 및 프로세스에 대한 이해<br>
+                ㆍIT서비스 영업 및 제안 경험<br>
+                ㆍ제안 및 프리젠테이션 경험<br>
+                ㆍ협상스킬과 이슈관리 능력 보유<br>
+                <br>
+                <b>우대사항</b><br>
+                ㆍ데이터 분석 서비스 영업 경험<br>
+                ㆍ데이터 비즈니스 부문 경험</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>컨설팅</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>솔루션<br>
+                컨설턴트</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ솔루션 기반 컨설팅 업무 수행<br>
+                ㆍ제안요청서 및 과업지시서 분석<br>
+                ㆍ입찰제안서, 발표자료의 <br>
+                &nbsp;&nbsp; 스토리보드 기획 및 <br>
+                &nbsp;&nbsp; 제안서 작성</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 신입 또는 3년 이하(팀원급), <br>
+               &nbsp;&nbsp;&nbsp; 9년 이상(팀장급)
+- 경력의 경우 솔루션 및<br>
+&nbsp;&nbsp;&nbsp;
+SI 컨설팅 업무 경력에 한함 <br>
+                ㆍ직급 : 사원~차장급<br>
+                <b><br>
+                  우대사항</b><br>
+                ㆍ전산 및 IT 관련 전공자<br>
+                ㆍ정보처리기사 자격증 소지자<br>
+                ㆍPPT 등을 활용한 도큐멘테이션 능력 보유자</td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>기획</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>웹서비스 <br>
+                기획</b></td>
+              <td align="center" bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">O명</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 1px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">ㆍ빅데이터 분석 웹 서비스 기획<br>
+                ㆍ공공/기업향 분석서비스 <br>
+               &nbsp;&nbsp; 표준화 기획<br>
+                ㆍ빅데이터 수집 솔루션 웹 기획<br>
+                ㆍ경쟁 서비스 분석 등<br>
+                &nbsp;&nbsp;&nbsp;
+시장분석을
+통한 고도화 기획<br>
+                ㆍ기존 서비스 운영/관리 및<br>
+                &nbsp;&nbsp;&nbsp;
+소개/교육</td>
+              <td bgcolor="#FFFFFF"
+                                            style="border-width:0px 0px 1px 0px; border-style:solid; border-color:#ccc; font-family:malgun gothic, 맑은 고딕; font-size:15px; line-height:25px;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;"><b>자격요건</b><br>
+                ㆍ학력 : 대학교졸업(4년) 이상<br>
+                ㆍ경력 : 3년 이상~10년 이하<br>
+                ㆍ직급 : 대리~과장급<br>
+                ㆍ웹 서비스 신규 기획 및 운영 유경험자 <br>
+                ㆍ사용자 요구사항 분석 및 협의로 기능정의 및<br>
+                &nbsp;&nbsp;
+화면기획
+가능하신 분<br>
+ㆍUX 개선 제안 및 가이드 제시 가능하신 분<br>
+ㆍAxure, figma 등의 툴을 활용한 화면기획 <br>
+&nbsp;&nbsp; 가능하신 분<br>
+ㆍ포트폴리오 제출 필수
+<br>
+                <b><br>
+                우대사항</b><br>
+                ㆍ데이터 분석 서비스 기획 경험<br>
+                ㆍ최신 트렌드 및 동종업계 변화에 빠르게 <br>
+               &nbsp;&nbsp; 적응할 수 있는 분<br>
+ㆍ비즈니스 마인드를 통해 주도적으로 프로젝트를<font color="#4be68e"></font><br>
+&nbsp;&nbsp; 운영할 수 있는 분</td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+  <tr>
+    <td style="padding:0 20px"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+      <tr>
+        <td style="font-family: malgun gothic, 맑은 고딕; font-size: 30px; line-height: 25px; letter-spacing: -2px; color: #222222;"><span style="color:#384f9e;"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit5/kn_210727.png" alt="아이콘
+" border="0" style="vertical-align:top"/></span>근무조건</td>
+      </tr>
+      <tr>
+        <td height="15"></td>
+      </tr>
+      <tr>
+       <td style="padding:0 20px">ㆍ근무형태 : 정규직 (수습기간 : 3개월)<br>
+         ㆍ근무일시 : 주 5일 (월~금)<br>
+　- 기본 근무시간 : 오전 9시 ~ 오후 6시<br>
+　- 30분 단위 시차출퇴근제 운영 (8시 / 8시 30분 / 9시 / 9시 30분 /10시)<br>
+ㆍ근무지역 : 서울시 서초구<br>
+ㆍ임금수준 : 학사초임 3,500만원 (2022년, 개발 직무 기준) </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0px" align="center"  cellspacing="0px">
+      <tr>
+        <td width="45px" align="right"><span style="color:#384f9e;"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit5/kn_210727.png" alt="아이콘
+" border="0" style="vertical-align:top"/></span></td>
+        <td width="776" style="font-family: malgun gothic, 맑은 고딕; font-size:28px; line-height:25px; letter-spacing:-2px; color:#222222;"><span style="color: #222222">지원절차</span></td>
+        <td width="45px"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15"></td>
+  </tr>
+  <tr>
+    <td ><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+      
+      <tr>
+        <td align="center"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit3/konan_step_210129_01.png" alt="서류전형 -> 실무진 면접 -> 임원 면접 -> 최종합격" border="0" style="vertical-align:top"/></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td style="padding:0 45px"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+      <tr>
+        <td height="15"></td>
+      </tr>
+      <tr>
+        <td align="center">※ 직무에 따라 코딩 테스트 또는 과제가 추가될 수 있습니다.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+  <tr>
+    <td><img src="https://www.saraminimage.co.kr/recruit/os_mmp/226_konan_img_230131.png" alt="복리후생
+" border="0" style="vertical-align:top"/></td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+
+  
+
+  <tr>
+    <td style="padding:0 20px">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+        <tr>
+          <td style="font-family: malgun gothic, 맑은 고딕; font-size: 30px; line-height: 25px; letter-spacing: -2px; color: #222222;"><span style="color:#384f9e;"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit5/kn_210727.png" alt="아이콘
+" border="0" style="vertical-align:top"/></span>접수기간 및 방법<font color="#6d7db8"></font></td>
+        </tr>
+        <tr><td height="15"></td></tr>
+        <tr>
+          <td style="padding:0 20px">ㆍ접수기간 : <span style="color: #FF6700">~ 2023년 06월 30일 까지 </span><br />
+            ㆍ접수방법 : <span style="color: #004CFF">사람인 온라인 입사지원</span> <br />
+ㆍ부문별 다수 채용으로 상시 채용합니다.<br>
+ㆍ접수일자 순으로 서류검토 및 채용절차 진행합니다.&nbsp; <br>
+ㆍ서류 전형은 합격자만 별도 안내드립니다.</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="65"></td>
+  </tr>
+  <tr>
+    <td style="padding:0 20px"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="font-family: malgun gothic, 맑은 고딕;font-size:15px;line-height:25px;letter-spacing:-1px">
+      <tr>
+        <td style="font-family: malgun gothic, 맑은 고딕; font-size: 30px; line-height: 25px; letter-spacing: -2px; color: #222222;"><span style="color:#384f9e;"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit5/kn_210727.png" alt="아이콘
+" border="0" style="vertical-align:top"/></span>기타사항</td>
+      </tr>
+      <tr>
+        <td height="15"></td>
+      </tr>
+      <tr>
+     <td style="padding:0 20px"> ㆍ장애인, 국가보훈대상자는 관계법령에 의거하여 우대 합니다.<br>
+ㆍ지원서 및 제출서류에 허위사실이 있을 경우 합격이 취소될 수 있습니다.<br>
+ㆍ채용 완료시 본 공고는 조기 마감될 수 있습니다.</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="40"></td>
+  </tr>
+    
+  <tr>
+    <td align="center"><a href="http://www.konantech.com/" target="_blank"><span style="background: #384f9e; margin: 0px auto; border-radius: 30px; width: 240px; height: 50px; text-align: center; color: #ffffff; line-height: 50px; font-family: 맑은 고딕; font-size: 17px; display: inline-block; cursor: pointer;"><b>홈페이지 바로가기</b></span></a></td>
+  </tr>
+  <tr><td height="65"></td></tr>
+  <tr>
+    <td align="right"><img src="https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png" alt="Designed by saramin" style="padding: 0 45px;"></td>
+  </tr>
+  
+</table>
+    </div>
+
+
+<font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('44948146', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

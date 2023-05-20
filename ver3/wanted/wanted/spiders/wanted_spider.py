@@ -13,12 +13,11 @@ class JobSpider(scrapy.Spider):
     search_keyword =["데이터 엔지니어",'데이터엔지니어','data engineer','MLOps']
     start_urls = [f"https://www.wanted.co.kr/api/v4/jobs?&country=kr&job_sort=company.response_rate_order&locations=all&years=-1&query={keyword}&limit=100&" for keyword in search_keyword]
 
-    now = str(datetime.now().strftime('%Y_%m_%d_%H%M%S'))
+    # now = str(datetime.now().strftime('%Y_%m_%d_%H%M%S'))
         
-    logging.basicConfig(filename=f'./log/{now}.log', level=10)
+    # logging.basicConfig(filename=f'./log/{now}.log', level=10)
 
     def __init__(self):
-        self.id = ""
         self.base_url = "https://www.wanted.co.kr/api/v4/jobs/"
         self.item = WantedItem()
 
@@ -27,20 +26,20 @@ class JobSpider(scrapy.Spider):
         json_response = json.loads(response.text)
         for j in range(0,len(json_response['data'])):
             
-            logging.info(f"ID :{self.id}")
+            # logging.info(f"ID :{self.id}")
             
-            self.id  = json_response['data'][j]['id']
-            self.item['id'] = self.id 
+            id  = json_response['data'][j]['id']
+            
 
-            detail_View_url = self.base_url+str(self.id)
+            detail_View_url = self.base_url+str(id)
             yield Request(url=detail_View_url,callback=self.detail_parse)
 
 
     def detail_parse(self, response):
        r = json.loads(response.text)
      
-       logging.info(f"Searching URL ::{response.url}")
-       
+    #    logging.info(f"Searching URL ::{response.url}")
+       self.item['id'] = r['job']['id']
        self.item['담당업무'] =r['job']['detail']['main_tasks']
        self.item['우대사항'] =r['job']['detail']['benefits']
        self.item['자격요건'] =r['job']['detail']['requirements']

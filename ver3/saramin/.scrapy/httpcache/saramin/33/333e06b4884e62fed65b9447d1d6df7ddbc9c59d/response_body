@@ -1,0 +1,319 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><font color="#0b7fcc"></font><font color="#2da86a"></font><div style="max-width:860px;font-family:'Apple SD Gothic', '맑은고딕', 'Nanum Gothic', sans-serif;">
+    <div style="width:100%;height:120px;padding:30px 20px;box-sizing:border-box;background:url(//cdn.jumpit.co.kr/jumpit/bnr_sri_position_pc@2x.png) no-repeat 50% 50%;background-size:cover;display:table">
+        <strong style="display:table-cell;vertical-align:middle;font-size:24px;font-weight:bold;letter-spacing:0;text-align:center;line-height:30px;color: #fff">
+        Devops 엔지니어        </strong>
+    </div>
+    <div style="padding:40px 20px 30px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                서비스 소개</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">포지큐브는 AI 기술 전문 회사로, AI Voice & Vision 분야에서 서비스를 제공하고 있습니다.
+
+
+#. '생활 곳곳에 스며드는 AI'를 지향합니다.
+ - 'OOO 담당자와 통화 할 수 있을까요 ?.' 라는 요청에 AI가 전화를 돌려 줍니다.
+ - 카메라에 신분증을 잠시 비추면 AI가 본인 확인을 진행합니다.
+ - '오늘 몇 시까지 운영하시나요?' 라는 질문에 AI가 영업시간을 안내합니다.
+ - AI 전화 응대 서비스, AI based OCR 서비스, AI 주문 접수 서비스 등의 AI 서비스를 개발·운영합니다.
+　뉴스에서 들어본 것 같은 AI 기술이 아닌, 우리의 삶에 적용되는 AI 서비스를 제공하고 있습니다.
+　AI 기술이 우리 삶의 당연한 일부분이 되는 그 날을 향해 노력하고 있습니다.
+	
+
+#. AI Transformer 로 업계 선두에 서고자 합니다.
+ - 2000년대에는 닷컴 기업, 2010년대에는 스마트폰. 2020년대를 대표하는 기술은 'AI'라고 생각합니다.
+ - AI 기술을 통한 혁신은, 이미 시작 되었으며, 우리는 그 변화의 중심에 들어가고자 합니다.
+ - 우리는 탁월한 기술력을 바탕으로, 시대 변화의 흐름을 주도하는 'AI 전문 서비스' 회사가 되고자 합니다.
+
+
+#. 포지큐브는 성장하고 있습니다.
+ - 삼성전자, LG전자 등 다양한 배경을 가진 사람들이 모여, 회사와 개인의 성장을 위해 노력합니다.
+ - 2017년 창업한 이래로
+　TIPS, SW 고성장클럽, KB 스타터스 등에 선정되며 그 가능성을 인정 받았을 뿐만 아니라,
+　2020년에는 캡스톤 파트너스, HB 인베스트먼트, 윈 벤처 투자, BA 파트너스에서 시리즈 A 투자유치에 성공했습니다.
+ - 정부 기관 및 여러 기업이 포지큐브의 AI 서비스를 이용중이며,
+　2020년에는 매출 200% 성장을 이미 달성 하였습니다.
+
+
+#. Done is better than perfect
+ - 의미 없이 지지부진한 탁상공론을 즐기지 않습니다.
+ - 간결한 의사 소통과 빠른 결정, 신속한 실행력을 통해 결과물을 도출합니다.
+ - 우리는 실패를 두려워 하지 않습니다.
+　실패 속에서 무언가를 배울 수 있다면, 그것은 이미 가치 있는 일입니다.
+	
+
+#. 이런 분을 찾고 있습니다.
+ - AI 분야의 최전선에서 경쟁력 있는 커리어를 만들어가고 싶으신 분
+ - 새로운 것에 대한 지적 호기심이 많은 분
+ - 발전하는 삶을 지향하며 그것을 위해 도전하는 것을 두려워하지 않는 분
+ - 동료와 서로 도움을 주고받는 것에 거리낌이 없는 분
+ - 맡은 일에 책임감을 갖고 임하며, 문제 상황을 외면하지 않는 분
+ - 회사와 내가 서로에게 성장의 바탕이 된다는 것을 이해하시는 분
+
+
+#. 우리는 이런 길을 걸어 왔습니다.
+  - 2021-10, 시리즈B 투자유치 110억원 (기존 시리즈A투자사 후속투자 및 신규 투자사)
+  - 2021-09, 자회사 인슈어랩스 3센터 오픈
+  - 2021-08, Microsoft Partnership(IP-Cosell)
+  - 2021-06, 자회사 인슈어랩스 2센터 오픈
+  - 2021-05, KB 국민카드 음성 AI 시스템 구축 프로젝트
+  - 2021-04, 조달청 혁신시제품(robi리셉션) 서비스 런칭
+　　　　　　→ 고객사 : 경북개발공사, 구로구청, 동래구청, 성남시청
+  - 2020-10, POST-TIPS 선정
+  - 2020-09, 조달청 혁신시제품 선정
+  - 2020-06, robi 리셉션 (Outbound + Telemarketing)
+　　　　　　→ 고객사 : Chubb, GS, SK M&S, 신한 카드
+ - 2020-06, Microsoft for Startups 프로그램 (Tier 1)에 선정
+ - 2020-04, 한국정보통신기술협회(TTA) GS인증 1등급 획득
+ - 2020-04, SW 고성장 클럽 200 선정(과학기술정보통신부)
+ - 2020-03, KB금융지주 - KB스타터스 선정
+ - 2020-02, 캡스톤 파트너스 등 4개 VC로부터 시리즈 A 투자 유치
+ - 2019-10, LG 전자 파트너쉽 체결
+ - 2019-05, robi리셉션 (AI 전화응대 서비스)
+　　　　　　→ 고객사 : 보령시청, 인포뱅크, 양서 농협
+ - 2018-04, 중소기업기술개발지원사업 TIPS 과제 선정
+ - 2017-11, robi스캐너 (AI OCR 솔루션) 개발 완료
+　　　　　　→ 고객사 : 하나은행, Toss, KB국민카드, 카카오, 페이코, 오리온, 녹십자, 제주항공
+ - 2017-07, 하나금융지주 1Q Lab 스타트업 5기 멤버 선정 (빅데이터 및 자연어 처리 기술)
+ - 2017-05, 포지큐브(POSICUBE) 창업
+
+
+#. 언론 소개
+　오피니언뉴스 : http://www.opinionnews.co.kr/news/articleView.html?idxno=44195
+　전자신문 : https://m.etnews.com/20201211000117?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D
+　Korea Times : http://www.koreatimes.co.kr/www/issues/2020/05/175_289925.html
+　아시아경제 : https://n.news.naver.com/article/277/0004645435?lfrom=facebook&fbclid=IwAR1e9Oy_EE30kDC2YwN-rC1laCQZ4M5eQYwjM42Q-ZUE4pFFF7iTT-N8-Ds
+　IT조선 : http://it.chosun.com/site/data/html_dir/2019/10/08/2019100800962.html
+　전자신문 : https://www.etnews.com/20190906000277
+　KEB하나은행 : https://www.kebhana.com/1QLab/news/1448038_113455.jsp</pre>
+            </div>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                모집부문 / 상세내용</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <dl style="margin:0;padding:0">
+                <dt style="display:block;margin:0;padding:0 0 12px;max-width:610px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    사용 기술
+                </dt>
+                <dd style="margin:0;padding:0">
+                    <span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/ibmcontainers.png" alt="IBM Containers" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> IBM Containers</span><span style="display:inline-block;margin:0 6px 6px 0;padding:6px;border-radius:3px;background:#f4f4f4;font-size:15px;color:#000;line-height:20px;"><img src="https://cdn.jumpit.co.kr/images/stacks/kubernetes.png" alt="Kubernetes" width="20" height="20" style="margin-right:6px;vertical-align:bottom;"> Kubernetes</span>                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    주요업무
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 퍼블릭 클라우드 및 온프레미스 환경에 위치한 신규 서버 환경을 구축 및 기존 환경의 유지보수를 합니다.
+• 쿠버네티스 기반 환경을 구축하고 운영/관리합니다.
+• 서비스 모니터링을 설정하고 로깅 및 알람 구성을 고도화 합니다.
+• 좋은 OSS를 발견한다면 자사 서비스 고도화에 이용할 수 있을지 고민합니다.
+• 자사 서비스의 테스트/빌드/배포 환경을 개선하고 프로세스를 자동화하여 개발 생산성을 높입니다. (CI/CD, MLOps)</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    자격요건
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• 백엔드 개발 경험 6개월 이상 있으신 분
+• Container를 이용하여 어플리케이션을 개발하거나, 환경을 구축한 경험이 있으신 분
+• 퍼블릭 클라우드 기반 환경 구축 및 운영 경험이 있으신 분을 찾습니다.
+• 네트워크에 관한 기초지식이 있는 분</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    우대사항
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                  <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">• Kubernetes 기반의 서비스 운영 경험이 있으시다면 더욱 좋습니다.
+• on-premises 환경에서의 서비스 운영 경험이 있으시다면 더욱 좋습니다.
+• 로깅 및 모니터링 환경 구축 경험이 있으시다면 더욱 좋습니다.</pre>
+                </dd>
+            </dl>
+            <dl style="margin:0;padding:32px 0 0">
+                <dt style="display:block;margin:0;padding:0 0 4px;font-size:15px;line-height:24px;letter-spacing:0;color:#000;font-weight:bold">
+                    마감일 및 근무지
+                </dt>
+                <dd style="display:block;margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000">
+                 • 마감일 : ~2023-05-12<br>• 근무지<br> - 서울시 강남구 테헤란로 14길 16, 11층, 12층                </dd>
+            </dl>
+        </div>
+    </div>
+    <div style="padding:30px 20px;overflow:hidden;">
+        <div style="float:left;vertical-align:top;width:210px;">
+            <h3 style="margin:0;padding:0 0 16px;font-size:18px;line-height:24px;letter-spacing:-0.5px;color:#000;font-weight:bold;">
+                복지 및 혜택</h3>
+        </div>
+        <div style="float:left;min-width:calc(100% - 210px);max-width:610px;border-top:1px solid #000;padding-top:24px;">
+            <div style="margin:0;padding:0;font-size:15px;line-height:26px;letter-spacing:0;color:#000;">
+              <pre style="word-break: break-all;white-space: pre-line;word-wrap: break-word;">[근무환경]
+• 채용형태 : 정규직 (수습기간 3개월_수습기간 급여 100%지급)
+• 근무형태 : 자율출퇴근, 재택근무가능
+• 근무시간 : 주5일 (월~금)
+• 근무지역 : 강남구 역삼동 포지큐브 본사
+
+[혜택 및 복지]
+• 몸이 건강해야 마음이 건강하다! 매년 제공되는 건강검진
+• 당신의 개성을 존중합니다. 개인별 맞춤 장비 제공
+• 먹고 일하는 직원이 행복하다! 화수분처럼 쏟아지는 간식bar
+• 근무시간에 탁구 경기 가능! 탁구대, 플스 구비
+• 합법적 비상금 충당 가능! 매월 급여 외 식대 제공(비상금 충당 가능)
+• 서로 윈윈하자! 자기계발비, 교육훈련비, 도서지원
+• 160평 2개층 규모의 사무실과 카페테리아
+• 스톡옵션, 퇴직연금, 성과급 제도 운영
+(더 많은 복리후생을 제공하기 위해 HR팀 열일중입니다!)</pre>
+            </div>
+        </div>
+    </div>
+         <div style="padding:50px 0;overflow:hidden;">
+      <a href="https://api.jumpit.co.kr/position/16396/link" target="_blank" title="점핏 새창열림" style="display:block;margin:0 auto;text-align:center;text-decoration:none">
+          <div style="width:100%;height:200px;">
+          <picture>
+               <source media="(max-width: 500px)" srcset="https://api.jumpit.co.kr/position/16396/mobile-banner">
+                   <img src="https://api.jumpit.co.kr/position/16396/banner" style="width:100%;object-fit:cover;" alt="배너" />
+          </picture>
+          </div>
+      </a>
+  </div>
+</div><font color="#4be68e"></font><font color="#6d7d89"></font><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45598015', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

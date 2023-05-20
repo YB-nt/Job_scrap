@@ -1,0 +1,143 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><div class="pc_recruit_template ver2 green check"><table class="info_recruit_template"><tbody><tr><td><table class="top_recruit_template"><tbody><tr><td><div class="top_area type4"><div class="info_top"><div class="img_top" id="template_image"><img src="//www.saraminimage.co.kr/sri/vix/template/toptype/it7.png"></div><div class="wrap_top" style="height: 362px;"><div class="cont_top"><div class="inner"><div class="tit_top" id="template_common_title"><div>인공지능(AI), 빅데이터 수집/분석/모델개발, 엔지니어 모집</div></div></div></div></div></div><div class="desc_top" id="template_common_company_intro" style="display: none;"><div>2007년 09월 27일에 설립된 응용 소프트웨어 개발 및 공급업업종의 S/W 개발,자문사업을 하는 중소기업,  주식회사기업 입니다.</div></div></div></td></tr></tbody></table></td></tr><tr><td><table class="cont_recruit_template"><tbody><tr><td><h2 class="tit_template" id="template_divisions_title"><span class="ico"></span>모집부문 및 상세내용</h2><div class="wrap_tbl_template"><table class="tbl_template" id="divisionTable"><colgroup><col width="184"><col></colgroup><thead><tr><th scope="col">모집부문</th><th scope="col">상세내용</th></tr></thead><tbody><tr id="common_table"><th scope="row"><strong class="tit" id="template_common_qualification_title">공통 자격요건</strong></th><td><table class="tbl_list"><tbody><tr><td id="template_common_education">ㆍ학력 : 대졸 이상 (2,3년), 석사/박사 우대</td></tr></tbody></table></td></tr><tr class="recruit_division_0 tr_division" style="display: table-row;" data-key="0"><th scope="row"><strong class="tit" id="template_divisions_recruitment_title_0" data-group="recruit_division_0">인공지능(AI) 및 빅데이터 분야 수집/분석/모델개발</strong><span class="txt" id="template_divisions_work_dept_nm_0" data-group="recruit_division_0">연구소, 연구개발팀 0명</span></th><td><table class="tbl_list display_assign_task_nm_0" id="template_divisions_assign_task_nm_0" style data-group="recruit_division_0"><tbody><tr><td><strong class="tit">담당업무</strong></td></tr><tr><td>ㆍ데이터거버넌스(수집/정제/저장/가공/분석/시각화), 빅데이터 분석 및 모델링, <br>
+인공지능(AI), 기계학습(ML), 딥러닝(DL), 인공지능 학습 데이터 구축<font color="#0b7fcc"></font><br>ㆍ특화분야 : 농생명, 스마트팜, 금융(핀테크) 분야<br type="_moz"></td></tr></tbody></table><table class="tbl_list"><tbody><tr><td><strong class="tit" id="template_divisions_qualification_title_0">지원자격</strong></td></tr><tr><td>ㆍ학력 : 대졸 이상 (2,3년), 석사/박사 우대<br></td></tr><tr class="display_req_0" style="display: none;"><td id="template_divisions_req_title_0">
+            ㆍ기타 필수 사항
+        </td></tr><tr class="display_req_0" id="template_divisions_req_0" style="display: none;" data-group="recruit_division_0"><td><table class="tbl_list_type2"><tbody></tbody></table></td></tr></tbody></table><table class="tbl_list display_pre_0" id="template_divisions_pre_0" data-group="recruit_division_0"><tbody><tr><td><strong class="tit">우대사항</strong></td></tr><tr><td><table class="tbl_list_type2 forward"><tbody><tr><td>ㆍ전기/전자공학, 컴퓨터/시스템공학, 수학/통계학</td></tr><tr><td>ㆍ정보처리기사, 빅데이터분석기사, 데이터분석전문가<font color="#2da86a"></font></td></tr><tr><td>ㆍ영어가능자, 인근거주자, 해당직무 근무경험</td></tr></tbody></table></td></tr></tbody></table></td></tr><tr class="recruit_division_1 tr_division" data-key="1"><th scope="row"><strong class="tit" id="template_divisions_recruitment_title_1" data-group="recruit_division_1">인공지능(AI) 및 빅데이터 분야 인프라 운영</strong><span class="txt" id="template_divisions_work_dept_nm_1" data-group="recruit_division_1">연구소, 연구개발팀 0명</span></th><td><table class="tbl_list display_assign_task_nm_1" id="template_divisions_assign_task_nm_1" data-group="recruit_division_1"><tbody><tr><td><strong class="tit">담당업무</strong></td></tr><tr><td>ㆍ데이터거버넌스(수집/정제/저장/가공/분석/시각화),<br>
+빅데이터시스템(하둡 에코 시스템), 클라우데라(CLOUDERA) 운영,<br>
+빅데이터 플랫폼 및 빅데이터 분석 플랫폼 인프라 운영</td></tr></tbody></table><table class="tbl_list"><tbody><tr><td><strong class="tit" id="template_divisions_qualification_title_1">지원자격</strong></td></tr><tr><td><span id="template_divisions_Career_1" data-group="recruit_division_1">ㆍ경력 : 신입/경력 2년 이상</span><span id="template_divisions_JobGrade_1" data-group="recruit_division_1">(연구원, 책임연구원, 팀장급)</span></td></tr><tr class="display_req_1" style="display:none;"><td id="template_divisions_req_title_1">
+            ㆍ기타 필수 사항
+        </td></tr><tr class="display_req_1" id="template_divisions_req_1" style="display:none;" data-group="recruit_division_1"><td><table class="tbl_list_type2"><tbody></tbody></table></td></tr></tbody></table><table class="tbl_list display_pre_1" id="template_divisions_pre_1" data-group="recruit_division_1"><tbody><tr><td><strong class="tit">우대사항</strong></td></tr><tr><td><table class="tbl_list_type2 forward"><tbody><tr><td>ㆍ전기/전자공학, 컴퓨터/시스템공학, 수학/통계학</td></tr><tr><td>ㆍ정보처리기사, 빅데이터분석기사, 데이터분석전문가</td></tr><tr><td>ㆍ영어가능자, 인근거주자, 해당직무 근무경험</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr><tr><td><h2 class="tit_template" id="template_job_type_title"><span class="ico"></span>근무조건</h2><div class="wrap_list_template"><table class="list_template"><tbody><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_job_type_title">근무형태</span><span class="colon">:</span><span class="txt" id="template_job_type_job_type">정규직(수습기간)-<span style="color: rgb(171, 171, 171);">3개월</span></span></td></tr><tr class="work_shift display_work_shift" style="display: table-row;"><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_work_shift_title" data-group="work_shift">근무일시</span><span class="colon">:</span><span class="txt" id="template_job_type_work_shift" data-group="work_shift">주 5일(월~금) 전일제 09:00~18:00</span></td></tr><tr class="address display_address"><td><span class="dot">ㆍ</span><span class="tit" id="template_job_type_address_title">근무지역</span><span class="colon">:</span><span class="txt"><span id="template_job_type_aw_post_address">(54870) 전북 전주시 덕진구 오공로 123 테크비즈센터 606호, 607호(만성동)</span></span></td></tr></tbody></table></div></td></tr><tr class="display_hiring_process_list"><td><h2 class="tit_template" id="template_step_title"><span class="ico"></span>전형절차</h2><ol class="step_template_type step_template_type3" id="template_step_hiring_process_list"><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 서류전형</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 1차면접</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 테스트</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 2차면접</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 건강검진</strong><span class="txt_step"></span></div></div></li><li><div class="cont_step"><div class="inner"><strong class="tit_step"> 최종합격</strong><span class="txt_step"></span></div></div></li></ol></td></tr><tr><td><h2 class="tit_template" id="template_how_to_apply_title"><span class="ico"></span>접수기간 및 방법<font color="#4be68e"></font></h2><div class="wrap_list_template"><table class="list_template"><tbody><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_period_title">접수기간</span><span class="colon">:</span><span class="txt emph" id="template_how_to_apply_period">채용공고 확인</span></td></tr><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_howtoapply_title">접수방법<font color="#6d7e68"></font></span><span class="colon">:</span><span class="txt" id="template_how_to_apply_howtoapply">사람인 입사지원</span></td></tr><tr><td><span class="dot">ㆍ</span><span class="tit" id="template_how_to_apply_apply_form_title">이력서양식</span><span class="colon">:</span><span class="txt" id="template_how_to_apply_apply_form">사람인 온라인 이력서</span></td></tr><tr class="display_required_documents required_documents" style="display: table-row;"><td><span class="dot">ㆍ</span><span class="tit" id="template_step_required_documents_title" data-group="required_documents">제출서류</span><span class="colon">:</span><span class="txt" id="template_step_required_documents" data-group="required_documents">입사지원시 제출 : 입사지원서(사람인 온라인 양식), 이력서, 자기소개소, 경력기술서(포트폴리오)<br>
+인터뷰시 제출 : 주민등록등본 1부, 최종학력졸업증명서 1부, 최종학력성적증명서 1부</span></td></tr></tbody></table></div></td></tr><tr id="template_caution"><td><h2 class="tit_template"><span class="ico"></span>유의사항</h2><div class="wrap_list_template"><table class="list_template"><tbody><tr id="blindCaution" style="display: none;"><td>ㆍ학력, 성별, 연령을 보지않는 블라인드 채용입니다. </td></tr><tr><td>ㆍ입사 지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.</td></tr><tr class="divisions_caution" style="display: none;"><td>ㆍ모집 분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다.</td></tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></table></div><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45644583', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

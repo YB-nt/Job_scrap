@@ -1,0 +1,162 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><font color="#0b7fcc"></font><font color="#2da86a"></font><div class="cont_simply">[담당업무]<br />
+ㅇ B2B/B2C 서비스를 위한 AI 모델 개발<br />
+ㅇ AI 모델을 실시간으로 분석할 수 있는 MLOps 환경 구축<br />
+ㅇ 다수의 서버 환경에서의 연구/개발<br />
+<br />
+[자격 요건]<br />
+ㅇ 정제되지 않은 Dataset을 이용한 실제 모델 구축 경험<br />
+ㅇ Vision AI 개발 경험 2년 이상<br />
+ㅇ 새로운 문제를 풀어가는 것에 대한 도전<br />
+<br />
+[우대사항]<br />
+ㅇ 컴퓨터공학/SW 전공자이신 분<br />
+ㅇ 문제에 맞게 올바른 아키텍처를 설계할 수 있는 분<br />
+ㅇ 최신 AI SOTA 모델들에 관심을 갖고 트렌드를 아시는 분<br />
+<br />
+[문의/지원]<br />
+리플라이랩 김석겸 파트너<br />
+sukyum@refly.kr<br />
+<br />
+---<br />
+<br />
+나의 커리어 동반자,<br />
+헤드헌팅 플랫폼 '헤이헌터'를 운영하고 있습니다.<br />
+<br />
+https://www.heyhunter.co.kr<br />
+<br />
+간단한 프로필을 등록하시면 헤드헌터로부터 포지션을 제안받으실 수 있고, <br />
+현재 진행중인 더 많은 헤드헌팅 포지션을 확인하실 수 있습니다.</div><div class="jv_cont jv_howto_easy"><h3 class="jv_sub_tit">함께하기 위한 방법</h3><ul class="jv_howto_details"><li>접수기간 : 2023년 04월 26일 (수)12시 00분 ~ 2023년 05월 11일 (목) 23시 59분</li><li>접수방법 : 사람인 입사지원</li><li>이력서양식 : 사람인 이력서 양식</li></ul><h3 class="jv_sub_tit">함께하기 위한 여정</h3><ul class="jv_howto_details"><li>서류전형</li><li>1차면접</li><li>2차면접</li><li>최종합격</li></ul></div><font color="#4be68e"></font><font color="#6d7dbd"></font><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45581949', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>

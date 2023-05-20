@@ -1,0 +1,199 @@
+ <!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>채용공고 상세</title>
+    <base target="_blank">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="/sri_css/recruit-template-reset.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+    <link href="/sri_css/recruit-template.css?v=20230509163315" media="all" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0 !important;padding:0 !important;background:#fff !important;">
+<div class="user_content"><div class="cont_simply">[회사소개]<br />
+TSN Lab은 실시간 통신/AI 기술을 개발하는 회사입니다. TSN Lab의 가장 큰 장점은 성장할 수 있는 회사라는 점입니다. 다른 회사가 하지 않는 엄청 어려운 원천 기술을 개발하고 있고, 모르면 하나 하나 가르쳐 줄 시니어 개발자들이 있습니다. 3년 정도 근무하면 웬만한 중견/대기업에서 부러워 할만한 사람으로 성장할 수 있습니다. 대표이사와 함께 일했던 친구들은 사정이 있어서 에스케*, 네이*, 카카*, 토*, 아마*, NH*, 한화시스*로 이직하긴 했지만...  3년 이후에도  이 회사가 좋아서 계속 남아있게 만들어드리겠습니다.<br />
+<br />
+TSN Lab은 2023년까지 실시간 통신 기술과 실시간 AI 엔진 원천 기술을 확보하려 합니다. 2023년부터 글로벌 시장의 문을 두드리겠습니다.<br />
+<br />
+과학기술정보통신부가 주관하고 정보통신산업진흥원(NIPA)가 주최하는 2021년 공개소프트웨어 개발자대회에서 일반부 은상, 2022년 일반부 기술발전상을 수상했습니다.<br />
+성균관대학교와 GA Korea가 주최하는 2021 KINGO-GA 창업경진대회에서 대상을 수상했습니다.<br />
+<br />
+[업무내용]<br />
+- MLOps 솔루션 개발<br />
+- AWS  또는 GCP와 연동 기능 개발<br />
+- 각종 Tool 연계 기능 관리/개발<br />
+- 기업부설 연구소 인프라 관리<br />
+<br />
+[인재상] <br />
+- DevOps에 대한 지식, 경험이 있어야 합니다.<br />
+- 컴퓨터 만지고 노는 것을 좋아하면 가장 좋습니다.<br />
+- 각종 툴을 설치하고 운용해본 경험이 있으면 좋습니다.<br />
+- MLOps 개발이 큰 업무여서 Python 프로그래밍 경험이 있어야 합니다.<br />
+- 원격으로 의사소통 하는데 문제가 없어야 합니다.<br />
+<br />
+[기술스택] Python, DevOps, MLOps<br />
+<br />
+[자격요건]<font color="#0b7fcc"></font><br />
+- 경력: 신입 ~ 경력 3년 미만<font color="#2da86a"></font><br />
+- 학력: 고등학교 이상 졸업자 (대학교 졸업예정자 가능)<br />
+<br />
+[우대사항]<br />
+- 추가로 아래와 같은 경력이 있으면 좋습니다! Option입니다.<br />
+- 소프트웨어 관련 학과 졸업<br />
+- git과 같은 원격 협업 툴 사용 경험<br />
+- AI와 MLOps에 대한 지식, 경험<br />
+<br />
+[근무환경]<br />
+- 재택근무가 기본입니다. 아침에 일어나서 Google meet으로 접속하면 출근입니다.<br />
+- 사무실로 출근 하고 싶은 분들을 위해 공유 오피스 비용을 지원하고 있습니다. 재택근무를 해도 되고, 집 근처의 공유오피스로 출근해도 됩니다.<br />
+- 회의, 개발, 일일보고 등 모든 업무는 온라인으로 합니다.<br />
+- 분기별 한번 Offline으로 만나서 회식합니다.<br />
+- 매 월요일 아침 회사 전체 회의 시간에 세미나를 진행합니다. YouTube에서 TSN Lab을 검색해보세요! 회사 분위기를 알 수 있습니다. → https://www.youtube.com/@tsnlab<br />
+<br />
+[근무조건]<br />
+- 바로 업무를 시작할 수 있는 경우: 연봉 3,600만원 이상<br />
+- 3개월 정도 Warming up 후 업무를 시작할 수 있을 경우: 연봉 3,000만원 이상(6개월 이내 연봉 3,600만원 달성 가능한 경우)<br />
+- 기초가 부족하지만 성장 가능성이 있는 경우: 연봉 2,600만원 이상(1년 이내 연봉 3,600만원 달성 가능한 경우)<br />
+- 경력인 경우 - 이전 직장 월급 이상<br />
+- 신입/경력 상관 없이 첫 3개월은 인턴 기간이며 연봉의 80%를 월급으로 지급합니다.<br />
+<br />
+[복지/인센티브]<br />
+- 저희 회사는 원격근무가 기본이기 때문에 몇가지  복지/인센티브 정책이 있습니다.<br />
+- 업무 성과에 따라 비정기적으로 인센티브를 지급합니다.<br />
+- 집에서 근무하기 어려운 경우 월 20만원까지 공유오피스 비용을 지원합니다.<br />
+- 월 5만원 사무용품/간식비를 지급합니다.<br />
+- 소프트웨어 공제조합과 과학기술인 공제회를 통해 다양한 복지 혜택을 제공하고있습니다.<br />
+https://www.ksfc.or.kr/ksfch458.do → 소프트웨어공제조합 복지<font color="#4be68e"></font><br />
+https://www.sema.or.kr/wlfare/main/main.do → 과학기술인공제회 복지<br />
+- 과학기술인 공제조합에 가입해 입사 첫날부터 퇴직금을 적립합니다. (회사가 망해도 퇴직금은 보장됩니다).<br />
+- 정직원이 되면 생명/손해 보험 가입됩니다. 키보드 두드리다 손가락 삐면 보험 처리 하시면 됩니다.<br />
+<br />
+[전형방법]<br />
+- coo@tsnlab.com 으로 자기소개서/이력서를 합쳐서  A4 1 page 이내(매우 중요)로 보내주세요. 양식은 자유입니다.<br />
+- 자소서에 TSN Lab에 지원하는 이유를 5줄 이상 적어주세요.<br />
+- 서류 합격  → 온라인 면접(기술면접) → 인적성 검사 순으로 진행합니다.<br />
+<br />
+[지원 시 유의사항]<br />
+- 지원서류 및 입사서류에 허위사실이 발견될 경우 채용이 확정되었더라도 취소될 수 있습니다.</div><div class="jv_cont jv_howto_easy"><h3 class="jv_sub_tit">함께하기 위한 방법<font color="#6d7e76"></font></h3><ul class="jv_howto_details"><li>접수기간 : 2023년 04월 28일 (금)10시 00분 ~ 2023년 05월 28일 (일) 23시 59분</li><li>접수방법 : 사람인 입사지원</li><li>이력서양식 : 자유양식</li></ul><h3 class="jv_sub_tit">함께하기 위한 여정</h3><ul class="jv_howto_details"><li>서류전형</li><li>1차면접</li><li>인적성평가</li><li>최종합격</li></ul></div><font color="#c0ffee"></font></div>
+
+<script type="text/javascript">
+    var i;
+
+    var showQuickLogin = function () {
+        if (window.top.Saramin && window.top.Saramin.showQuickLogin) {
+            window.top.Saramin.showQuickLogin();
+        }
+    };
+
+    window.onload = function () {
+        var frames = document.getElementsByTagName("iframe");
+        for (i = 0; i < frames.length; i++) {
+            if(frames[i].src.indexOf('?') > -1) {
+                frames[i].src = frames[i].src.replace('autoplay=1', 'autoplay=0');
+                frames[i].src += '&wmode=transparent';
+            } else {
+                frames[i].src += '?wmode=transparent';
+            }
+
+        }
+        var embedes = document.getElementsByTagName("embed");
+        for (i = 0; i < embedes.length; i++) {
+            embedes[i].wmode = 'transparent';
+        }
+
+        var aList = document.querySelectorAll('a,area');
+        var aLength = aList.length;
+
+        for (i = 0; i < aLength; i++) {
+            var aLink = aList[i];
+            var href = aLink.getAttribute('href') || '';
+
+            if (href.indexOf('mailto:') !== -1 || href.indexOf('tel:') !== -1 || href.match('#(.*)') !== null) {
+                continue;
+            }
+
+            aLink.setAttribute('target', '_blank');
+        }
+
+        var aTagList = document.querySelectorAll('a,area');
+        for (i = 0; i < aTagList.length; i++ ){
+            aTagList[i].addEventListener('mousedown', function (e) {
+                var item = e.currentTarget;
+                var href = item.getAttribute('href') || '';
+
+                Saramin.checkUpdateHomepage(href);
+            });
+        }
+
+        if (window.top.JobsView) {
+            window.top.JobsView.revealMail(document.getElementsByClassName("enc_mail"));
+        } else {
+            window.top.revealMail(document.getElementsByClassName("enc_mail"))
+        }
+
+    };
+
+    var Saramin = {};
+    Saramin.checkUpdateHomepage = function(href) {
+        var isFile = false,
+            urlLastSpiceByDot = href.split('.').pop().toLowerCase(),
+            fileExtWord = ['hwp', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'xls', 'xlsx', 'rtf', 'gul'],
+            fileExtCompress = ['zip', 'alz', 'rar', 'lzh', 'arj', 'egg', 'tar', 'sit'],
+            fileExtImageFlash = ['jpg', 'gif', 'png', 'psd', 'fla', 'ai', 'jpe', 'jpeg', 'tif', 'tiff', 'pcx', 'swf'],
+            fileExt;
+
+        fileExt = fileExtWord.concat(fileExtCompress).concat(fileExtImageFlash);
+        isFile = (fileExt.indexOf(urlLastSpiceByDot) !== -1);
+
+        if (href != '' && isFile === false && href.indexOf('mailto:') === -1
+            && href.indexOf('pds.saramin.co.kr') === -1 && href.indexOf('uf.daum.net') === -1 && href.indexOf('drive.google.com') === -1
+        ) {
+            try {
+                Saramin.updateHomepageLink('45597700', 'homepage');
+            } catch (e) {}
+        }
+    };
+    Saramin.updateHomepageLink = function(rec_idx, form_gb) {
+        var i = new Image();
+        i.src    = "/zf_user/track-apply-form/update-homepage-apply-form-cnt-ajax?rec_idx=" + rec_idx + "&form_gb=" + form_gb + '&t_category=relay_view&t_content=view_detail&t_ref=&t_ref_content=';
+        i.onload = function () {};
+    };
+
+
+    /*
+    isImgLoad = function (img) {
+        if (!img.complete) {
+            return false;
+        }
+
+        if (img.naturalWidth === 0) {
+            return false;
+        }
+
+        return true;
+    };
+
+    setTimeout(function () {
+        var tagList = document.querySelector(".user_content").querySelectorAll('img');
+        var tagListLength = tagList.length;
+
+        for (var i = 0; i < tagListLength; i++) {
+            var item = tagList[i];
+            if (!isImgLoad(item)) {
+                item.setAttribute('src', '');
+                item.parentElement.removeChild(item);
+
+                if (document.execCommand) {
+                    document.execCommand("Stop", false);
+                }
+
+                if (window.stop) {
+                    window.stop();
+                }
+            }
+        }
+    }, 10000);
+    */
+</script>
+</body>
+</html>
