@@ -27,7 +27,7 @@
 <br><br><br>
 
 ## 프로젝트 상세설명,과정 
-프로젝트 전체에 사용한 기술들 : `python`,`selenium`,`restful-api`,`scrapy`,`pandas`,`mongodb`,`postgresql` ...<br>
+프로젝트 전체에 사용한 기술들 : `python`,`selenium`,`restful-api`,`scrapy`,`pandas`,`mongodb`,`postgresql` ...<br><br>
 [ver1] https://github.com/YB-nt/Job_scrap/blob/main/ver1/README.md<br>
 [ver2] https://github.com/YB-nt/Job_scrap/blob/main/ver2/README.md<br>
 [ver3] https://github.com/YB-nt/Job_scrap/blob/main/ver3/README.md<br>
