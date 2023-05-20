@@ -17,7 +17,7 @@
 3. 데이터 적제<br>
     - 주요 데이터 : 자격요건,우대사항,담당업무 ...<br>
     - 변환이 완료된 데이터를 mongodb(ver3),postgresql(ver1)에 적제<br><br>
-    - ![job_scrap_MongoDB](https://github.com/YB-nt/Job_scrap/assets/74981759/0f8b2fa8-e811-4363-a067-fe4a2cc420f6)
+![job_scrap_MongoDB](https://github.com/YB-nt/Job_scrap/assets/74981759/0f8b2fa8-e811-4363-a067-fe4a2cc420f6)
     
 4. 데이터 검사<br>
     - 추가적인 데이터처리<br>
