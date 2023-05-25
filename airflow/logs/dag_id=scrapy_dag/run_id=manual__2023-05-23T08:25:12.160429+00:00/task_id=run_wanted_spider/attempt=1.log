@@ -1,0 +1,34 @@
+[2023-05-23T08:25:13.817+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: scrapy_dag.run_wanted_spider manual__2023-05-23T08:25:12.160429+00:00 [queued]>
+[2023-05-23T08:25:13.830+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: scrapy_dag.run_wanted_spider manual__2023-05-23T08:25:12.160429+00:00 [queued]>
+[2023-05-23T08:25:13.832+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T08:25:13.833+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-05-23T08:25:13.834+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-23T08:25:13.851+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): run_wanted_spider> on 2023-05-23 08:25:12.160429+00:00
+[2023-05-23T08:25:13.860+0000] {standard_task_runner.py:55} INFO - Started process 4797 to run task
+[2023-05-23T08:25:13.866+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'scrapy_dag', 'run_wanted_spider', 'manual__2023-05-23T08:25:12.160429+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/scrapy_dag.py', '--cfg-path', '/tmp/tmprnltx7h9']
+[2023-05-23T08:25:13.867+0000] {standard_task_runner.py:83} INFO - Job 35: Subtask run_wanted_spider
+[2023-05-23T08:25:13.951+0000] {task_command.py:388} INFO - Running <TaskInstance: scrapy_dag.run_wanted_spider manual__2023-05-23T08:25:12.160429+00:00 [running]> on host 24694c125b64
+[2023-05-23T08:25:14.045+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=scrapy_dag
+AIRFLOW_CTX_TASK_ID=run_wanted_spider
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-23T08:25:12.160429+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-23T08:25:12.160429+00:00
+[2023-05-23T08:25:14.049+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-05-23T08:25:14.051+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cd /tmp/wanted && scrapy crawl wanted']
+[2023-05-23T08:25:14.068+0000] {subprocess.py:86} INFO - Output:
+[2023-05-23T08:25:14.070+0000] {subprocess.py:93} INFO - /bin/bash: line 1: cd: /tmp/wanted: No such file or directory
+[2023-05-23T08:25:14.072+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-05-23T08:25:14.088+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-05-23T08:25:14.095+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=scrapy_dag, task_id=run_wanted_spider, execution_date=20230523T082512, start_date=20230523T082513, end_date=20230523T082514
+[2023-05-23T08:25:14.113+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 35 for task run_wanted_spider (Bash command failed. The command returned a non-zero exit code 1.; 4797)
+[2023-05-23T08:25:14.159+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-05-23T08:25:14.196+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
