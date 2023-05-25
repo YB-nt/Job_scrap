@@ -18,10 +18,10 @@
 1. 데이터 수집 <br>
    - scrapy를 사용해서 데이터를 수집<br><br>
 2. 데이터 전처리,변환<br>
-   - 데이터를 정형데이터로 저장하기 위해서 문자열처리,정규표현식,nlp를 사용해서 데이터 변환<br><br>
+   - 데이터를 정형데이터로 저장하기 위해서 정규표현식을 사용해서 데이터 변환<br><br>
 3. 데이터 적제<br>
     - 주요 데이터 : 자격요건,우대사항,담당업무 ...<br>
-    - 변환이 완료된 데이터를 mongodb(ver3),postgresql(ver1)에 적제<br><br>
+    - 변환이 완료된 데이터를 mongodb(ver3) - mongodb-atlas
     
 <br><br><br>
 
@@ -54,15 +54,19 @@
 - Mongodb에 데이터를 적재시 에러 발생하면 json으로 저장이 되도록 예외처리 진행하였다. 
 
 <br>
-
-
+<img width="774" alt="스크린샷 2023-05-25 오후 2 40 35" src="https://github.com/YB-nt/Job_scrap/assets/74981759/a37ce182-6303-4d68-9da7-781a64b72256">
+<img width="774" alt="스크린샷 2023-05-25 오후 2 40 28" src="https://github.com/YB-nt/Job_scrap/assets/74981759/e93d658c-ee7a-4abf-b35a-9a994836adbb">
 
 <br>
 
 ## workflow
 - docker-compose 로 airflow 환경을 구성
+- airflow를 사용해서 workflow를 구성
+- 각 scrapy 프로젝트를 bashoperator를 사용해서 실행
 - airflow를 사용해서 workflow를 구성 
 - 매일 자정에 동작되도록 스케쥴링 해주었다. 
+
+<img width="459" alt="스크린샷 2023-05-25 오후 2 01 34" src="https://github.com/YB-nt/Job_scrap/assets/74981759/2ae64f9f-e503-4250-8cea-726497125ff5">
 
 <br>
 
@@ -74,17 +78,17 @@
 - ~~Airflow + docker-compos~~
 <br>
 
-- 서버 연동<br>
-- 데이터 시각화
-- 추가적인 데이터 처리
-- 크롤링 데이터 적합성 검사
+- 서버 연동 <br>
+- 데이터 시각화<br>
+- 추가적인 데이터 처리<br>
+- 크롤링 데이터 적합성 검사<br>
 
 <br>
 
 ## Before Version
 
-- [ver1] https://github.com/YB-nt/Job_scrap/blob/main/ver1/README.md<br>
-- [ver2] https://github.com/YB-nt/Job_scrap/blob/main/ver2/README.md<br>
+- [ver1] https://github.com/YB-nt/Before_Job_scrap/blob/master/ver1/README.md<br>
+- [ver2] https://github.com/YB-nt/Before_Job_scrap/blob/master/ver2/README.md<br>
 
 
 
