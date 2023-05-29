@@ -20623,3 +20623,83 @@ File Path                        PID    Runtime      # DAGs    # Errors  Last Ru
 ================================================================================
 [2023-05-25T06:19:22.120+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
 [2023-05-25T06:19:30.995+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-29T13:01:16.796+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-29T13:01:16.809+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-29T13:01:16.814+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-29T13:01:16.820+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-29T13:03:05.679+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-29T13:03:05.699+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-29T13:03:05.709+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-29T13:03:05.715+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-29T13:03:21.941+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-05-29T13:03:22.538+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/scrapy_dag.py     60  0.38s             0           0
+================================================================================
+[2023-05-29T13:03:23.627+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-29T13:03:23.627+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-29T13:03:27.446+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-29T13:10:11.083+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-29T13:10:11.088+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-29T13:10:11.097+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-29T13:10:11.100+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-29T13:10:56.731+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-05-29T13:10:59.128+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/scrapy_dag.py     70  1.30s             0           0
+================================================================================
+[2023-05-29T13:11:29.696+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  4.56s           2023-05-29T13:11:02
+================================================================================
+[2023-05-29T13:11:59.870+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.59s           2023-05-29T13:11:33
+================================================================================
+[2023-05-29T13:12:10.683+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-29T13:20:33.854+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-29T13:20:33.864+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-29T13:20:33.867+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-29T13:20:33.870+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-29T13:20:53.463+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-05-29T13:20:54.294+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/scrapy_dag.py     67  0.41s             0           0
+================================================================================
+[2023-05-29T13:21:24.661+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  3.26s           2023-05-29T13:20:57
+================================================================================
+[2023-05-29T13:21:54.874+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.38s           2023-05-29T13:21:27
+================================================================================
+[2023-05-29T13:22:09.752+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
