@@ -376,3 +376,70 @@
 [2023-05-25T05:03:14.315+0000] {logging_mixin.py:137} INFO - [2023-05-25T05:03:14.315+0000] {dag.py:2690} INFO - Sync 1 DAGs
 [2023-05-25T05:03:14.371+0000] {logging_mixin.py:137} INFO - [2023-05-25T05:03:14.371+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-25T00:00:00+00:00, run_after=2023-05-26T00:00:00+00:00
 [2023-05-25T05:03:14.426+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.208 seconds
+[2023-05-25T06:15:03.434+0000] {processor.py:153} INFO - Started process (PID=89) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:03.523+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:15:03.563+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:03.562+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:04.738+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:08.300+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.300+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:scrapy_dag
+[2023-05-25T06:15:08.381+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.381+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:scrapy_dag
+[2023-05-25T06:15:08.433+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.433+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:scrapy_dag
+[2023-05-25T06:15:08.441+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.441+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:15:08.621+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.621+0000] {dag.py:2711} INFO - Creating ORM DAG for scrapy_dag
+[2023-05-25T06:15:08.879+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:08.879+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:15:09.090+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 5.944 seconds
+[2023-05-25T06:15:39.485+0000] {processor.py:153} INFO - Started process (PID=110) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:39.488+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:15:39.492+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:39.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:39.550+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:15:39.595+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:39.595+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:15:39.636+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:15:39.636+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:15:39.667+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.189 seconds
+[2023-05-25T06:16:09.825+0000] {processor.py:153} INFO - Started process (PID=131) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:09.833+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:16:09.838+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:09.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:09.900+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:09.976+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:09.976+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:16:10.053+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:10.053+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:16:10.099+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.280 seconds
+[2023-05-25T06:16:40.203+0000] {processor.py:153} INFO - Started process (PID=160) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:40.214+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:16:40.216+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:40.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:40.321+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:16:40.460+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:40.460+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:16:40.572+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:16:40.572+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:16:40.642+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.459 seconds
+[2023-05-25T06:17:10.939+0000] {processor.py:153} INFO - Started process (PID=182) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:10.947+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:17:10.950+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:10.950+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:10.982+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:11.020+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:11.020+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:17:11.059+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:11.059+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:17:11.085+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.152 seconds
+[2023-05-25T06:17:41.206+0000] {processor.py:153} INFO - Started process (PID=202) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:41.209+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:17:41.212+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:41.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:41.246+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:17:41.282+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:41.282+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:17:41.320+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:17:41.319+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:17:41.347+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.146 seconds
+[2023-05-25T06:18:11.647+0000] {processor.py:153} INFO - Started process (PID=222) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:11.652+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:18:11.658+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:11.658+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:11.727+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:11.776+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:11.776+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:18:11.825+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:11.825+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:18:11.856+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.218 seconds
+[2023-05-25T06:18:42.200+0000] {processor.py:153} INFO - Started process (PID=242) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:42.213+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:18:42.216+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:42.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:42.310+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:18:42.403+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:42.402+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:18:42.496+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:18:42.496+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:18:42.562+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.367 seconds
+[2023-05-25T06:19:12.903+0000] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:19:12.907+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/scrapy_dag.py for tasks to queue
+[2023-05-25T06:19:12.910+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:19:12.910+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:19:12.946+0000] {processor.py:753} INFO - DAG(s) dict_keys(['scrapy_dag']) retrieved from /opt/airflow/dags/scrapy_dag.py
+[2023-05-25T06:19:12.988+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:19:12.988+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-05-25T06:19:13.029+0000] {logging_mixin.py:137} INFO - [2023-05-25T06:19:13.029+0000] {dag.py:3441} INFO - Setting next_dagrun for scrapy_dag to 2023-05-24T00:00:00+00:00, run_after=2023-05-25T00:00:00+00:00
+[2023-05-25T06:19:13.058+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/scrapy_dag.py took 0.161 seconds

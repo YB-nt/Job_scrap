@@ -20538,3 +20538,88 @@ File Path                                                                       
 /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py                                                  6           0  0.75s           2023-05-25T05:02:49
 ================================================================================
 [2023-05-25T05:03:27.637+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-25T06:10:13.723+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-25T06:10:13.765+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-25T06:10:13.781+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-25T06:10:13.801+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-25T06:11:06.297+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-25T06:11:12.869+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-05-25T06:14:22.005+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-05-25T06:14:22.063+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2023-05-25T06:14:22.070+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-05-25T06:14:22.076+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-25T06:15:02.145+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-05-25T06:15:04.660+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/scrapy_dag.py     89  1.63s             0           0
+================================================================================
+[2023-05-25T06:15:35.073+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  6.23s           2023-05-25T06:15:09
+================================================================================
+[2023-05-25T06:16:05.758+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.23s           2023-05-25T06:15:39
+================================================================================
+[2023-05-25T06:16:36.103+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.33s           2023-05-25T06:16:10
+================================================================================
+[2023-05-25T06:17:06.461+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.53s           2023-05-25T06:16:40
+================================================================================
+[2023-05-25T06:17:37.145+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.19s           2023-05-25T06:17:11
+================================================================================
+[2023-05-25T06:18:07.537+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.18s           2023-05-25T06:17:41
+================================================================================
+[2023-05-25T06:18:37.850+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.30s           2023-05-25T06:18:11
+================================================================================
+[2023-05-25T06:19:08.441+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/scrapy_dag.py                           1           0  0.43s           2023-05-25T06:18:42
+================================================================================
+[2023-05-25T06:19:22.120+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-05-25T06:19:30.995+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
