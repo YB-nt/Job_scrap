@@ -12,7 +12,7 @@
 <br><br>
 
 ## 프로젝트 과정 
-<img width="1023" alt="스크린샷 2023-05-31 오후 9 30 06" src="https://github.com/YB-nt/Job_scrap/assets/74981759/8da8215b-0cda-4ff3-82e3-e688c7cd08a7">
+<img width="820" alt="스크린샷 2023-05-31 오후 9 30 06" src="https://github.com/YB-nt/Job_scrap/assets/74981759/8da8215b-0cda-4ff3-82e3-e688c7cd08a7">
 
 
 <br>
