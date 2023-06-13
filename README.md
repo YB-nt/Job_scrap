@@ -81,10 +81,16 @@
 - ~~Airflow + docker-compos~~
 <br>
 
-- 서버 연동 <br>
-- 데이터 시각화<br>
-- 추가적인 데이터 처리<br>
-- 크롤링 데이터 적합성 검사<br>
+## 프로젝트 개선 방향성 
+  - 크롤러 수정 
+      - 크롤러 실행시간 체크 <br> 
+      - 비동기성 크롤러 직접 구현 <br>
+            -> python or golang
+  - 데이터 처리 
+      - SparkSQL를 사용해서 데이터 처리 
+
+  - 프로젝트 과정 
+      - 크롤링(csv) -> S3 -> Spark -> DB | airflow | docker-compose -> ec2
 
 <br>
 
