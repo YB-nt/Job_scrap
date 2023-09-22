@@ -36,6 +36,21 @@
 - 다양한 추가 기능을 사용할 수 있다. middleware(auto-useragent,proxy setting ...)
 <br><br>
 
+### 프로젝트 Ver1 -> Ver3 성능 비교
+
+- 실행 시 크롤링 사이트 상태에 따라서 변동성이 있을 수 있음
+
+- **속도를 약 46.11% 향상**
+  
+|비교|VER3|VER1|
+|---|:---:|:---:|
+|속도|0m20.475s|0m37.995s|
+|DB|MongoDB|ElephantDB|
+|처리량|약 400PAGE|약 50PAGE|
+|방법|Scrap+airflow|selnium+bs|
+
+
+
 ## Data Extract
 - middleware를 추가하여서 크롤링 안정성을 높여주었다.
 
@@ -71,28 +86,6 @@
 
 <img width="459" alt="스크린샷 2023-05-25 오후 2 01 34" src="https://github.com/YB-nt/Job_scrap/assets/74981759/2ae64f9f-e503-4250-8cea-726497125ff5">
 
-<br>
-
-## TODO
-- ~~데이터 중복,누락 예외처리~~
-- ~~데이터베이스 연동후 데이터베이스에 자동 저장~~
-- ~~wanted scrapy 로 변경~~
-- ~~데이터베이스에 저장된데이터들 중복검사~~
-- ~~Airflow + docker-compos~~
-<br>
-
-## 프로젝트 개선 방향성 
-  - 크롤러 수정 
-      - 크롤러 실행시간 체크 <br> 
-      - 비동기성 크롤러 직접 구현 <br>
-            -> python or golang
-  - 데이터 처리 
-      - SparkSQL를 사용해서 데이터 처리 
-
-  - 프로젝트 과정 
-      - 크롤링(csv) -> S3 -> Spark -> DB | airflow | docker-compose -> ec2
-
-<br>
 
 ## Before Version
 
