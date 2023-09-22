@@ -11,8 +11,8 @@ import logging
 
 class JobSpider(scrapy.Spider):
     name = "saramin"
-    search_keyword =["데이터 엔지니어",'데이터엔지니어','data engineer','MLOps']
-    start_urls = [f"https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword={keyword}" for keyword in search_keyword]
+    self.search_keyword =["데이터 엔지니어",'데이터엔지니어','data engineer','MLOps']
+    start_urls = [f"https://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=recently&searchword={keyword}" for keyword in self.search_keyword]
     
     
 
@@ -39,9 +39,16 @@ class JobSpider(scrapy.Spider):
         if(len(text)!=0):
             if(type(text)==list):
                 text = ', '.join(text)
-            
+        if(self.check_text(text)):    
+            yield self.preprocess(text,url=response.url)
 
-        yield self.preprocess(text,url=response.url)
+    def check_text(self,text):
+        for keyword in self.search_keyword:
+            p = re.compile(keyword)
+            if(len(re.findall(p,text)>1)):
+                return True
+            else:
+                return False
         
     def preprocess(self, text,url):
         
