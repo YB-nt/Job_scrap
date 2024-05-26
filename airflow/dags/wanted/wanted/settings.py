@@ -13,11 +13,11 @@ SPIDER_MODULES = ['wanted.spiders']
 NEWSPIDER_MODULE = 'wanted.spiders'
 
 
-MONGODB_USER = 'yb-nt'
-MONGODB_PASSWORD ="ixXEWpXMUFUQADM0"
-MONGODB_SERVER = "cluster0.l0auzyf.mongodb.net"
-MONGODB_DB = "job_scrap"
-MONGODB_COLLECTION = "wanted_data"
+MONGODB_USER = ""
+MONGODB_PASSWORD =""
+MONGODB_SERVER = ""
+MONGODB_DB = ""
+MONGODB_COLLECTION = ""
 
 MONGODB_URI = f"mongodb+srv://{MONGODB_USER}:{MONGODB_PASSWORD}@{MONGODB_SERVER}/?retryWrites=true&w=majority"
 
